@@ -1,0 +1,98 @@
+---
+title       : rCharts
+subtitle    : Interactive Visualizations from R
+author      : Ramnath Vaidyanathan
+hitheme     : solarized_light
+license     : by-nc-sa
+assets:
+  js:
+    - "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"
+    - "http://bartaz.github.io/sandbox.js/jquery.highlight.js"
+--- .dark .nobackground .quote
+
+<q>rCharts helps create, customize and share dynamic, interactive visualizations from R, using a consistent lattice-like plotting interface.</q>
+
+```{r setup, echo = F, message = F, cache = F}
+knitr::opts_chunk$set(tidy = F, message = F, comment = NA, results = 'asis')
+include <- function(file){
+  writeLines(paste('    ', readLines(file)))
+}
+options(RCHART_WIDTH = 900, RCHART_HEIGHT = 400)
+```
+
+--- .larger
+
+## Quick Start
+
+```r
+library(devtools)
+pkgs <- c("slidify", "slidifyLibraries", "rCharts")
+install_github(pkgs, 'ramnathv')
+```
+
+---
+
+<q> rCharts helps __create__, customize and share dynamic, interactive visualizations from R, using a consistent lattice-like plotting interface.</q>
+
+--- .larger
+
+```{r plot1}
+library(rCharts)
+rPlot(mpg ~ wt | gear, data = mtcars, type = 'point')
+```
+
+--- .larger
+
+```{r plot2}
+nPlot(mpg ~ wt, group = 'gear', data = mtcars, 
+  type = 'scatterChart'
+)
+```
+
+---
+
+## Leaflet Map
+
+```{r plot3, results = 'hide'}
+map3 <- Leaflet$new()
+map3$setView(c(51.505, -0.09), zoom = 13)
+map3$tileLayer(
+  provider = "Stamen.Watercolor",
+  maxZoom = 18 
+)
+map3$marker(c(51.5, -0.09), bindPopup = "<p> Hi. I am a popup </p>")
+map3$set(height = 590, width = 950)
+map3
+```
+
+--- #leaflet-map
+
+```{r ref.label = 'plot3', echo = F}
+
+```
+
+<style>#leaflet-map iframe{height: 600px;}</style>
+
+--- #highcharts
+
+## HighCharts
+
+```{r, warning = F, results = 'hide'}
+h1 <- hPlot(x = "Wr.Hnd", y = "NW.Hnd", 
+  data = MASS::survey, 
+  type = c("line", "bubble", "scatter"), 
+  group = "Clap", 
+  size = "Age"
+)
+h1
+```
+
+---
+
+```{r echo = F}
+h1
+```
+
+<style>#highcharts iframe{height: 600px;}</style>
+
+

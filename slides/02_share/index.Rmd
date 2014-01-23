@@ -1,0 +1,119 @@
+---
+title       : Share Visualizations
+subtitle    : rCharts
+--- .dark .nobackground .quote
+
+<q>rCharts helps create, customize and __share__ dynamic, interactive visualizations from R, using a consistent lattice-like plotting interface.</q>
+
+```{r setup, echo = F, message = F, cache = F}
+knitr::opts_chunk$set(tidy = F, message = F, comment = NA, results = 'asis')
+include <- function(file){
+  writeLines(paste('    ', readLines(file)))
+}
+options(RCHART_WIDTH = 900, RCHART_HEIGHT = 400)
+```
+
+---
+
+## Create Chart
+
+```{r}
+library(rCharts)
+hair_eye_male = subset(as.data.frame(HairEyeColor), Sex == "Male")
+n1 <- nPlot(Freq ~ Hair, group = 'Eye', 
+  data = hair_eye_male, type = 'multiBarChart'
+)
+n1$set(width = 1000)
+```
+
+---
+
+## Save
+
+```{r results = 'asis'}
+n1$save('assets/fig/savechart.html', cdn = TRUE)
+cat('<iframe src="assets/fig/savechart.html" width=100%, height=600></iframe>')
+```
+
+
+
+--- .segue .dark .nobackground
+
+## Embed
+
+---
+
+## IFrame
+
+```{r iframechart}
+n1$show('iframe', cdn = TRUE)
+```
+
+---
+
+## IFrame Inline
+
+```{r iframesrcchart}
+n1$show('iframesrc', cdn = TRUE)
+```
+
+---
+
+## Inline
+
+```{r inlinecchart, cache = F}
+n1$show('inline', cdn = TRUE, include_assets = TRUE)
+```
+
+--- .segue .dark .nobackground
+
+## Publish
+
+```{r echo = F}
+n1$set(width = 800)
+```
+
+
+---
+
+## Post Gist
+
+```{r eval = F}
+n1$publish("Hair Color vs. Eye Color")
+```
+
+---
+
+## Update Gist
+
+```{r eval = F}
+n1$chart(stacked = TRUE)
+n1$publish("Hair Color vs. Eye Color", id = 8576282)
+```
+
+---
+
+<iframe src='http://rcharts.io/viewer/?8576282' width=100% height=400></iframe>
+
+---
+
+## Publish with Code
+
+```{r eval = F}
+n2 <- create_chart('assets/code/chart1.R')
+n2$publish("Hair Color vs. Eye Color")
+```
+
+---
+
+<iframe src='http://rcharts.io/viewer/?8576370' width=100% height=400></iframe>
+
+
+
+
+
+
+
+
+
+

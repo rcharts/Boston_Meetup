@@ -1,0 +1,104 @@
+---
+title       : NYT Home Prices
+subtitle    : Customizing Visualizations
+--- &tabs
+
+```{r setup, echo = F, cache = F}
+library(knitr)
+opts_chunk$set(tidy = F, fig.path = 'fig/')
+```
+
+
+## Get Data
+
+
+*** 
+
+## Code
+
+```{r results = 'asis'}
+require(PerformanceAnalytics)
+data(managers)
+managers <- na.omit(managers)
+data_ = data.frame(
+  date = format(index(managers), "%Y-%m-%d"),
+  coredata(cumprod(managers + 1)*100)
+)
+```
+
+*** .active
+
+## Data
+
+```{r results = 'asis', echo = F}
+require(xtable)
+options(xtable.type = 'html', xtable.include.rownames = F)
+xtable(head(data_, 10))
+```
+
+
+--- .bigger &tabs
+
+## Process Data
+
+*** 
+
+## Code
+
+```{r}
+require(reshape2)
+# melt data frame into long form
+data_m <- melt(data_, id = "date", 
+  variable.name = 'manager', 
+  value.name = 'val'
+)
+```
+
+*** .active
+
+## Data
+
+```{r results = 'asis', echo = F}
+xtable(head(data_m, 10))
+```
+
+--- .bigger
+
+## Visualize Data
+
+```{r nythome2, results = 'hide', fig.path = "fig/"}
+require(rCharts)
+
+# initialize chart and set path to chart library
+p2 <- rCharts$new()
+p2$setLib('nyt_home')
+
+# pass description, plot data and groups variable
+p2$set(
+  description = "This data comes from the managers dataset 
+  included in the R package PerformanceAnalytics.",
+  data = data_m,
+  groups = "manager",
+  height = 0,
+  width = 0
+)
+p2
+```
+
+---
+
+```{r ref.label = 'nythome2', echo = F, results = 'asis'}
+
+```
+
+<style>
+  iframe.nyt-home{width: 600px;}
+  li.tab::before{content: ""}
+</style>
+
+<div class="source">
+Source: <a href="http://www.nytimes.com/interactive/2011/05/31/business/economy/case-shiller-index.html">NY Times</a>
+</div>
+
+
+

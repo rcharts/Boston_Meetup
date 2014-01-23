@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bump Chart</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Bump Chart">
+  <meta name="author" content="Ramnath Vaidyanathan">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../../../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../../../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../../../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../../../libraries/frameworks/io2012/css/gh-buttons.css" >
+  <link rel="stylesheet" href="../../../libraries/highlighters/highlight.js/css/solarized_light.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="../../../libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="../../../libraries/widgets/quiz/css/demo.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../../../libraries/frameworks/io2012/js/slides" 
+    src="../../../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="../assets/img/slidify_logo.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Bump Chart</h1>
+    <h2>Customizing Visualizations</h2>
+    <p>Ramnath Vaidyanathan<br/>McGill University</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <iframe src='fig/bchart2.html' width=100% height=600 seamless></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="segue dark nobackground" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Get Data</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <article data-timings="">
+    <!-- html table generated in R 3.0.2 by xtable 1.7-1 package -->
+
+<!-- Thu Jan 23 05:10:16 2014 -->
+
+<TABLE border=1>
+<TR> <TH> Date </TH> <TH> HomeTeam </TH> <TH> AwayTeam </TH> <TH> FTR </TH>  </TR>
+  <TR> <TD> 13/08/11 </TD> <TD> Blackburn </TD> <TD> Wolves </TD> <TD> A </TD> </TR>
+  <TR> <TD> 13/08/11 </TD> <TD> Fulham </TD> <TD> Aston Villa </TD> <TD> D </TD> </TR>
+  <TR> <TD> 13/08/11 </TD> <TD> Liverpool </TD> <TD> Sunderland </TD> <TD> D </TD> </TR>
+  <TR> <TD> 13/08/11 </TD> <TD> Newcastle </TD> <TD> Arsenal </TD> <TD> D </TD> </TR>
+  <TR> <TD> 13/08/11 </TD> <TD> QPR </TD> <TD> Bolton </TD> <TD> A </TD> </TR>
+  <TR> <TD> 13/08/11 </TD> <TD> Wigan </TD> <TD> Norwich </TD> <TD> D </TD> </TR>
+  <TR> <TD> 14/08/11 </TD> <TD> Stoke </TD> <TD> Chelsea </TD> <TD> D </TD> </TR>
+  <TR> <TD> 14/08/11 </TD> <TD> West Brom </TD> <TD> Man United </TD> <TD> A </TD> </TR>
+  <TR> <TD> 15/08/11 </TD> <TD> Man City </TD> <TD> Swansea </TD> <TD> H </TD> </TR>
+  <TR> <TD> 20/08/11 </TD> <TD> Arsenal </TD> <TD> Liverpool </TD> <TD> A </TD> </TR>
+  <TR> <TD> 20/08/11 </TD> <TD> Aston Villa </TD> <TD> Blackburn </TD> <TD> H </TD> </TR>
+  <TR> <TD> 20/08/11 </TD> <TD> Chelsea </TD> <TD> West Brom </TD> <TD> H </TD> </TR>
+  <TR> <TD> 20/08/11 </TD> <TD> Everton </TD> <TD> QPR </TD> <TD> A </TD> </TR>
+  <TR> <TD> 20/08/11 </TD> <TD> Sunderland </TD> <TD> Newcastle </TD> <TD> A </TD> </TR>
+  <TR> <TD> 20/08/11 </TD> <TD> Swansea </TD> <TD> Wigan </TD> <TD> D </TD> </TR>
+   </TABLE>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="segue dark nobackground" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Reshape Data</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <article data-timings="">
+    
+
+
+<div class="tabbable">
+  <ul class="nav nav-pills">
+    <li class="tab ">
+      <a href="#slide-5-tab-1" data-toggle="pill">Code</a>
+    </li>
+    <li class="tab active">
+      <a href="#slide-5-tab-2" data-toggle="pill">Data</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade in " id="slide-5-tab-1">
+      <pre><code class="r"># Get data from URL: &quot;http://www.football-data.co.uk/englandm.php&quot;
+getData &lt;- function(dataURL){
+  require(reshape2); require(plyr)
+  # read data, extract columns
+  df &lt;- read.csv(dataURL, stringsAsFactors = F)
+  df &lt;- df[, c(&quot;Date&quot;, &quot;HomeTeam&quot;, &quot;AwayTeam&quot;, &quot;FTR&quot;)]
+  df &lt;- rename(df, c(Date = &quot;date&quot;, HomeTeam = &quot;H&quot;, AwayTeam = &quot;A&quot;))
+  df$date &lt;- as.Date(df$date, format = &quot;%d/%m/%y&quot;)
+  # convert to long form, arrange by date, and add points
+  dfm &lt;- melt(df, measure.vars = c(&quot;H&quot;, &quot;A&quot;), 
+    variable.name = &quot;loc&quot;, value.name = &#39;team&#39;)
+  dfm &lt;- arrange(dfm, date)
+
+  dfm &lt;- mutate(dfm, 
+    loc = as.character(loc), 
+    points = 3*(loc == FTR) + 1*(FTR == &#39;D&#39;)
+  )
+  return(dfm)
+}
+</code></pre>
+
+    </div>
+    <div class="tab-pane fade in active" id="slide-5-tab-2">
+      <!-- html table generated in R 3.0.2 by xtable 1.7-1 package -->
+
+<!-- Thu Jan 23 05:09:46 2014 -->
+
+<TABLE border=1>
+<TR> <TH> date </TH> <TH> FTR </TH> <TH> loc </TH> <TH> team </TH> <TH> points </TH>  </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> A </TD> <TD> H </TD> <TD> Blackburn </TD> <TD align="right"> 0.00 </TD> </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> D </TD> <TD> H </TD> <TD> Fulham </TD> <TD align="right"> 1.00 </TD> </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> D </TD> <TD> H </TD> <TD> Liverpool </TD> <TD align="right"> 1.00 </TD> </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> D </TD> <TD> H </TD> <TD> Newcastle </TD> <TD align="right"> 1.00 </TD> </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> A </TD> <TD> H </TD> <TD> QPR </TD> <TD align="right"> 0.00 </TD> </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> D </TD> <TD> H </TD> <TD> Wigan </TD> <TD align="right"> 1.00 </TD> </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> A </TD> <TD> A </TD> <TD> Wolves </TD> <TD align="right"> 3.00 </TD> </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> D </TD> <TD> A </TD> <TD> Aston Villa </TD> <TD align="right"> 1.00 </TD> </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> D </TD> <TD> A </TD> <TD> Sunderland </TD> <TD align="right"> 1.00 </TD> </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> D </TD> <TD> A </TD> <TD> Arsenal </TD> <TD align="right"> 1.00 </TD> </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> A </TD> <TD> A </TD> <TD> Bolton </TD> <TD align="right"> 3.00 </TD> </TR>
+  <TR> <TD align="right"> 15199.00 </TD> <TD> D </TD> <TD> A </TD> <TD> Norwich </TD> <TD align="right"> 1.00 </TD> </TR>
+  <TR> <TD align="right"> 15200.00 </TD> <TD> D </TD> <TD> H </TD> <TD> Stoke </TD> <TD align="right"> 1.00 </TD> </TR>
+   </TABLE>
+
+    </div>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="segue dark nobackground" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Get League Table</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <article data-timings="">
+    
+
+
+<div class="tabbable">
+  <ul class="nav nav-pills">
+    <li class="tab ">
+      <a href="#slide-7-tab-1" data-toggle="pill">Code</a>
+    </li>
+    <li class="tab active">
+      <a href="#slide-7-tab-2" data-toggle="pill">Data</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade in " id="slide-7-tab-1">
+      <pre><code class="r">getLeagueTable &lt;- function(date_, data_){
+  require(dplyr)
+  data_ %.%
+    filter(date &lt;= date_) %.%
+    group_by(team) %.%
+    summarise(
+      P = sum(points),
+      G = length(points),
+      W = sum(points == 3),
+      D = sum(points == 1),
+      L = sum(points == 0)
+    ) %.%
+    transform(
+      rank = rank(P, ties.method = &#39;min&#39;) 
+    ) %.%
+    arrange(rank)
+}
+</code></pre>
+
+    </div>
+    <div class="tab-pane fade in active" id="slide-7-tab-2">
+      <!-- html table generated in R 3.0.2 by xtable 1.7-1 package -->
+
+<!-- Thu Jan 23 05:09:46 2014 -->
+
+<TABLE border=1>
+<TR> <TH> team </TH> <TH> P </TH> <TH> G </TH> <TH> W </TH> <TH> D </TH> <TH> L </TH> <TH> rank </TH>  </TR>
+  <TR> <TD> Wolves </TD> <TD align="right"> 25.00 </TD> <TD align="right">  38 </TD> <TD align="right">   5 </TD> <TD align="right">  10 </TD> <TD align="right">  23 </TD> <TD align="right">   1 </TD> </TR>
+  <TR> <TD> Blackburn </TD> <TD align="right"> 31.00 </TD> <TD align="right">  38 </TD> <TD align="right">   8 </TD> <TD align="right">   7 </TD> <TD align="right">  23 </TD> <TD align="right">   2 </TD> </TR>
+  <TR> <TD> Bolton </TD> <TD align="right"> 36.00 </TD> <TD align="right">  38 </TD> <TD align="right">  10 </TD> <TD align="right">   6 </TD> <TD align="right">  22 </TD> <TD align="right">   3 </TD> </TR>
+  <TR> <TD> QPR </TD> <TD align="right"> 37.00 </TD> <TD align="right">  38 </TD> <TD align="right">  10 </TD> <TD align="right">   7 </TD> <TD align="right">  21 </TD> <TD align="right">   4 </TD> </TR>
+  <TR> <TD> Aston Villa </TD> <TD align="right"> 38.00 </TD> <TD align="right">  38 </TD> <TD align="right">   7 </TD> <TD align="right">  17 </TD> <TD align="right">  14 </TD> <TD align="right">   5 </TD> </TR>
+  <TR> <TD> Wigan </TD> <TD align="right"> 43.00 </TD> <TD align="right">  38 </TD> <TD align="right">  11 </TD> <TD align="right">  10 </TD> <TD align="right">  17 </TD> <TD align="right">   6 </TD> </TR>
+  <TR> <TD> Stoke </TD> <TD align="right"> 45.00 </TD> <TD align="right">  38 </TD> <TD align="right">  11 </TD> <TD align="right">  12 </TD> <TD align="right">  15 </TD> <TD align="right">   7 </TD> </TR>
+  <TR> <TD> Sunderland </TD> <TD align="right"> 45.00 </TD> <TD align="right">  38 </TD> <TD align="right">  11 </TD> <TD align="right">  12 </TD> <TD align="right">  15 </TD> <TD align="right">   7 </TD> </TR>
+  <TR> <TD> Swansea </TD> <TD align="right"> 47.00 </TD> <TD align="right">  38 </TD> <TD align="right">  12 </TD> <TD align="right">  11 </TD> <TD align="right">  15 </TD> <TD align="right">   9 </TD> </TR>
+  <TR> <TD> West Brom </TD> <TD align="right"> 47.00 </TD> <TD align="right">  38 </TD> <TD align="right">  13 </TD> <TD align="right">   8 </TD> <TD align="right">  17 </TD> <TD align="right">   9 </TD> </TR>
+  <TR> <TD> Norwich </TD> <TD align="right"> 47.00 </TD> <TD align="right">  38 </TD> <TD align="right">  12 </TD> <TD align="right">  11 </TD> <TD align="right">  15 </TD> <TD align="right">   9 </TD> </TR>
+  <TR> <TD> Liverpool </TD> <TD align="right"> 52.00 </TD> <TD align="right">  38 </TD> <TD align="right">  14 </TD> <TD align="right">  10 </TD> <TD align="right">  14 </TD> <TD align="right">  12 </TD> </TR>
+  <TR> <TD> Fulham </TD> <TD align="right"> 52.00 </TD> <TD align="right">  38 </TD> <TD align="right">  14 </TD> <TD align="right">  10 </TD> <TD align="right">  14 </TD> <TD align="right">  12 </TD> </TR>
+   </TABLE>
+
+    </div>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="segue dark nobackground" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Get Bump Chart Data</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <article data-timings="">
+    
+
+
+<div class="tabbable">
+  <ul class="nav nav-pills">
+    <li class="tab ">
+      <a href="#slide-9-tab-1" data-toggle="pill">Code</a>
+    </li>
+    <li class="tab active">
+      <a href="#slide-9-tab-2" data-toggle="pill">Data</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade in " id="slide-9-tab-1">
+      <pre><code class="r">#&#39; Format data for the bump chart
+getBumpChartData &lt;- function(url){
+  require(plyr)
+  #&#39; function to convert dates to seconds for javascript
+  to_jsdate &lt;- function(date_){
+    val = as.POSIXct(as.Date(date_),origin = &quot;1970-01-01&quot;)
+    as.numeric(val)
+  }
+  dfm &lt;- getData(url)
+  bumpChartData &lt;- ldply(unique(dfm$date), function(date_){
+    cbind(getLeagueTable2(date_, dfm), date = to_jsdate(date_))
+  })
+  return(bumpChartData)
+}
+</code></pre>
+
+    </div>
+    <div class="tab-pane fade in active" id="slide-9-tab-2">
+      <!-- html table generated in R 3.0.2 by xtable 1.7-1 package -->
+
+<!-- Thu Jan 23 05:09:47 2014 -->
+
+<TABLE border=1>
+<TR> <TH> team </TH> <TH> P </TH> <TH> G </TH> <TH> W </TH> <TH> D </TH> <TH> L </TH> <TH> rank </TH> <TH> date </TH>  </TR>
+  <TR> <TD> Blackburn </TD> <TD align="right"> 0.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   1 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> QPR </TD> <TD align="right"> 0.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   1 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> Arsenal </TD> <TD align="right"> 1.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   3 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> Aston Villa </TD> <TD align="right"> 1.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   3 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> Fulham </TD> <TD align="right"> 1.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   3 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> Liverpool </TD> <TD align="right"> 1.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   3 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> Newcastle </TD> <TD align="right"> 1.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   3 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> Norwich </TD> <TD align="right"> 1.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   3 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> Sunderland </TD> <TD align="right"> 1.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   3 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> Wigan </TD> <TD align="right"> 1.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   3 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> Bolton </TD> <TD align="right"> 3.00 </TD> <TD align="right">   1 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   0 </TD> <TD align="right">  11 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> Wolves </TD> <TD align="right"> 3.00 </TD> <TD align="right">   1 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   0 </TD> <TD align="right">  11 </TD> <TD align="right"> 1313193600.00 </TD> </TR>
+  <TR> <TD> Blackburn </TD> <TD align="right"> 0.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   1 </TD> <TD align="right"> 1313280000.00 </TD> </TR>
+  <TR> <TD> QPR </TD> <TD align="right"> 0.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   1 </TD> <TD align="right"> 1313280000.00 </TD> </TR>
+  <TR> <TD> West Brom </TD> <TD align="right"> 0.00 </TD> <TD align="right">   1 </TD> <TD align="right">   0 </TD> <TD align="right">   0 </TD> <TD align="right">   1 </TD> <TD align="right">   1 </TD> <TD align="right"> 1313280000.00 </TD> </TR>
+   </TABLE>
+
+    </div>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="segue dark nobackground" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Visualize Data</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="larger" id="slide-11" style="background:;">
+  <article data-timings="">
+    
+
+
+<div class="tabbable">
+  <ul class="nav nav-pills">
+    <li class="tab active">
+      <a href="#slide-11-tab-1" data-toggle="pill">Code</a>
+    </li>
+    <li class="tab ">
+      <a href="#slide-11-tab-2" data-toggle="pill">Plot</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade in active" id="slide-11-tab-1">
+      <pre><code class="r">#&#39; Plot the data
+plotBumpChart &lt;- function(bData, interpolation = &#39;basis&#39;){
+  require(rCharts);
+  b1 &lt;- Rickshaw$new()
+  mycolors = ggthemes::tableau_color_pal(&quot;tableau20&quot;)(20)
+  b1$layer(
+    rank ~ date, 
+    group = &#39;team&#39;, 
+    data = bData, 
+    type = &#39;line&#39;, 
+    interpolation = interpolation, 
+    colors = mycolors
+  )
+  b1$set(slider = TRUE)
+  return(b1)
+}
+</code></pre>
+
+    </div>
+    <div class="tab-pane fade in " id="slide-11-tab-2">
+      <iframe src='
+fig/bchart1.html
+' scrolling='no' seamless
+'rChart rickshaw '
+id=iframe-
+chart4cdd458b321c
+></iframe>
+
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+    </div>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="segue dark nobackground" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Customize Popup</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="larger" id="slide-13" style="background:;">
+  <article data-timings="">
+    
+
+
+<div class="tabbable">
+  <ul class="nav nav-pills">
+    <li class="tab active">
+      <a href="#slide-13-tab-1" data-toggle="pill">Code</a>
+    </li>
+    <li class="tab ">
+      <a href="#slide-13-tab-2" data-toggle="pill">Plot</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade in active" id="slide-13-tab-1">
+      <pre><code class="r">b1$yAxis(tickFormat = &quot;#! function(n){
+  return(n == 0 ? &#39;&#39;: String(21 - n))
+} !#&quot;)
+b1$hoverDetail(formatter = &quot;#! function(series, x, y){
+  var info = series.info[String(x)];
+  var d = new Date(x * 1000).toUTCString();
+  return &#39;&lt;b&gt;&#39; + series.name + &#39;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&#39; + 
+  &#39;&lt;b&gt;Position:&lt;/b&gt; &#39; + String(21 - y)  +
+  &#39;&lt;br&gt;&lt;b&gt;Points:&lt;/b&gt; &#39; + info.P +
+  &#39;&lt;br&gt;&lt;b&gt;Wins:&lt;/b&gt; &#39; + info.W +
+  &#39;&lt;br&gt;&lt;b&gt;Draws:&lt;/b&gt;&#39; + info.D +
+  &#39;&lt;br&gt;&lt;b&gt;Losses:&lt;/b&gt;&#39; + info.L +
+  &#39;&lt;br&gt;&lt;br&gt;&#39; + d
+} !#&quot;)
+</code></pre>
+
+    </div>
+    <div class="tab-pane fade in " id="slide-13-tab-2">
+      <iframe src='
+fig/bchart2.html
+' scrolling='no' seamless
+'rChart rickshaw '
+id=iframe-
+chart4cdd458b321c
+></iframe>
+
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+<style>
+  li.tab::before{content: ""}
+  slide.larger pre {
+    font-size: 28px;
+    line-height: 32px;  
+  }
+</style>
+
+    </div>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Get Data'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title=''>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Reshape Data'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title=''>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Get League Table'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title=''>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Get Bump Chart Data'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title=''>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Visualize Data'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title=''>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Customize Popup'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title=''>
+         13
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="../../../libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../../libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="../../../libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="../../../libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="../../../libraries/widgets/quiz/js/quiz-app.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../../../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

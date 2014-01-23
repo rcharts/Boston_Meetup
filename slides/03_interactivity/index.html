@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactivity</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Interactivity">
+  <meta name="author" content="Ramnath Vaidyanathan">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/gh-buttons.css" >
+  <link rel="stylesheet" href="../../libraries/highlighters/highlight.js/css/solarized_light.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="../../libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="../../libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="./assets/css/mainapp.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../../libraries/frameworks/io2012/js/slides" 
+    src="../../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/slidify_logo.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Interactivity</h1>
+    <h2>rCharts</h2>
+    <p>Ramnath Vaidyanathan<br/>McGill University</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="dark nobackground quote" id="slide-1" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Create Chart</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(rCharts)
+r1 &lt;- rPlot(mpg ~ wt, 
+  data = mtcars, 
+  color = &quot;gear&quot;, 
+  type = &quot;point&quot;
+)
+r1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <article data-timings="">
+    <iframe src='
+assets/fig/chart1.html
+' scrolling='no' seamless
+'rChart polycharts '
+id=iframe-
+chart4cdd4f9f0954
+></iframe>
+
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="segue dark nobackground" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Client Side Interactivity</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>AngularJS Controls</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">r1$addControls(&#39;x&#39;, &#39;mpg&#39;, names(mtcars))
+r1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <article data-timings="">
+    <iframe src='
+assets/fig/chart2.html
+' scrolling='no' seamless
+'rChart polycharts '
+id=iframe-
+chart4cdd4f9f0954
+></iframe>
+
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <article data-timings="">
+    <pre><code class="r">r1$addControls(&#39;x&#39;, &#39;mpg&#39;, names(mtcars))
+r1$addControls(&#39;color&#39;, &#39;cyl&#39;, names(mtcars))
+r1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <article data-timings="">
+    <iframe src='
+assets/fig/chart3.html
+' scrolling='no' seamless
+'rChart polycharts '
+id=iframe-
+chart4cdd4f9f0954
+></iframe>
+
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <article data-timings="">
+    <pre><code class="r">HairEye &lt;- subset(as.data.frame(HairEyeColor), Sex == &quot;Male&quot;)
+n1 &lt;- nPlot(Freq ~ Eye, 
+  data = HairEye, 
+  group = &#39;Hair&#39;, 
+  type = &#39;multiBarChart&#39;
+)
+n1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <article data-timings="">
+    <iframe src='
+assets/fig/chart4.html
+' scrolling='no' seamless
+'rChart nvd3 '
+id=iframe-
+chart4cdd1385f3cc
+></iframe>
+
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="segue dark nobackground" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>DatGUI Controls</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <article data-timings="">
+    <pre><code class="r">n1$addControls(&quot;type&quot;, &quot;multiBarChart&quot;, 
+  values = c(&#39;multiBarChart&#39;, &#39;multiBarHorizontalChart&#39;)
+)
+n1$setTemplate(script = 
+ system.file(&#39;libraries&#39;, &#39;nvd3&#39;, 
+  &#39;controls&#39;, &#39;datgui.html&#39;, 
+  package = &#39;rCharts&#39;
+ )
+)
+n1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <article data-timings="">
+    <iframe src='
+assets/fig/chart5.html
+' scrolling='no' seamless
+'rChart nvd3 '
+id=iframe-
+chart4cdd1385f3cc
+></iframe>
+
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>More Controls</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">hair_eye_male = as.data.frame(HairEyeColor)
+n2 &lt;- nPlot(Freq ~ Hair, 
+  group = &#39;Eye&#39;, 
+  data = hair_eye_male, 
+  type = &#39;multiBarChart&#39;
+)
+n2$addFilters(&quot;Sex&quot;)
+n2
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <article data-timings="">
+    <iframe src='
+assets/fig/chart6.html
+' scrolling='no' seamless
+'rChart nvd3 '
+id=iframe-
+chart4cddfbf6061
+></iframe>
+
+<style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="segue dark nobackground" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Server Side Interactivity</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Shiny</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(shiny)
+runApp(list(
+  ui = pageWithSidebar(
+    headerPanel(&quot;&quot;),
+    sidebarPanel(
+      selectInput(&quot;x&quot;, &quot;&quot;, names(mtcars), &quot;wt&quot;)  
+    ),
+    mainPanel(
+      chartOutput(&quot;r1&quot;, &quot;polycharts&quot;)
+    )
+  ),
+  server = function(input, output){
+    output$r1 &lt;- renderChart2({
+      rPlot(x = input$x, y = &quot;mpg&quot;, data = mtcars, type = &#39;point&#39;)
+    })
+  }
+))
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  </slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Create Chart'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title=''>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Client Side Interactivity'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='AngularJS Controls'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title=''>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title=''>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title=''>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title=''>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title=''>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='DatGUI Controls'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title=''>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title=''>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='More Controls'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title=''>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Server Side Interactivity'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Shiny'>
+         17
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="../../libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="../../libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="../../libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="../../libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="./assets/js/z_app.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

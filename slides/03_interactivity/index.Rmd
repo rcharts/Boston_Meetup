@@ -1,0 +1,181 @@
+---
+title       : Interactivity
+subtitle    : rCharts
+--- .dark .nobackground .quote
+
+```{r setup, echo = F, message = F, cache = F}
+knitr::opts_chunk$set(tidy = F, message = F, comment = NA, results = 'asis')
+include <- function(file){
+  writeLines(paste('    ', readLines(file)))
+}
+options(RCHART_WIDTH = 900, RCHART_HEIGHT = 400)
+```
+
+---
+
+## Create Chart
+
+```{r results = 'hide'}
+library(rCharts)
+r1 <- rPlot(mpg ~ wt, 
+  data = mtcars, 
+  color = "gear", 
+  type = "point"
+)
+r1
+```
+
+---
+
+```{r chart1, echo = F}
+r1
+```
+
+
+--- .segue .dark .nobackground
+
+## Client Side Interactivity
+
+---
+
+## AngularJS Controls
+
+```{r results = 'hide'}
+r1$addControls('x', 'mpg', names(mtcars))
+r1
+```
+
+---
+
+```{r chart2, echo = F}
+r1
+```
+
+---
+
+```{r results = 'hide'}
+r1$addControls('x', 'mpg', names(mtcars))
+r1$addControls('color', 'cyl', names(mtcars))
+r1
+```
+
+---
+
+
+```{r chart3, echo = F}
+r1
+```
+
+---
+
+```{r results = 'hide'}
+HairEye <- subset(as.data.frame(HairEyeColor), Sex == "Male")
+n1 <- nPlot(Freq ~ Eye, 
+  data = HairEye, 
+  group = 'Hair', 
+  type = 'multiBarChart'
+)
+n1
+```
+
+---
+
+```{r chart4, echo = F}
+n1
+```
+
+--- .segue .dark .nobackground
+
+## DatGUI Controls
+
+---
+
+```{r results = 'hide'}
+n1$addControls("type", "multiBarChart", 
+  values = c('multiBarChart', 'multiBarHorizontalChart')
+)
+n1$setTemplate(script = 
+ system.file('libraries', 'nvd3', 
+  'controls', 'datgui.html', 
+  package = 'rCharts'
+ )
+)
+n1
+```
+
+---
+
+```{r chart5, echo = F}
+n1$set(height = 500)
+n1
+```
+
+---
+
+## More Controls
+
+```{r results = 'hide'}
+hair_eye_male = as.data.frame(HairEyeColor)
+n2 <- nPlot(Freq ~ Hair, 
+  group = 'Eye', 
+  data = hair_eye_male, 
+  type = 'multiBarChart'
+)
+n2$addFilters("Sex")
+n2
+```
+
+---
+
+```{r chart6, echo = F}
+n2
+```
+
+--- .segue .dark .nobackground
+
+## Server Side Interactivity
+
+---
+
+## Shiny
+
+```{r eval = F, echo = TRUE}
+library(shiny)
+runApp(list(
+  ui = pageWithSidebar(
+    headerPanel(""),
+    sidebarPanel(
+      selectInput("x", "", names(mtcars), "wt")  
+    ),
+    mainPanel(
+      chartOutput("r1", "polycharts")
+    )
+  ),
+  server = function(input, output){
+    output$r1 <- renderChart2({
+      rPlot(x = input$x, y = "mpg", data = mtcars, type = 'point')
+    })
+  }
+))
+```
+
+---
+
+## OpenCPU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

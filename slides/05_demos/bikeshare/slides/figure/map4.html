@@ -1,0 +1,7371 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='/Library/Frameworks/R.framework/Versions/3.0/Resources/library/rCharts/libraries/leaflet/external/leaflet.css'>
+    <link rel='stylesheet' href='/Library/Frameworks/R.framework/Versions/3.0/Resources/library/rCharts/libraries/leaflet/external/leaflet-rCharts.css'>
+    <link rel='stylesheet' href='/Library/Frameworks/R.framework/Versions/3.0/Resources/library/rCharts/libraries/leaflet/external/legend.css'>
+    
+    <script src='/Library/Frameworks/R.framework/Versions/3.0/Resources/library/rCharts/libraries/leaflet/external/leaflet.js' type='text/javascript'></script>
+    <script src='/Library/Frameworks/R.framework/Versions/3.0/Resources/library/rCharts/libraries/leaflet/external/leaflet-providers.js' type='text/javascript'></script>
+    <script src='/Library/Frameworks/R.framework/Versions/3.0/Resources/library/rCharts/libraries/leaflet/external/Control.FullScreen.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 1200px;
+      height: 600px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id='chart2715251f9a80' class='rChart leaflet'></div>  
+    
+    <script>
+  var spec = {
+ "dom": "chart2715251f9a80",
+"width":   1200,
+"height":    600,
+"urlTemplate": "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+"layerOpts": {
+ "attribution": "Map data<a href=\"http://openstreetmap.org\">OpenStreetMap</a>\n         contributors, Imagery<a href=\"http://mapbox.com\">MapBox</a>" 
+},
+"provider": "Stamen.TonerLite",
+"center": [  40.73, -73.991 ],
+"zoom":     13,
+"id": "chart2715251f9a80",
+"features": [
+ {
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.994, 40.767 ] 
+},
+"properties": {
+ "name": "W 52 St & 11 Ave",
+"idx":      0,
+"timestamp": "2013-08-19T22:32:15.379168",
+"number":     72,
+"free":     31,
+"bikes":      6,
+"coordinates": "",
+"address": "W 52 St & 11 Ave",
+"lat": 4.0767e+07,
+"lng": -7.3994e+07,
+"id":      0,
+"fillColor": "#D7191C",
+"popup": "<b>W 52 St &amp; 11 Ave</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.379168" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.007, 40.719 ] 
+},
+"properties": {
+ "name": "Franklin St & W Broadway",
+"idx":      1,
+"timestamp": "2013-08-19T22:32:15.379220",
+"number":     79,
+"free":      6,
+"bikes":     23,
+"coordinates": "",
+"address": "Franklin St & W Broadway",
+"lat": 4.0719e+07,
+"lng": -7.4007e+07,
+"id":      1,
+"fillColor": "#A6D96A",
+"popup": "<b>Franklin St &amp; W Broadway</b><br>\n<b>Free Docks: </b> 6 <br>\n<b>Available Bikes:</b> 23<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.379220" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [    -74, 40.711 ] 
+},
+"properties": {
+ "name": "St James Pl & Pearl St",
+"idx":      2,
+"timestamp": "2013-08-19T22:32:15.379244",
+"number":     82,
+"free":     21,
+"bikes":      4,
+"coordinates": "",
+"address": "St James Pl & Pearl St",
+"lat": 4.0711e+07,
+"lng": -7.4e+07,
+"id":      2,
+"fillColor": "#D7191C",
+"popup": "<b>St James Pl &amp; Pearl St</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.379244" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.976, 40.684 ] 
+},
+"properties": {
+ "name": "Atlantic Ave & Fort Greene Pl",
+"idx":      3,
+"timestamp": "2013-08-19T22:32:15.379265",
+"number":     83,
+"free":     37,
+"bikes":     21,
+"coordinates": "",
+"address": "Atlantic Ave & Fort Greene Pl",
+"lat": 4.0684e+07,
+"lng": -7.3976e+07,
+"id":      3,
+"fillColor": "#FDAE61",
+"popup": "<b>Atlantic Ave &amp; Fort Greene Pl</b><br>\n<b>Free Docks: </b> 37 <br>\n<b>Available Bikes:</b> 21<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.379265" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.001, 40.742 ] 
+},
+"properties": {
+ "name": "W 17 St & 8 Ave",
+"idx":      4,
+"timestamp": "2013-08-19T22:32:15.379287",
+"number":    116,
+"free":     23,
+"bikes":      8,
+"coordinates": "",
+"address": "W 17 St & 8 Ave",
+"lat": 4.0742e+07,
+"lng": -7.4001e+07,
+"id":      4,
+"fillColor": "#FDAE61",
+"popup": "<b>W 17 St &amp; 8 Ave</b><br>\n<b>Free Docks: </b> 23 <br>\n<b>Available Bikes:</b> 8<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.379287" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.978, 40.696 ] 
+},
+"properties": {
+ "name": "Park Ave & St Edwards St",
+"idx":      5,
+"timestamp": "2013-08-19T22:32:15.379309",
+"number":    119,
+"free":     15,
+"bikes":      3,
+"coordinates": "",
+"address": "Park Ave & St Edwards St",
+"lat": 4.0696e+07,
+"lng": -7.3978e+07,
+"id":      5,
+"fillColor": "#D7191C",
+"popup": "<b>Park Ave &amp; St Edwards St</b><br>\n<b>Free Docks: </b> 15 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.379309" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.959, 40.687 ] 
+},
+"properties": {
+ "name": "Lexington Ave & Classon Ave",
+"idx":      6,
+"timestamp": "2013-08-19T22:32:15.379650",
+"number":    120,
+"free":     18,
+"bikes":      1,
+"coordinates": "",
+"address": "Lexington Ave & Classon Ave",
+"lat": 4.0687e+07,
+"lng": -7.3959e+07,
+"id":      6,
+"fillColor": "#D7191C",
+"popup": "<b>Lexington Ave &amp; Classon Ave</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.379650" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.007, 40.732 ] 
+},
+"properties": {
+ "name": "Barrow St & Hudson St",
+"idx":      7,
+"timestamp": "2013-08-19T22:32:15.379691",
+"number":    127,
+"free":     25,
+"bikes":      4,
+"coordinates": "",
+"address": "Barrow St & Hudson St",
+"lat": 4.0732e+07,
+"lng": -7.4007e+07,
+"id":      7,
+"fillColor": "#D7191C",
+"popup": "<b>Barrow St &amp; Hudson St</b><br>\n<b>Free Docks: </b> 25 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.379691" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.003, 40.727 ] 
+},
+"properties": {
+ "name": "MacDougal St & Prince St",
+"idx":      8,
+"timestamp": "2013-08-19T22:32:15.379715",
+"number":    128,
+"free":     18,
+"bikes":     10,
+"coordinates": "",
+"address": "MacDougal St & Prince St",
+"lat": 4.0727e+07,
+"lng": -7.4003e+07,
+"id":      8,
+"fillColor": "#FDAE61",
+"popup": "<b>MacDougal St &amp; Prince St</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 10<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.379715" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.973, 40.762 ] 
+},
+"properties": {
+ "name": "E 56 St & Madison Ave",
+"idx":      9,
+"timestamp": "2013-08-19T22:32:15.379737",
+"number":    137,
+"free":      6,
+"bikes":     34,
+"coordinates": "",
+"address": "E 56 St & Madison Ave",
+"lat": 4.0762e+07,
+"lng": -7.3973e+07,
+"id":      9,
+"fillColor": "#1A9641",
+"popup": "<b>E 56 St &amp; Madison Ave</b><br>\n<b>Free Docks: </b> 6 <br>\n<b>Available Bikes:</b> 34<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.379737" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.993, 40.692 ] 
+},
+"properties": {
+ "name": "Clinton St & Joralemon St",
+"idx":     10,
+"timestamp": "2013-08-19T22:32:15.379976",
+"number":    143,
+"free":     21,
+"bikes":      2,
+"coordinates": "",
+"address": "Clinton St & Joralemon St",
+"lat": 4.0692e+07,
+"lng": -7.3993e+07,
+"id":     10,
+"fillColor": "#D7191C",
+"popup": "<b>Clinton St &amp; Joralemon St</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.379976" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.981, 40.698 ] 
+},
+"properties": {
+ "name": "Nassau St & Navy St",
+"idx":     11,
+"timestamp": "2013-08-19T22:32:15.380048",
+"number":    144,
+"free":     18,
+"bikes":      1,
+"coordinates": "",
+"address": "Nassau St & Navy St",
+"lat": 4.0698e+07,
+"lng": -7.3981e+07,
+"id":     11,
+"fillColor": "#D7191C",
+"popup": "<b>Nassau St &amp; Navy St</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380048" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.009, 40.716 ] 
+},
+"properties": {
+ "name": "Hudson St & Reade St",
+"idx":     12,
+"timestamp": "2013-08-19T22:32:15.380075",
+"number":    146,
+"free":     30,
+"bikes":      9,
+"coordinates": "",
+"address": "Hudson St & Reade St",
+"lat": 4.0716e+07,
+"lng": -7.4009e+07,
+"id":     12,
+"fillColor": "#FDAE61",
+"popup": "<b>Hudson St &amp; Reade St</b><br>\n<b>Free Docks: </b> 30 <br>\n<b>Available Bikes:</b> 9<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380075" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.011, 40.715 ] 
+},
+"properties": {
+ "name": "Greenwich St & Warren St",
+"idx":     13,
+"timestamp": "2013-08-19T22:32:15.380096",
+"number":    147,
+"free":      3,
+"bikes":     27,
+"coordinates": "",
+"address": "Greenwich St & Warren St",
+"lat": 4.0715e+07,
+"lng": -7.4011e+07,
+"id":     13,
+"fillColor": "#1A9641",
+"popup": "<b>Greenwich St &amp; Warren St</b><br>\n<b>Free Docks: </b> 3 <br>\n<b>Available Bikes:</b> 27<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380096" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.981, 40.721 ] 
+},
+"properties": {
+ "name": "E 2 St & Avenue C",
+"idx":     14,
+"timestamp": "2013-08-19T22:32:15.380117",
+"number":    150,
+"free":     27,
+"bikes":      2,
+"coordinates": "",
+"address": "E 2 St & Avenue C",
+"lat": 4.0721e+07,
+"lng": -7.3981e+07,
+"id":     14,
+"fillColor": "#D7191C",
+"popup": "<b>E 2 St &amp; Avenue C</b><br>\n<b>Free Docks: </b> 27 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380117" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.997, 40.722 ] 
+},
+"properties": {
+ "name": "Cleveland Pl & Spring St",
+"idx":     15,
+"timestamp": "2013-08-19T22:32:15.380138",
+"number":    151,
+"free":     10,
+"bikes":     21,
+"coordinates": "",
+"address": "Cleveland Pl & Spring St",
+"lat": 4.0722e+07,
+"lng": -7.3997e+07,
+"id":     15,
+"fillColor": "#A6D96A",
+"popup": "<b>Cleveland Pl &amp; Spring St</b><br>\n<b>Free Docks: </b> 10 <br>\n<b>Available Bikes:</b> 21<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380138" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.009, 40.715 ] 
+},
+"properties": {
+ "name": "Warren St & Church St",
+"idx":     16,
+"timestamp": "2013-08-19T22:32:15.380159",
+"number":    152,
+"free":      8,
+"bikes":     15,
+"coordinates": "",
+"address": "Warren St & Church St",
+"lat": 4.0715e+07,
+"lng": -7.4009e+07,
+"id":     16,
+"fillColor": "#A6D96A",
+"popup": "<b>Warren St &amp; Church St</b><br>\n<b>Free Docks: </b> 8 <br>\n<b>Available Bikes:</b> 15<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380159" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.982, 40.752 ] 
+},
+"properties": {
+ "name": "E 40 St & 5 Ave",
+"idx":     17,
+"timestamp": "2013-08-19T22:32:15.380181",
+"number":    153,
+"free":     27,
+"bikes":     24,
+"coordinates": "",
+"address": "E 40 St & 5 Ave",
+"lat": 4.0752e+07,
+"lng": -7.3982e+07,
+"id":     17,
+"fillColor": "#FFFFBF",
+"popup": "<b>E 40 St &amp; 5 Ave</b><br>\n<b>Free Docks: </b> 27 <br>\n<b>Available Bikes:</b> 24<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380181" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.996, 40.691 ] 
+},
+"properties": {
+ "name": "Henry St & Atlantic Ave",
+"idx":     18,
+"timestamp": "2013-08-19T22:32:15.380203",
+"number":    157,
+"free":     20,
+"bikes":      2,
+"coordinates": "",
+"address": "Henry St & Atlantic Ave",
+"lat": 4.0691e+07,
+"lng": -7.3996e+07,
+"id":     18,
+"fillColor": "#D7191C",
+"popup": "<b>Henry St &amp; Atlantic Ave</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380203" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.978, 40.748 ] 
+},
+"properties": {
+ "name": "E 37 St & Lexington Ave",
+"idx":     19,
+"timestamp": "2013-08-19T22:32:15.380224",
+"number":    160,
+"free":     14,
+"bikes":     11,
+"coordinates": "",
+"address": "E 37 St & Lexington Ave",
+"lat": 4.0748e+07,
+"lng": -7.3978e+07,
+"id":     19,
+"fillColor": "#FFFFBF",
+"popup": "<b>E 37 St &amp; Lexington Ave</b><br>\n<b>Free Docks: </b> 14 <br>\n<b>Available Bikes:</b> 11<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380224" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.998, 40.729 ] 
+},
+"properties": {
+ "name": "LaGuardia Pl & W 3 St",
+"idx":     20,
+"timestamp": "2013-08-19T22:32:15.380244",
+"number":    161,
+"free":     29,
+"bikes":      4,
+"coordinates": "",
+"address": "LaGuardia Pl & W 3 St",
+"lat": 4.0729e+07,
+"lng": -7.3998e+07,
+"id":     20,
+"fillColor": "#D7191C",
+"popup": "<b>LaGuardia Pl &amp; W 3 St</b><br>\n<b>Free Docks: </b> 29 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380244" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.97, 40.753 ] 
+},
+"properties": {
+ "name": "E 47 St & 2 Ave",
+"idx":     21,
+"timestamp": "2013-08-19T22:32:15.380265",
+"number":    164,
+"free":     17,
+"bikes":     26,
+"coordinates": "",
+"address": "E 47 St & 2 Ave",
+"lat": 4.0753e+07,
+"lng": -7.397e+07,
+"id":     21,
+"fillColor": "#A6D96A",
+"popup": "<b>E 47 St &amp; 2 Ave</b><br>\n<b>Free Docks: </b> 17 <br>\n<b>Available Bikes:</b> 26<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380265" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.976, 40.749 ] 
+},
+"properties": {
+ "name": "E 39 St & 3 Ave",
+"idx":     22,
+"timestamp": "2013-08-19T22:32:15.380286",
+"number":    167,
+"free":     20,
+"bikes":     24,
+"coordinates": "",
+"address": "E 39 St & 3 Ave",
+"lat": 4.0749e+07,
+"lng": -7.3976e+07,
+"id":     22,
+"fillColor": "#FFFFBF",
+"popup": "<b>E 39 St &amp; 3 Ave</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 24<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380286" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.995,  40.74 ] 
+},
+"properties": {
+ "name": "W 18 St & 6 Av",
+"idx":     23,
+"timestamp": "2013-08-19T22:32:15.380310",
+"number":    168,
+"free":      3,
+"bikes":     40,
+"coordinates": "",
+"address": "W 18 St & 6 Av",
+"lat": 4.074e+07,
+"lng": -7.3995e+07,
+"id":     23,
+"fillColor": "#1A9641",
+"popup": "<b>W 18 St &amp; 6 Av</b><br>\n<b>Free Docks: </b> 3 <br>\n<b>Available Bikes:</b> 40<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380310" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.984, 40.761 ] 
+},
+"properties": {
+ "name": "Broadway & W 49 St",
+"idx":     24,
+"timestamp": "2013-08-19T22:32:15.380343",
+"number":    173,
+"free":     31,
+"bikes":     13,
+"coordinates": "",
+"address": "Broadway & W 49 St",
+"lat": 4.0761e+07,
+"lng": -7.3984e+07,
+"id":     24,
+"fillColor": "#FDAE61",
+"popup": "<b>Broadway &amp; W 49 St</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 13<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380343" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.977, 40.738 ] 
+},
+"properties": {
+ "name": "E 25 St & 1 Ave",
+"idx":     25,
+"timestamp": "2013-08-19T22:32:15.380367",
+"number":    174,
+"free":     28,
+"bikes":      0,
+"coordinates": "",
+"address": "E 25 St & 1 Ave",
+"lat": 4.0738e+07,
+"lng": -7.3977e+07,
+"id":     25,
+"fillColor": "#D7191C",
+"popup": "<b>E 25 St &amp; 1 Ave</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 0<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380367" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.01, 40.709 ] 
+},
+"properties": {
+ "name": "Liberty St & Broadway",
+"idx":     26,
+"timestamp": "2013-08-19T22:32:15.380390",
+"number":    195,
+"free":     21,
+"bikes":     22,
+"coordinates": "",
+"address": "Liberty St & Broadway",
+"lat": 4.0709e+07,
+"lng": -7.401e+07,
+"id":     26,
+"fillColor": "#FFFFBF",
+"popup": "<b>Liberty St &amp; Broadway</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 22<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380390" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.007, 40.743 ] 
+},
+"properties": {
+ "name": "W 16 St & The High Line",
+"idx":     27,
+"timestamp": "2013-08-19T22:32:15.380422",
+"number":    212,
+"free":     10,
+"bikes":     18,
+"coordinates": "",
+"address": "W 16 St & The High Line",
+"lat": 4.0743e+07,
+"lng": -7.4007e+07,
+"id":     27,
+"fillColor": "#A6D96A",
+"popup": "<b>W 16 St &amp; The High Line</b><br>\n<b>Free Docks: </b> 10 <br>\n<b>Available Bikes:</b> 18<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380422" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.995,   40.7 ] 
+},
+"properties": {
+ "name": "Columbia Heights & Cranberry St",
+"idx":     28,
+"timestamp": "2013-08-19T22:32:15.380458",
+"number":    216,
+"free":     19,
+"bikes":      2,
+"coordinates": "",
+"address": "Columbia Heights & Cranberry St",
+"lat": 4.07e+07,
+"lng": -7.3995e+07,
+"id":     28,
+"fillColor": "#D7191C",
+"popup": "<b>Columbia Heights &amp; Cranberry St</b><br>\n<b>Free Docks: </b> 19 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.380458" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.994, 40.703 ] 
+},
+"properties": {
+ "name": "Old Fulton St",
+"idx":     29,
+"timestamp": "2013-08-19T22:32:15.381303",
+"number":    217,
+"free":      9,
+"bikes":     28,
+"coordinates": "",
+"address": "Old Fulton St",
+"lat": 4.0703e+07,
+"lng": -7.3994e+07,
+"id":     29,
+"fillColor": "#A6D96A",
+"popup": "<b>Old Fulton St</b><br>\n<b>Free Docks: </b> 9 <br>\n<b>Available Bikes:</b> 28<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381303" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.987,  40.69 ] 
+},
+"properties": {
+ "name": "Gallatin Pl & Livingston St",
+"idx":     30,
+"timestamp": "2013-08-19T22:32:15.381353",
+"number":    218,
+"free":     24,
+"bikes":     11,
+"coordinates": "",
+"address": "Gallatin Pl & Livingston St",
+"lat": 4.069e+07,
+"lng": -7.3987e+07,
+"id":     30,
+"fillColor": "#FDAE61",
+"popup": "<b>Gallatin Pl &amp; Livingston St</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 11<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381353" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [    -74, 40.738 ] 
+},
+"properties": {
+ "name": "W 13 St & 7 Ave",
+"idx":     31,
+"timestamp": "2013-08-19T22:32:15.381394",
+"number":    223,
+"free":     28,
+"bikes":      4,
+"coordinates": "",
+"address": "W 13 St & 7 Ave",
+"lat": 4.0738e+07,
+"lng": -7.4e+07,
+"id":     31,
+"fillColor": "#D7191C",
+"popup": "<b>W 13 St &amp; 7 Ave</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381394" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.711 ] 
+},
+"properties": {
+ "name": "Spruce St & Nassau St",
+"idx":     32,
+"timestamp": "2013-08-19T22:32:15.381431",
+"number":    224,
+"free":     14,
+"bikes":     14,
+"coordinates": "",
+"address": "Spruce St & Nassau St",
+"lat": 4.0711e+07,
+"lng": -7.4006e+07,
+"id":     32,
+"fillColor": "#FFFFBF",
+"popup": "<b>Spruce St &amp; Nassau St</b><br>\n<b>Free Docks: </b> 14 <br>\n<b>Available Bikes:</b> 14<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381431" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.008, 40.742 ] 
+},
+"properties": {
+ "name": "W 14 St & The High Line",
+"idx":     33,
+"timestamp": "2013-08-19T22:32:15.381466",
+"number":    225,
+"free":      6,
+"bikes":     30,
+"coordinates": "",
+"address": "W 14 St & The High Line",
+"lat": 4.0742e+07,
+"lng": -7.4008e+07,
+"id":     33,
+"fillColor": "#1A9641",
+"popup": "<b>W 14 St &amp; The High Line</b><br>\n<b>Free Docks: </b> 6 <br>\n<b>Available Bikes:</b> 30<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381466" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.972, 40.755 ] 
+},
+"properties": {
+ "name": "E 48 St & 3 Ave",
+"idx":     34,
+"timestamp": "2013-08-19T22:32:15.381503",
+"number":    228,
+"free":     26,
+"bikes":     25,
+"coordinates": "",
+"address": "E 48 St & 3 Ave",
+"lat": 4.0755e+07,
+"lng": -7.3972e+07,
+"id":     34,
+"fillColor": "#FFFFBF",
+"popup": "<b>E 48 St &amp; 3 Ave</b><br>\n<b>Free Docks: </b> 26 <br>\n<b>Available Bikes:</b> 25<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381503" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.994, 40.727 ] 
+},
+"properties": {
+ "name": "Great Jones St",
+"idx":     35,
+"timestamp": "2013-08-19T22:32:15.381614",
+"number":    229,
+"free":     13,
+"bikes":      8,
+"coordinates": "",
+"address": "Great Jones St",
+"lat": 4.0727e+07,
+"lng": -7.3994e+07,
+"id":     35,
+"fillColor": "#FDAE61",
+"popup": "<b>Great Jones St</b><br>\n<b>Free Docks: </b> 13 <br>\n<b>Available Bikes:</b> 8<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381614" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.99, 40.696 ] 
+},
+"properties": {
+ "name": "Cadman Plaza E & Tillary St",
+"idx":     36,
+"timestamp": "2013-08-19T22:32:15.381657",
+"number":    232,
+"free":     22,
+"bikes":      1,
+"coordinates": "",
+"address": "Cadman Plaza E & Tillary St",
+"lat": 4.0696e+07,
+"lng": -7.399e+07,
+"id":     36,
+"fillColor": "#D7191C",
+"popup": "<b>Cadman Plaza E &amp; Tillary St</b><br>\n<b>Free Docks: </b> 22 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381657" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.99, 40.692 ] 
+},
+"properties": {
+ "name": "Joralemon St & Adams St",
+"idx":     37,
+"timestamp": "2013-08-19T22:32:15.381695",
+"number":    233,
+"free":     28,
+"bikes":      9,
+"coordinates": "",
+"address": "Joralemon St & Adams St",
+"lat": 4.0692e+07,
+"lng": -7.399e+07,
+"id":     37,
+"fillColor": "#FDAE61",
+"popup": "<b>Joralemon St &amp; Adams St</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 9<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381695" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.987, 40.728 ] 
+},
+"properties": {
+ "name": "St Marks Pl & 2 Ave",
+"idx":     38,
+"timestamp": "2013-08-19T22:32:15.381732",
+"number":    236,
+"free":     31,
+"bikes":      8,
+"coordinates": "",
+"address": "St Marks Pl & 2 Ave",
+"lat": 4.0728e+07,
+"lng": -7.3987e+07,
+"id":     38,
+"fillColor": "#FDAE61",
+"popup": "<b>St Marks Pl &amp; 2 Ave</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 8<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381732" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.987,  40.73 ] 
+},
+"properties": {
+ "name": "E 11 St & 2 Ave",
+"idx":     39,
+"timestamp": "2013-08-19T22:32:15.381769",
+"number":    237,
+"free":     36,
+"bikes":      2,
+"coordinates": "",
+"address": "E 11 St & 2 Ave",
+"lat": 4.073e+07,
+"lng": -7.3987e+07,
+"id":     39,
+"fillColor": "#D7191C",
+"popup": "<b>E 11 St &amp; 2 Ave</b><br>\n<b>Free Docks: </b> 36 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381769" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.009, 40.736 ] 
+},
+"properties": {
+ "name": "Bank St & Washington St",
+"idx":     40,
+"timestamp": "2013-08-19T22:32:15.381805",
+"number":    238,
+"free":     27,
+"bikes":      3,
+"coordinates": "",
+"address": "Bank St & Washington St",
+"lat": 4.0736e+07,
+"lng": -7.4009e+07,
+"id":     40,
+"fillColor": "#D7191C",
+"popup": "<b>Bank St &amp; Washington St</b><br>\n<b>Free Docks: </b> 27 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381805" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.981, 40.692 ] 
+},
+"properties": {
+ "name": "Wiloughby St & Fleet St",
+"idx":     41,
+"timestamp": "2013-08-19T22:32:15.381842",
+"number":    239,
+"free":     11,
+"bikes":     17,
+"coordinates": "",
+"address": "Wiloughby St & Fleet St",
+"lat": 4.0692e+07,
+"lng": -7.3981e+07,
+"id":     41,
+"fillColor": "#A6D96A",
+"popup": "<b>Wiloughby St &amp; Fleet St</b><br>\n<b>Free Docks: </b> 11 <br>\n<b>Available Bikes:</b> 17<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381842" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.975,  40.69 ] 
+},
+"properties": {
+ "name": "DeKalb Ave & S Portland Ave",
+"idx":     42,
+"timestamp": "2013-08-19T22:32:15.381879",
+"number":    241,
+"free":     19,
+"bikes":      2,
+"coordinates": "",
+"address": "DeKalb Ave & S Portland Ave",
+"lat": 4.069e+07,
+"lng": -7.3975e+07,
+"id":     42,
+"fillColor": "#D7191C",
+"popup": "<b>DeKalb Ave &amp; S Portland Ave</b><br>\n<b>Free Docks: </b> 19 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381879" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.974, 40.698 ] 
+},
+"properties": {
+ "name": "Flushing Ave & Carlton Ave",
+"idx":     43,
+"timestamp": "2013-08-19T22:32:15.381917",
+"number":    242,
+"free":      1,
+"bikes":     19,
+"coordinates": "",
+"address": "Flushing Ave & Carlton Ave",
+"lat": 4.0698e+07,
+"lng": -7.3974e+07,
+"id":     43,
+"fillColor": "#1A9641",
+"popup": "<b>Flushing Ave &amp; Carlton Ave</b><br>\n<b>Free Docks: </b> 1 <br>\n<b>Available Bikes:</b> 19<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381917" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.979, 40.688 ] 
+},
+"properties": {
+ "name": "Fulton St & Rockwell Pl",
+"idx":     44,
+"timestamp": "2013-08-19T22:32:15.381955",
+"number":    243,
+"free":     34,
+"bikes":      3,
+"coordinates": "",
+"address": "Fulton St & Rockwell Pl",
+"lat": 4.0688e+07,
+"lng": -7.3979e+07,
+"id":     44,
+"fillColor": "#D7191C",
+"popup": "<b>Fulton St &amp; Rockwell Pl</b><br>\n<b>Free Docks: </b> 34 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.381955" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.965, 40.692 ] 
+},
+"properties": {
+ "name": "Willoughby Ave & Hall St",
+"idx":     45,
+"timestamp": "2013-08-19T22:32:15.382016",
+"number":    244,
+"free":     29,
+"bikes":      1,
+"coordinates": "",
+"address": "Willoughby Ave & Hall St",
+"lat": 4.0692e+07,
+"lng": -7.3965e+07,
+"id":     45,
+"fillColor": "#D7191C",
+"popup": "<b>Willoughby Ave &amp; Hall St</b><br>\n<b>Free Docks: </b> 29 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382016" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.977, 40.693 ] 
+},
+"properties": {
+ "name": "Myrtle Ave & St Edwards St",
+"idx":     46,
+"timestamp": "2013-08-19T22:32:15.382056",
+"number":    245,
+"free":     18,
+"bikes":      5,
+"coordinates": "",
+"address": "Myrtle Ave & St Edwards St",
+"lat": 4.0693e+07,
+"lng": -7.3977e+07,
+"id":     46,
+"fillColor": "#FDAE61",
+"popup": "<b>Myrtle Ave &amp; St Edwards St</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382056" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.005, 40.735 ] 
+},
+"properties": {
+ "name": "Perry St & Bleecker St",
+"idx":     47,
+"timestamp": "2013-08-19T22:32:15.382095",
+"number":    247,
+"free":      9,
+"bikes":      7,
+"coordinates": "",
+"address": "Perry St & Bleecker St",
+"lat": 4.0735e+07,
+"lng": -7.4005e+07,
+"id":     47,
+"fillColor": "#FFFFBF",
+"popup": "<b>Perry St &amp; Bleecker St</b><br>\n<b>Free Docks: </b> 9 <br>\n<b>Available Bikes:</b> 7<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382095" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.008, 40.722 ] 
+},
+"properties": {
+ "name": "Laight St & Hudson St",
+"idx":     48,
+"timestamp": "2013-08-19T22:32:15.382134",
+"number":    248,
+"free":      8,
+"bikes":     13,
+"coordinates": "",
+"address": "Laight St & Hudson St",
+"lat": 4.0722e+07,
+"lng": -7.4008e+07,
+"id":     48,
+"fillColor": "#A6D96A",
+"popup": "<b>Laight St &amp; Hudson St</b><br>\n<b>Free Docks: </b> 8 <br>\n<b>Available Bikes:</b> 13<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382134" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.009, 40.719 ] 
+},
+"properties": {
+ "name": "Harrison St & Hudson St",
+"idx":     49,
+"timestamp": "2013-08-19T22:32:15.382170",
+"number":    249,
+"free":      4,
+"bikes":     20,
+"coordinates": "",
+"address": "Harrison St & Hudson St",
+"lat": 4.0719e+07,
+"lng": -7.4009e+07,
+"id":     49,
+"fillColor": "#1A9641",
+"popup": "<b>Harrison St &amp; Hudson St</b><br>\n<b>Free Docks: </b> 4 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382170" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.996, 40.725 ] 
+},
+"properties": {
+ "name": "Lafayette St & Jersey St",
+"idx":     50,
+"timestamp": "2013-08-19T22:32:15.382206",
+"number":    250,
+"free":     32,
+"bikes":      4,
+"coordinates": "",
+"address": "Lafayette St & Jersey St",
+"lat": 4.0725e+07,
+"lng": -7.3996e+07,
+"id":     50,
+"fillColor": "#D7191C",
+"popup": "<b>Lafayette St &amp; Jersey St</b><br>\n<b>Free Docks: </b> 32 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382206" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.995, 40.723 ] 
+},
+"properties": {
+ "name": "Mott St & Prince St",
+"idx":     51,
+"timestamp": "2013-08-19T22:32:15.382242",
+"number":    251,
+"free":     10,
+"bikes":     15,
+"coordinates": "",
+"address": "Mott St & Prince St",
+"lat": 4.0723e+07,
+"lng": -7.3995e+07,
+"id":     51,
+"fillColor": "#FFFFBF",
+"popup": "<b>Mott St &amp; Prince St</b><br>\n<b>Free Docks: </b> 10 <br>\n<b>Available Bikes:</b> 15<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382242" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.999, 40.732 ] 
+},
+"properties": {
+ "name": "MacDougal St & Washington Sq",
+"idx":     52,
+"timestamp": "2013-08-19T22:32:15.382282",
+"number":    252,
+"free":     32,
+"bikes":      0,
+"coordinates": "",
+"address": "MacDougal St & Washington Sq",
+"lat": 4.0732e+07,
+"lng": -7.3999e+07,
+"id":     52,
+"fillColor": "#D7191C",
+"popup": "<b>MacDougal St &amp; Washington Sq</b><br>\n<b>Free Docks: </b> 32 <br>\n<b>Available Bikes:</b> 0<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382282" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.995, 40.735 ] 
+},
+"properties": {
+ "name": "W 13 St & 5 Ave",
+"idx":     53,
+"timestamp": "2013-08-19T22:32:15.382319",
+"number":    253,
+"free":     43,
+"bikes":      3,
+"coordinates": "",
+"address": "W 13 St & 5 Ave",
+"lat": 4.0735e+07,
+"lng": -7.3995e+07,
+"id":     53,
+"fillColor": "#D7191C",
+"popup": "<b>W 13 St &amp; 5 Ave</b><br>\n<b>Free Docks: </b> 43 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382319" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.998, 40.735 ] 
+},
+"properties": {
+ "name": "W 11 St & 6 Ave",
+"idx":     54,
+"timestamp": "2013-08-19T22:32:15.382355",
+"number":    254,
+"free":     24,
+"bikes":      2,
+"coordinates": "",
+"address": "W 11 St & 6 Ave",
+"lat": 4.0735e+07,
+"lng": -7.3998e+07,
+"id":     54,
+"fillColor": "#D7191C",
+"popup": "<b>W 11 St &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382355" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.002, 40.719 ] 
+},
+"properties": {
+ "name": "Lispenard St & Broadway",
+"idx":     55,
+"timestamp": "2013-08-19T22:32:15.382390",
+"number":    257,
+"free":      4,
+"bikes":     28,
+"coordinates": "",
+"address": "Lispenard St & Broadway",
+"lat": 4.0719e+07,
+"lng": -7.4002e+07,
+"id":     55,
+"fillColor": "#1A9641",
+"popup": "<b>Lispenard St &amp; Broadway</b><br>\n<b>Free Docks: </b> 4 <br>\n<b>Available Bikes:</b> 28<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382390" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.969, 40.689 ] 
+},
+"properties": {
+ "name": "DeKalb Ave & Vanderbilt Ave",
+"idx":     56,
+"timestamp": "2013-08-19T22:32:15.382425",
+"number":    258,
+"free":     21,
+"bikes":      2,
+"coordinates": "",
+"address": "DeKalb Ave & Vanderbilt Ave",
+"lat": 4.0689e+07,
+"lng": -7.3969e+07,
+"id":     56,
+"fillColor": "#D7191C",
+"popup": "<b>DeKalb Ave &amp; Vanderbilt Ave</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382425" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.012, 40.701 ] 
+},
+"properties": {
+ "name": "South St & Whitehall St",
+"idx":     57,
+"timestamp": "2013-08-19T22:32:15.382462",
+"number":    259,
+"free":      2,
+"bikes":     34,
+"coordinates": "",
+"address": "South St & Whitehall St",
+"lat": 4.0701e+07,
+"lng": -7.4012e+07,
+"id":     57,
+"fillColor": "#1A9641",
+"popup": "<b>South St &amp; Whitehall St</b><br>\n<b>Free Docks: </b> 2 <br>\n<b>Available Bikes:</b> 34<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382462" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.012, 40.704 ] 
+},
+"properties": {
+ "name": "Broad St & Bridge St",
+"idx":     58,
+"timestamp": "2013-08-19T22:32:15.382499",
+"number":    260,
+"free":      6,
+"bikes":     28,
+"coordinates": "",
+"address": "Broad St & Bridge St",
+"lat": 4.0704e+07,
+"lng": -7.4012e+07,
+"id":     58,
+"fillColor": "#1A9641",
+"popup": "<b>Broad St &amp; Bridge St</b><br>\n<b>Free Docks: </b> 6 <br>\n<b>Available Bikes:</b> 28<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382499" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.984, 40.695 ] 
+},
+"properties": {
+ "name": "Johnson St & Gold St",
+"idx":     59,
+"timestamp": "2013-08-19T22:32:15.382548",
+"number":    261,
+"free":     21,
+"bikes":      3,
+"coordinates": "",
+"address": "Johnson St & Gold St",
+"lat": 4.0695e+07,
+"lng": -7.3984e+07,
+"id":     59,
+"fillColor": "#D7191C",
+"popup": "<b>Johnson St &amp; Gold St</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382548" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.974, 40.692 ] 
+},
+"properties": {
+ "name": "Washington Park",
+"idx":     60,
+"timestamp": "2013-08-19T22:32:15.382585",
+"number":    262,
+"free":     21,
+"bikes":      2,
+"coordinates": "",
+"address": "Washington Park",
+"lat": 4.0692e+07,
+"lng": -7.3974e+07,
+"id":     60,
+"fillColor": "#D7191C",
+"popup": "<b>Washington Park</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382585" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.996, 40.717 ] 
+},
+"properties": {
+ "name": "Elizabeth St & Hester St",
+"idx":     61,
+"timestamp": "2013-08-19T22:32:15.382621",
+"number":    263,
+"free":     29,
+"bikes":      1,
+"coordinates": "",
+"address": "Elizabeth St & Hester St",
+"lat": 4.0717e+07,
+"lng": -7.3996e+07,
+"id":     61,
+"fillColor": "#D7191C",
+"popup": "<b>Elizabeth St &amp; Hester St</b><br>\n<b>Free Docks: </b> 29 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382621" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.007, 40.707 ] 
+},
+"properties": {
+ "name": "Maiden Ln & Pearl St",
+"idx":     62,
+"timestamp": "2013-08-19T22:32:15.382657",
+"number":    264,
+"free":      8,
+"bikes":     19,
+"coordinates": "",
+"address": "Maiden Ln & Pearl St",
+"lat": 4.0707e+07,
+"lng": -7.4007e+07,
+"id":     62,
+"fillColor": "#A6D96A",
+"popup": "<b>Maiden Ln &amp; Pearl St</b><br>\n<b>Free Docks: </b> 8 <br>\n<b>Available Bikes:</b> 19<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382657" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991, 40.722 ] 
+},
+"properties": {
+ "name": "Stanton St & Chrystie St",
+"idx":     63,
+"timestamp": "2013-08-19T22:32:15.382698",
+"number":    265,
+"free":     28,
+"bikes":      6,
+"coordinates": "",
+"address": "Stanton St & Chrystie St",
+"lat": 4.0722e+07,
+"lng": -7.3991e+07,
+"id":     63,
+"fillColor": "#D7191C",
+"popup": "<b>Stanton St &amp; Chrystie St</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382698" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.976, 40.724 ] 
+},
+"properties": {
+ "name": "Avenue D & E 8 St",
+"idx":     64,
+"timestamp": "2013-08-19T22:32:15.382735",
+"number":    266,
+"free":     23,
+"bikes":      1,
+"coordinates": "",
+"address": "Avenue D & E 8 St",
+"lat": 4.0724e+07,
+"lng": -7.3976e+07,
+"id":     64,
+"fillColor": "#D7191C",
+"popup": "<b>Avenue D &amp; E 8 St</b><br>\n<b>Free Docks: </b> 23 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382735" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.751 ] 
+},
+"properties": {
+ "name": "Broadway & W 36 St",
+"idx":     65,
+"timestamp": "2013-08-19T22:32:15.382776",
+"number":    267,
+"free":     53,
+"bikes":      4,
+"coordinates": "",
+"address": "Broadway & W 36 St",
+"lat": 4.0751e+07,
+"lng": -7.3988e+07,
+"id":     65,
+"fillColor": "#D7191C",
+"popup": "<b>Broadway &amp; W 36 St</b><br>\n<b>Free Docks: </b> 53 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382776" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [    -74, 40.719 ] 
+},
+"properties": {
+ "name": "Howard St & Centre St",
+"idx":     66,
+"timestamp": "2013-08-19T22:32:15.382814",
+"number":    268,
+"free":      5,
+"bikes":     15,
+"coordinates": "",
+"address": "Howard St & Centre St",
+"lat": 4.0719e+07,
+"lng": -7.4e+07,
+"id":     66,
+"fillColor": "#A6D96A",
+"popup": "<b>Howard St &amp; Centre St</b><br>\n<b>Free Docks: </b> 5 <br>\n<b>Available Bikes:</b> 15<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382814" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.972, 40.693 ] 
+},
+"properties": {
+ "name": "Adelphi St & Myrtle Ave",
+"idx":     67,
+"timestamp": "2013-08-19T22:32:15.382849",
+"number":    270,
+"free":     18,
+"bikes":      5,
+"coordinates": "",
+"address": "Adelphi St & Myrtle Ave",
+"lat": 4.0693e+07,
+"lng": -7.3972e+07,
+"id":     67,
+"fillColor": "#FDAE61",
+"popup": "<b>Adelphi St &amp; Myrtle Ave</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382849" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.978, 40.685 ] 
+},
+"properties": {
+ "name": "Ashland Pl & Hanson Pl",
+"idx":     68,
+"timestamp": "2013-08-19T22:32:15.382885",
+"number":    271,
+"free":     22,
+"bikes":     15,
+"coordinates": "",
+"address": "Ashland Pl & Hanson Pl",
+"lat": 4.0685e+07,
+"lng": -7.3978e+07,
+"id":     68,
+"fillColor": "#FFFFBF",
+"popup": "<b>Ashland Pl &amp; Hanson Pl</b><br>\n<b>Free Docks: </b> 22 <br>\n<b>Available Bikes:</b> 15<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382885" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.977, 40.687 ] 
+},
+"properties": {
+ "name": "Lafayette Ave & Fort Greene Pl",
+"idx":     69,
+"timestamp": "2013-08-19T22:32:15.382922",
+"number":    274,
+"free":     21,
+"bikes":      9,
+"coordinates": "",
+"address": "Lafayette Ave & Fort Greene Pl",
+"lat": 4.0687e+07,
+"lng": -7.3977e+07,
+"id":     69,
+"fillColor": "#FDAE61",
+"popup": "<b>Lafayette Ave &amp; Fort Greene Pl</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 9<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382922" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.966, 40.687 ] 
+},
+"properties": {
+ "name": "Washington Ave & Greene Ave",
+"idx":     70,
+"timestamp": "2013-08-19T22:32:15.382958",
+"number":    275,
+"free":     14,
+"bikes":      2,
+"coordinates": "",
+"address": "Washington Ave & Greene Ave",
+"lat": 4.0686e+07,
+"lng": -7.3966e+07,
+"id":     70,
+"fillColor": "#D7191C",
+"popup": "<b>Washington Ave &amp; Greene Ave</b><br>\n<b>Free Docks: </b> 14 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.382958" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.01, 40.717 ] 
+},
+"properties": {
+ "name": "Duane St & Greenwich St",
+"idx":     71,
+"timestamp": "2013-08-19T22:32:15.383016",
+"number":    276,
+"free":      1,
+"bikes":     23,
+"coordinates": "",
+"address": "Duane St & Greenwich St",
+"lat": 4.0717e+07,
+"lng": -7.401e+07,
+"id":     71,
+"fillColor": "#1A9641",
+"popup": "<b>Duane St &amp; Greenwich St</b><br>\n<b>Free Docks: </b> 1 <br>\n<b>Available Bikes:</b> 23<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383016" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.985, 40.698 ] 
+},
+"properties": {
+ "name": "Concord St & Bridge St",
+"idx":     72,
+"timestamp": "2013-08-19T22:32:15.383060",
+"number":    278,
+"free":     11,
+"bikes":      5,
+"coordinates": "",
+"address": "Concord St & Bridge St",
+"lat": 4.0698e+07,
+"lng": -7.3985e+07,
+"id":     72,
+"fillColor": "#FDAE61",
+"popup": "<b>Concord St &amp; Bridge St</b><br>\n<b>Free Docks: </b> 11 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383060" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983,   40.7 ] 
+},
+"properties": {
+ "name": "Sands St & Gold St",
+"idx":     73,
+"timestamp": "2013-08-19T22:32:15.383099",
+"number":    279,
+"free":     13,
+"bikes":      5,
+"coordinates": "",
+"address": "Sands St & Gold St",
+"lat": 4.07e+07,
+"lng": -7.3983e+07,
+"id":     73,
+"fillColor": "#FDAE61",
+"popup": "<b>Sands St &amp; Gold St</b><br>\n<b>Free Docks: </b> 13 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383099" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.995, 40.733 ] 
+},
+"properties": {
+ "name": "E 10 St & 5 Ave",
+"idx":     74,
+"timestamp": "2013-08-19T22:32:15.383136",
+"number":    280,
+"free":     25,
+"bikes":      3,
+"coordinates": "",
+"address": "E 10 St & 5 Ave",
+"lat": 4.0733e+07,
+"lng": -7.3995e+07,
+"id":     74,
+"fillColor": "#D7191C",
+"popup": "<b>E 10 St &amp; 5 Ave</b><br>\n<b>Free Docks: </b> 25 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383136" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.974, 40.764 ] 
+},
+"properties": {
+ "name": "Grand Army Plaza & Central Park S",
+"idx":     75,
+"timestamp": "2013-08-19T22:32:15.383174",
+"number":    281,
+"free":     31,
+"bikes":     23,
+"coordinates": "",
+"address": "Grand Army Plaza & Central Park S",
+"lat": 4.0764e+07,
+"lng": -7.3974e+07,
+"id":     75,
+"fillColor": "#FFFFBF",
+"popup": "<b>Grand Army Plaza &amp; Central Park S</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 23<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383174" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.968, 40.708 ] 
+},
+"properties": {
+ "name": "Kent Ave & S 11 St",
+"idx":     76,
+"timestamp": "2013-08-19T22:32:15.383209",
+"number":    282,
+"free":     14,
+"bikes":     13,
+"coordinates": "",
+"address": "Kent Ave & S 11 St",
+"lat": 4.0708e+07,
+"lng": -7.3968e+07,
+"id":     76,
+"fillColor": "#FFFFBF",
+"popup": "<b>Kent Ave &amp; S 11 St</b><br>\n<b>Free Docks: </b> 14 <br>\n<b>Available Bikes:</b> 13<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383209" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.003, 40.739 ] 
+},
+"properties": {
+ "name": "Greenwich Ave & 8 Ave",
+"idx":     77,
+"timestamp": "2013-08-19T22:32:15.383247",
+"number":    284,
+"free":     34,
+"bikes":      4,
+"coordinates": "",
+"address": "Greenwich Ave & 8 Ave",
+"lat": 4.0739e+07,
+"lng": -7.4003e+07,
+"id":     77,
+"fillColor": "#D7191C",
+"popup": "<b>Greenwich Ave &amp; 8 Ave</b><br>\n<b>Free Docks: </b> 34 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383247" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991, 40.735 ] 
+},
+"properties": {
+ "name": "Broadway & E 14 St",
+"idx":     78,
+"timestamp": "2013-08-19T22:32:15.383284",
+"number":    285,
+"free":     37,
+"bikes":      6,
+"coordinates": "",
+"address": "Broadway & E 14 St",
+"lat": 4.0735e+07,
+"lng": -7.3991e+07,
+"id":     78,
+"fillColor": "#D7191C",
+"popup": "<b>Broadway &amp; E 14 St</b><br>\n<b>Free Docks: </b> 37 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383284" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.959, 40.685 ] 
+},
+"properties": {
+ "name": "Monroe St & Classon Ave",
+"idx":     79,
+"timestamp": "2013-08-19T22:32:15.383323",
+"number":    289,
+"free":     12,
+"bikes":      6,
+"coordinates": "",
+"address": "Monroe St & Classon Ave",
+"lat": 4.0685e+07,
+"lng": -7.3959e+07,
+"id":     79,
+"fillColor": "#FDAE61",
+"popup": "<b>Monroe St &amp; Classon Ave</b><br>\n<b>Free Docks: </b> 12 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383323" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.965,  40.76 ] 
+},
+"properties": {
+ "name": "2 Ave & E 58 St",
+"idx":     80,
+"timestamp": "2013-08-19T22:32:15.383361",
+"number":    290,
+"free":     29,
+"bikes":      0,
+"coordinates": "",
+"address": "2 Ave & E 58 St",
+"lat": 4.076e+07,
+"lng": -7.3965e+07,
+"id":     80,
+"fillColor": "#D7191C",
+"popup": "<b>2 Ave &amp; E 58 St</b><br>\n<b>Free Docks: </b> 29 <br>\n<b>Available Bikes:</b> 0<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383361" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.985, 40.713 ] 
+},
+"properties": {
+ "name": "Madison St & Montgomery St",
+"idx":     81,
+"timestamp": "2013-08-19T22:32:15.383398",
+"number":    291,
+"free":      6,
+"bikes":     11,
+"coordinates": "",
+"address": "Madison St & Montgomery St",
+"lat": 4.0713e+07,
+"lng": -7.3985e+07,
+"id":     81,
+"fillColor": "#A6D96A",
+"popup": "<b>Madison St &amp; Montgomery St</b><br>\n<b>Free Docks: </b> 6 <br>\n<b>Available Bikes:</b> 11<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383398" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991,  40.73 ] 
+},
+"properties": {
+ "name": "Lafayette St & E 8 St",
+"idx":     82,
+"timestamp": "2013-08-19T22:32:15.383434",
+"number":    293,
+"free":     37,
+"bikes":     17,
+"coordinates": "",
+"address": "Lafayette St & E 8 St",
+"lat": 4.073e+07,
+"lng": -7.3991e+07,
+"id":     82,
+"fillColor": "#FDAE61",
+"popup": "<b>Lafayette St &amp; E 8 St</b><br>\n<b>Free Docks: </b> 37 <br>\n<b>Available Bikes:</b> 17<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383434" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.996,  40.73 ] 
+},
+"properties": {
+ "name": "Washington Square E",
+"idx":     83,
+"timestamp": "2013-08-19T22:32:15.383470",
+"number":    294,
+"free":     26,
+"bikes":      3,
+"coordinates": "",
+"address": "Washington Square E",
+"lat": 4.073e+07,
+"lng": -7.3996e+07,
+"id":     83,
+"fillColor": "#D7191C",
+"popup": "<b>Washington Square E</b><br>\n<b>Free Docks: </b> 26 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383470" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.993, 40.714 ] 
+},
+"properties": {
+ "name": "Pike St & E Broadway",
+"idx":     84,
+"timestamp": "2013-08-19T22:32:15.383504",
+"number":    295,
+"free":     17,
+"bikes":      6,
+"coordinates": "",
+"address": "Pike St & E Broadway",
+"lat": 4.0714e+07,
+"lng": -7.3993e+07,
+"id":     84,
+"fillColor": "#FDAE61",
+"popup": "<b>Pike St &amp; E Broadway</b><br>\n<b>Free Docks: </b> 17 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383504" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.997, 40.714 ] 
+},
+"properties": {
+ "name": "Division St & Bowery",
+"idx":     85,
+"timestamp": "2013-08-19T22:32:15.383538",
+"number":    296,
+"free":     22,
+"bikes":      9,
+"coordinates": "",
+"address": "Division St & Bowery",
+"lat": 4.0714e+07,
+"lng": -7.3997e+07,
+"id":     85,
+"fillColor": "#FDAE61",
+"popup": "<b>Division St &amp; Bowery</b><br>\n<b>Free Docks: </b> 22 <br>\n<b>Available Bikes:</b> 9<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383538" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.987, 40.734 ] 
+},
+"properties": {
+ "name": "E 15 St & 3 Ave",
+"idx":     86,
+"timestamp": "2013-08-19T22:32:15.383574",
+"number":    297,
+"free":     25,
+"bikes":      1,
+"coordinates": "",
+"address": "E 15 St & 3 Ave",
+"lat": 4.0734e+07,
+"lng": -7.3987e+07,
+"id":     86,
+"fillColor": "#D7191C",
+"popup": "<b>E 15 St &amp; 3 Ave</b><br>\n<b>Free Docks: </b> 25 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383574" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.98, 40.687 ] 
+},
+"properties": {
+ "name": "3 Ave & Flatbush Ave",
+"idx":     87,
+"timestamp": "2013-08-19T22:32:15.383609",
+"number":    298,
+"free":     29,
+"bikes":      4,
+"coordinates": "",
+"address": "3 Ave & Flatbush Ave",
+"lat": 4.0687e+07,
+"lng": -7.398e+07,
+"id":     87,
+"fillColor": "#D7191C",
+"popup": "<b>3 Ave &amp; Flatbush Ave</b><br>\n<b>Free Docks: </b> 29 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383609" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991, 40.729 ] 
+},
+"properties": {
+ "name": "Cooper Square & E 7 St",
+"idx":     88,
+"timestamp": "2013-08-19T22:32:15.383644",
+"number":    300,
+"free":     37,
+"bikes":      4,
+"coordinates": "",
+"address": "Cooper Square & E 7 St",
+"lat": 4.0729e+07,
+"lng": -7.3991e+07,
+"id":     88,
+"fillColor": "#D7191C",
+"popup": "<b>Cooper Square &amp; E 7 St</b><br>\n<b>Free Docks: </b> 37 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383644" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.984, 40.722 ] 
+},
+"properties": {
+ "name": "E 2 St & Avenue B",
+"idx":     89,
+"timestamp": "2013-08-19T22:32:15.383682",
+"number":    301,
+"free":     32,
+"bikes":      3,
+"coordinates": "",
+"address": "E 2 St & Avenue B",
+"lat": 4.0722e+07,
+"lng": -7.3984e+07,
+"id":     89,
+"fillColor": "#D7191C",
+"popup": "<b>E 2 St &amp; Avenue B</b><br>\n<b>Free Docks: </b> 32 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383682" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.978, 40.721 ] 
+},
+"properties": {
+ "name": "Avenue D & E 3 St",
+"idx":     90,
+"timestamp": "2013-08-19T22:32:15.383719",
+"number":    302,
+"free":     16,
+"bikes":      7,
+"coordinates": "",
+"address": "Avenue D & E 3 St",
+"lat": 4.0721e+07,
+"lng": -7.3978e+07,
+"id":     90,
+"fillColor": "#FDAE61",
+"popup": "<b>Avenue D &amp; E 3 St</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 7<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383719" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.999, 40.724 ] 
+},
+"properties": {
+ "name": "Mercer St & Spring St",
+"idx":     91,
+"timestamp": "2013-08-19T22:32:15.383755",
+"number":    303,
+"free":      5,
+"bikes":     25,
+"coordinates": "",
+"address": "Mercer St & Spring St",
+"lat": 4.0724e+07,
+"lng": -7.3999e+07,
+"id":     91,
+"fillColor": "#1A9641",
+"popup": "<b>Mercer St &amp; Spring St</b><br>\n<b>Free Docks: </b> 5 <br>\n<b>Available Bikes:</b> 25<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383755" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.014, 40.705 ] 
+},
+"properties": {
+ "name": "Broadway & Battery Pl",
+"idx":     92,
+"timestamp": "2013-08-19T22:32:15.383791",
+"number":    304,
+"free":      5,
+"bikes":     20,
+"coordinates": "",
+"address": "Broadway & Battery Pl",
+"lat": 4.0705e+07,
+"lng": -7.4014e+07,
+"id":     92,
+"fillColor": "#A6D96A",
+"popup": "<b>Broadway &amp; Battery Pl</b><br>\n<b>Free Docks: </b> 5 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383791" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.967, 40.761 ] 
+},
+"properties": {
+ "name": "E 58 St & 3 Ave",
+"idx":     93,
+"timestamp": "2013-08-19T22:32:15.383828",
+"number":    305,
+"free":      8,
+"bikes":     19,
+"coordinates": "",
+"address": "E 58 St & 3 Ave",
+"lat": 4.0761e+07,
+"lng": -7.3967e+07,
+"id":     93,
+"fillColor": "#A6D96A",
+"popup": "<b>E 58 St &amp; 3 Ave</b><br>\n<b>Free Docks: </b> 8 <br>\n<b>Available Bikes:</b> 19<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383828" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.005, 40.708 ] 
+},
+"properties": {
+ "name": "Cliff St & Fulton St",
+"idx":     94,
+"timestamp": "2013-08-19T22:32:15.383865",
+"number":    306,
+"free":     10,
+"bikes":     23,
+"coordinates": "",
+"address": "Cliff St & Fulton St",
+"lat": 4.0708e+07,
+"lng": -7.4005e+07,
+"id":     94,
+"fillColor": "#A6D96A",
+"popup": "<b>Cliff St &amp; Fulton St</b><br>\n<b>Free Docks: </b> 10 <br>\n<b>Available Bikes:</b> 23<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383865" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.99, 40.714 ] 
+},
+"properties": {
+ "name": "Canal St & Rutgers St",
+"idx":     95,
+"timestamp": "2013-08-19T22:32:15.383903",
+"number":    307,
+"free":     16,
+"bikes":     13,
+"coordinates": "",
+"address": "Canal St & Rutgers St",
+"lat": 4.0714e+07,
+"lng": -7.399e+07,
+"id":     95,
+"fillColor": "#FFFFBF",
+"popup": "<b>Canal St &amp; Rutgers St</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 13<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383903" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.999, 40.713 ] 
+},
+"properties": {
+ "name": "St James Pl & Oliver St",
+"idx":     96,
+"timestamp": "2013-08-19T22:32:15.383940",
+"number":    308,
+"free":      9,
+"bikes":     17,
+"coordinates": "",
+"address": "St James Pl & Oliver St",
+"lat": 4.0713e+07,
+"lng": -7.3999e+07,
+"id":     96,
+"fillColor": "#A6D96A",
+"popup": "<b>St James Pl &amp; Oliver St</b><br>\n<b>Free Docks: </b> 9 <br>\n<b>Available Bikes:</b> 17<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383940" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.013, 40.715 ] 
+},
+"properties": {
+ "name": "Murray St & West St",
+"idx":     97,
+"timestamp": "2013-08-19T22:32:15.383977",
+"number":    309,
+"free":      9,
+"bikes":     30,
+"coordinates": "",
+"address": "Murray St & West St",
+"lat": 4.0715e+07,
+"lng": -7.4013e+07,
+"id":     97,
+"fillColor": "#A6D96A",
+"popup": "<b>Murray St &amp; West St</b><br>\n<b>Free Docks: </b> 9 <br>\n<b>Available Bikes:</b> 30<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.383977" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.989, 40.689 ] 
+},
+"properties": {
+ "name": "State St & Smith St",
+"idx":     98,
+"timestamp": "2013-08-19T22:32:15.384035",
+"number":    310,
+"free":     25,
+"bikes":      9,
+"coordinates": "",
+"address": "State St & Smith St",
+"lat": 4.0689e+07,
+"lng": -7.3989e+07,
+"id":     98,
+"fillColor": "#FDAE61",
+"popup": "<b>State St &amp; Smith St</b><br>\n<b>Free Docks: </b> 25 <br>\n<b>Available Bikes:</b> 9<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384035" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.717 ] 
+},
+"properties": {
+ "name": "Norfolk St & Broome St",
+"idx":     99,
+"timestamp": "2013-08-19T22:32:15.384074",
+"number":    311,
+"free":     28,
+"bikes":      1,
+"coordinates": "",
+"address": "Norfolk St & Broome St",
+"lat": 4.0717e+07,
+"lng": -7.3988e+07,
+"id":     99,
+"fillColor": "#D7191C",
+"popup": "<b>Norfolk St &amp; Broome St</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384074" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.989, 40.722 ] 
+},
+"properties": {
+ "name": "Allen St & E Houston St",
+"idx":    100,
+"timestamp": "2013-08-19T22:32:15.384113",
+"number":    312,
+"free":     26,
+"bikes":      1,
+"coordinates": "",
+"address": "Allen St & E Houston St",
+"lat": 4.0722e+07,
+"lng": -7.3989e+07,
+"id":    100,
+"fillColor": "#D7191C",
+"popup": "<b>Allen St &amp; E Houston St</b><br>\n<b>Free Docks: </b> 26 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384113" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.968, 40.696 ] 
+},
+"properties": {
+ "name": "Washington Ave & Park Ave",
+"idx":    101,
+"timestamp": "2013-08-19T22:32:15.384146",
+"number":    313,
+"free":      6,
+"bikes":     15,
+"coordinates": "",
+"address": "Washington Ave & Park Ave",
+"lat": 4.0696e+07,
+"lng": -7.3968e+07,
+"id":    101,
+"fillColor": "#A6D96A",
+"popup": "<b>Washington Ave &amp; Park Ave</b><br>\n<b>Free Docks: </b> 6 <br>\n<b>Available Bikes:</b> 15<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384146" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.992, 40.694 ] 
+},
+"properties": {
+ "name": "Montague St & Clinton St",
+"idx":    102,
+"timestamp": "2013-08-19T22:32:15.384183",
+"number":    314,
+"free":     38,
+"bikes":      1,
+"coordinates": "",
+"address": "Montague St & Clinton St",
+"lat": 4.0694e+07,
+"lng": -7.3992e+07,
+"id":    102,
+"fillColor": "#D7191C",
+"popup": "<b>Montague St &amp; Clinton St</b><br>\n<b>Free Docks: </b> 38 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384183" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.007, 40.704 ] 
+},
+"properties": {
+ "name": "South St & Gouverneur Ln",
+"idx":    103,
+"timestamp": "2013-08-19T22:32:15.384221",
+"number":    315,
+"free":      6,
+"bikes":     17,
+"coordinates": "",
+"address": "South St & Gouverneur Ln",
+"lat": 4.0704e+07,
+"lng": -7.4007e+07,
+"id":    103,
+"fillColor": "#A6D96A",
+"popup": "<b>South St &amp; Gouverneur Ln</b><br>\n<b>Free Docks: </b> 6 <br>\n<b>Available Bikes:</b> 17<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384221" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.007,  40.71 ] 
+},
+"properties": {
+ "name": "Fulton St & William St",
+"idx":    104,
+"timestamp": "2013-08-19T22:32:15.384259",
+"number":    316,
+"free":     31,
+"bikes":     12,
+"coordinates": "",
+"address": "Fulton St & William St",
+"lat": 4.071e+07,
+"lng": -7.4007e+07,
+"id":    104,
+"fillColor": "#FDAE61",
+"popup": "<b>Fulton St &amp; William St</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 12<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384259" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.982, 40.725 ] 
+},
+"properties": {
+ "name": "E 6 St & Avenue B",
+"idx":    105,
+"timestamp": "2013-08-19T22:32:15.384295",
+"number":    317,
+"free":     16,
+"bikes":     10,
+"coordinates": "",
+"address": "E 6 St & Avenue B",
+"lat": 4.0725e+07,
+"lng": -7.3982e+07,
+"id":    105,
+"fillColor": "#FDAE61",
+"popup": "<b>E 6 St &amp; Avenue B</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 10<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384295" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.978, 40.753 ] 
+},
+"properties": {
+ "name": "E 43 St & Vanderbilt Ave",
+"idx":    106,
+"timestamp": "2013-08-19T22:32:15.384334",
+"number":    318,
+"free":     10,
+"bikes":     21,
+"coordinates": "",
+"address": "E 43 St & Vanderbilt Ave",
+"lat": 4.0753e+07,
+"lng": -7.3978e+07,
+"id":    106,
+"fillColor": "#A6D96A",
+"popup": "<b>E 43 St &amp; Vanderbilt Ave</b><br>\n<b>Free Docks: </b> 10 <br>\n<b>Available Bikes:</b> 21<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384334" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.009, 40.713 ] 
+},
+"properties": {
+ "name": "Park Pl & Church St",
+"idx":    107,
+"timestamp": "2013-08-19T22:32:15.384380",
+"number":    319,
+"free":     19,
+"bikes":     12,
+"coordinates": "",
+"address": "Park Pl & Church St",
+"lat": 4.0713e+07,
+"lng": -7.4009e+07,
+"id":    107,
+"fillColor": "#FDAE61",
+"popup": "<b>Park Pl &amp; Church St</b><br>\n<b>Free Docks: </b> 19 <br>\n<b>Available Bikes:</b> 12<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384380" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.717 ] 
+},
+"properties": {
+ "name": "Church St & Leonard St",
+"idx":    108,
+"timestamp": "2013-08-19T22:32:15.384416",
+"number":    320,
+"free":      2,
+"bikes":     33,
+"coordinates": "",
+"address": "Church St & Leonard St",
+"lat": 4.0717e+07,
+"lng": -7.4006e+07,
+"id":    108,
+"fillColor": "#1A9641",
+"popup": "<b>Church St &amp; Leonard St</b><br>\n<b>Free Docks: </b> 2 <br>\n<b>Available Bikes:</b> 33<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384416" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.99,   40.7 ] 
+},
+"properties": {
+ "name": "Cadman Plaza E & Red Cross Pl",
+"idx":    109,
+"timestamp": "2013-08-19T22:32:15.384455",
+"number":    321,
+"free":      1,
+"bikes":     23,
+"coordinates": "",
+"address": "Cadman Plaza E & Red Cross Pl",
+"lat": 4.07e+07,
+"lng": -7.399e+07,
+"id":    109,
+"fillColor": "#1A9641",
+"popup": "<b>Cadman Plaza E &amp; Red Cross Pl</b><br>\n<b>Free Docks: </b> 1 <br>\n<b>Available Bikes:</b> 23<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384455" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991, 40.696 ] 
+},
+"properties": {
+ "name": "Clinton St & Tillary St",
+"idx":    110,
+"timestamp": "2013-08-19T22:32:15.384494",
+"number":    322,
+"free":     29,
+"bikes":      1,
+"coordinates": "",
+"address": "Clinton St & Tillary St",
+"lat": 4.0696e+07,
+"lng": -7.3991e+07,
+"id":    110,
+"fillColor": "#D7191C",
+"popup": "<b>Clinton St &amp; Tillary St</b><br>\n<b>Free Docks: </b> 29 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384494" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.986, 40.692 ] 
+},
+"properties": {
+ "name": "Lawrence St & Willoughby St",
+"idx":    111,
+"timestamp": "2013-08-19T22:32:15.384535",
+"number":    323,
+"free":     26,
+"bikes":     13,
+"coordinates": "",
+"address": "Lawrence St & Willoughby St",
+"lat": 4.0692e+07,
+"lng": -7.3986e+07,
+"id":    111,
+"fillColor": "#FDAE61",
+"popup": "<b>Lawrence St &amp; Willoughby St</b><br>\n<b>Free Docks: </b> 26 <br>\n<b>Available Bikes:</b> 13<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384535" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.981,  40.69 ] 
+},
+"properties": {
+ "name": "DeKalb Ave & Hudson Ave",
+"idx":    112,
+"timestamp": "2013-08-19T22:32:15.384571",
+"number":    324,
+"free":     24,
+"bikes":     25,
+"coordinates": "",
+"address": "DeKalb Ave & Hudson Ave",
+"lat": 4.069e+07,
+"lng": -7.3981e+07,
+"id":    112,
+"fillColor": "#FFFFBF",
+"popup": "<b>DeKalb Ave &amp; Hudson Ave</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 25<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384571" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.985, 40.736 ] 
+},
+"properties": {
+ "name": "E 19 St & 3 Ave",
+"idx":    113,
+"timestamp": "2013-08-19T22:32:15.384605",
+"number":    325,
+"free":     29,
+"bikes":      3,
+"coordinates": "",
+"address": "E 19 St & 3 Ave",
+"lat": 4.0736e+07,
+"lng": -7.3985e+07,
+"id":    113,
+"fillColor": "#D7191C",
+"popup": "<b>E 19 St &amp; 3 Ave</b><br>\n<b>Free Docks: </b> 29 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384605" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.984,  40.73 ] 
+},
+"properties": {
+ "name": "E 11 St & 1 Ave",
+"idx":    114,
+"timestamp": "2013-08-19T22:32:15.384645",
+"number":    326,
+"free":     24,
+"bikes":      2,
+"coordinates": "",
+"address": "E 11 St & 1 Ave",
+"lat": 4.073e+07,
+"lng": -7.3984e+07,
+"id":    114,
+"fillColor": "#D7191C",
+"popup": "<b>E 11 St &amp; 1 Ave</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384645" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.017, 40.715 ] 
+},
+"properties": {
+ "name": "Vesey Pl & River Terrace",
+"idx":    115,
+"timestamp": "2013-08-19T22:32:15.384683",
+"number":    327,
+"free":     16,
+"bikes":     20,
+"coordinates": "",
+"address": "Vesey Pl & River Terrace",
+"lat": 4.0715e+07,
+"lng": -7.4017e+07,
+"id":    115,
+"fillColor": "#FFFFBF",
+"popup": "<b>Vesey Pl &amp; River Terrace</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384683" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.01, 40.724 ] 
+},
+"properties": {
+ "name": "Watts St & Greenwich St",
+"idx":    116,
+"timestamp": "2013-08-19T22:32:15.384727",
+"number":    328,
+"free":      6,
+"bikes":     16,
+"coordinates": "",
+"address": "Watts St & Greenwich St",
+"lat": 4.0724e+07,
+"lng": -7.401e+07,
+"id":    116,
+"fillColor": "#A6D96A",
+"popup": "<b>Watts St &amp; Greenwich St</b><br>\n<b>Free Docks: </b> 6 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384727" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.01,  40.72 ] 
+},
+"properties": {
+ "name": "Greenwich St & N Moore St",
+"idx":    117,
+"timestamp": "2013-08-19T22:32:15.384765",
+"number":    329,
+"free":     25,
+"bikes":      4,
+"coordinates": "",
+"address": "Greenwich St & N Moore St",
+"lat": 4.072e+07,
+"lng": -7.401e+07,
+"id":    117,
+"fillColor": "#D7191C",
+"popup": "<b>Greenwich St &amp; N Moore St</b><br>\n<b>Free Docks: </b> 25 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384765" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.715 ] 
+},
+"properties": {
+ "name": "Reade St & Broadway",
+"idx":    118,
+"timestamp": "2013-08-19T22:32:15.384802",
+"number":    330,
+"free":     28,
+"bikes":     11,
+"coordinates": "",
+"address": "Reade St & Broadway",
+"lat": 4.0715e+07,
+"lng": -7.4006e+07,
+"id":    118,
+"fillColor": "#FDAE61",
+"popup": "<b>Reade St &amp; Broadway</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 11<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384802" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.992, 40.712 ] 
+},
+"properties": {
+ "name": "Pike St & Monroe St",
+"idx":    119,
+"timestamp": "2013-08-19T22:32:15.384839",
+"number":    331,
+"free":     22,
+"bikes":      5,
+"coordinates": "",
+"address": "Pike St & Monroe St",
+"lat": 4.0712e+07,
+"lng": -7.3992e+07,
+"id":    119,
+"fillColor": "#D7191C",
+"popup": "<b>Pike St &amp; Monroe St</b><br>\n<b>Free Docks: </b> 22 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384839" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.979, 40.712 ] 
+},
+"properties": {
+ "name": "Cherry St",
+"idx":    120,
+"timestamp": "2013-08-19T22:32:15.384875",
+"number":    332,
+"free":     18,
+"bikes":      2,
+"coordinates": "",
+"address": "Cherry St",
+"lat": 4.0712e+07,
+"lng": -7.3979e+07,
+"id":    120,
+"fillColor": "#D7191C",
+"popup": "<b>Cherry St</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384875" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.997, 40.742 ] 
+},
+"properties": {
+ "name": "W 20 St & 7 Ave",
+"idx":    121,
+"timestamp": "2013-08-19T22:32:15.384909",
+"number":    334,
+"free":     23,
+"bikes":      8,
+"coordinates": "",
+"address": "W 20 St & 7 Ave",
+"lat": 4.0742e+07,
+"lng": -7.3997e+07,
+"id":    121,
+"fillColor": "#FDAE61",
+"popup": "<b>W 20 St &amp; 7 Ave</b><br>\n<b>Free Docks: </b> 23 <br>\n<b>Available Bikes:</b> 8<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384909" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.994, 40.729 ] 
+},
+"properties": {
+ "name": "Washington Pl & Broadway",
+"idx":    122,
+"timestamp": "2013-08-19T22:32:15.384944",
+"number":    335,
+"free":     25,
+"bikes":      2,
+"coordinates": "",
+"address": "Washington Pl & Broadway",
+"lat": 4.0729e+07,
+"lng": -7.3994e+07,
+"id":    122,
+"fillColor": "#D7191C",
+"popup": "<b>Washington Pl &amp; Broadway</b><br>\n<b>Free Docks: </b> 25 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384944" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.999,  40.73 ] 
+},
+"properties": {
+ "name": "Sullivan St & Washington Sq",
+"idx":    123,
+"timestamp": "2013-08-19T22:32:15.384982",
+"number":    336,
+"free":     27,
+"bikes":      5,
+"coordinates": "",
+"address": "Sullivan St & Washington Sq",
+"lat": 4.073e+07,
+"lng": -7.3999e+07,
+"id":    123,
+"fillColor": "#D7191C",
+"popup": "<b>Sullivan St &amp; Washington Sq</b><br>\n<b>Free Docks: </b> 27 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.384982" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.008, 40.704 ] 
+},
+"properties": {
+ "name": "Old Slip & Front St",
+"idx":    124,
+"timestamp": "2013-08-19T22:32:15.385043",
+"number":    337,
+"free":     11,
+"bikes":     20,
+"coordinates": "",
+"address": "Old Slip & Front St",
+"lat": 4.0704e+07,
+"lng": -7.4008e+07,
+"id":    124,
+"fillColor": "#A6D96A",
+"popup": "<b>Old Slip &amp; Front St</b><br>\n<b>Free Docks: </b> 11 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385043" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.974, 40.726 ] 
+},
+"properties": {
+ "name": "Avenue D & E 12 St",
+"idx":    125,
+"timestamp": "2013-08-19T22:32:15.385081",
+"number":    339,
+"free":     16,
+"bikes":      6,
+"coordinates": "",
+"address": "Avenue D & E 12 St",
+"lat": 4.0726e+07,
+"lng": -7.3974e+07,
+"id":    125,
+"fillColor": "#FDAE61",
+"popup": "<b>Avenue D &amp; E 12 St</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385081" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.713 ] 
+},
+"properties": {
+ "name": "Madison St & Clinton St",
+"idx":    126,
+"timestamp": "2013-08-19T22:32:15.385118",
+"number":    340,
+"free":     24,
+"bikes":      2,
+"coordinates": "",
+"address": "Madison St & Clinton St",
+"lat": 4.0713e+07,
+"lng": -7.3988e+07,
+"id":    126,
+"fillColor": "#D7191C",
+"popup": "<b>Madison St &amp; Clinton St</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385118" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.976, 40.718 ] 
+},
+"properties": {
+ "name": "Stanton St & Mangin St",
+"idx":    127,
+"timestamp": "2013-08-19T22:32:15.385157",
+"number":    341,
+"free":     16,
+"bikes":      2,
+"coordinates": "",
+"address": "Stanton St & Mangin St",
+"lat": 4.0718e+07,
+"lng": -7.3976e+07,
+"id":    127,
+"fillColor": "#D7191C",
+"popup": "<b>Stanton St &amp; Mangin St</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385157" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.98, 40.717 ] 
+},
+"properties": {
+ "name": "Columbia St & Rivington St",
+"idx":    128,
+"timestamp": "2013-08-19T22:32:15.385195",
+"number":    342,
+"free":     24,
+"bikes":      4,
+"coordinates": "",
+"address": "Columbia St & Rivington St",
+"lat": 4.0717e+07,
+"lng": -7.398e+07,
+"id":    128,
+"fillColor": "#D7191C",
+"popup": "<b>Columbia St &amp; Rivington St</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385195" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.97, 40.698 ] 
+},
+"properties": {
+ "name": "Clinton Ave & Flushing Ave",
+"idx":    129,
+"timestamp": "2013-08-19T22:32:15.385233",
+"number":    343,
+"free":      7,
+"bikes":     14,
+"coordinates": "",
+"address": "Clinton Ave & Flushing Ave",
+"lat": 4.0698e+07,
+"lng": -7.397e+07,
+"id":    129,
+"fillColor": "#A6D96A",
+"popup": "<b>Clinton Ave &amp; Flushing Ave</b><br>\n<b>Free Docks: </b> 7 <br>\n<b>Available Bikes:</b> 14<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385233" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.954, 40.685 ] 
+},
+"properties": {
+ "name": "Monroe St & Bedford Ave",
+"idx":    130,
+"timestamp": "2013-08-19T22:32:15.385270",
+"number":    344,
+"free":      4,
+"bikes":     16,
+"coordinates": "",
+"address": "Monroe St & Bedford Ave",
+"lat": 4.0685e+07,
+"lng": -7.3954e+07,
+"id":    130,
+"fillColor": "#A6D96A",
+"popup": "<b>Monroe St &amp; Bedford Ave</b><br>\n<b>Free Docks: </b> 4 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385270" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.997, 40.736 ] 
+},
+"properties": {
+ "name": "W 13 St & 6 Ave",
+"idx":    131,
+"timestamp": "2013-08-19T22:32:15.385303",
+"number":    345,
+"free":     33,
+"bikes":      1,
+"coordinates": "",
+"address": "W 13 St & 6 Ave",
+"lat": 4.0736e+07,
+"lng": -7.3997e+07,
+"id":    131,
+"fillColor": "#D7191C",
+"popup": "<b>W 13 St &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 33 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385303" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.737 ] 
+},
+"properties": {
+ "name": "Bank St & Hudson St",
+"idx":    132,
+"timestamp": "2013-08-19T22:32:15.385342",
+"number":    346,
+"free":     18,
+"bikes":      8,
+"coordinates": "",
+"address": "Bank St & Hudson St",
+"lat": 4.0737e+07,
+"lng": -7.4006e+07,
+"id":    132,
+"fillColor": "#FDAE61",
+"popup": "<b>Bank St &amp; Hudson St</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 8<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385342" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.007, 40.729 ] 
+},
+"properties": {
+ "name": "W Houston St & Hudson St",
+"idx":    133,
+"timestamp": "2013-08-19T22:32:15.385378",
+"number":    347,
+"free":     18,
+"bikes":     16,
+"coordinates": "",
+"address": "W Houston St & Hudson St",
+"lat": 4.0729e+07,
+"lng": -7.4007e+07,
+"id":    133,
+"fillColor": "#FFFFBF",
+"popup": "<b>W Houston St &amp; Hudson St</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385378" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.002, 40.725 ] 
+},
+"properties": {
+ "name": "W Broadway & Spring St",
+"idx":    134,
+"timestamp": "2013-08-19T22:32:15.385415",
+"number":    348,
+"free":     17,
+"bikes":     23,
+"coordinates": "",
+"address": "W Broadway & Spring St",
+"lat": 4.0725e+07,
+"lng": -7.4002e+07,
+"id":    134,
+"fillColor": "#FFFFBF",
+"popup": "<b>W Broadway &amp; Spring St</b><br>\n<b>Free Docks: </b> 17 <br>\n<b>Available Bikes:</b> 23<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385415" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983, 40.719 ] 
+},
+"properties": {
+ "name": "Rivington St & Ridge St",
+"idx":    135,
+"timestamp": "2013-08-19T22:32:15.385453",
+"number":    349,
+"free":     20,
+"bikes":      3,
+"coordinates": "",
+"address": "Rivington St & Ridge St",
+"lat": 4.0719e+07,
+"lng": -7.3983e+07,
+"id":    135,
+"fillColor": "#D7191C",
+"popup": "<b>Rivington St &amp; Ridge St</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385453" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.987, 40.716 ] 
+},
+"properties": {
+ "name": "Clinton St & Grand St",
+"idx":    136,
+"timestamp": "2013-08-19T22:32:15.385488",
+"number":    350,
+"free":     23,
+"bikes":      5,
+"coordinates": "",
+"address": "Clinton St & Grand St",
+"lat": 4.0716e+07,
+"lng": -7.3987e+07,
+"id":    136,
+"fillColor": "#D7191C",
+"popup": "<b>Clinton St &amp; Grand St</b><br>\n<b>Free Docks: </b> 23 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385488" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.705 ] 
+},
+"properties": {
+ "name": "Front St & Maiden Ln",
+"idx":    137,
+"timestamp": "2013-08-19T22:32:15.385520",
+"number":    351,
+"free":     12,
+"bikes":     23,
+"coordinates": "",
+"address": "Front St & Maiden Ln",
+"lat": 4.0705e+07,
+"lng": -7.4006e+07,
+"id":    137,
+"fillColor": "#A6D96A",
+"popup": "<b>Front St &amp; Maiden Ln</b><br>\n<b>Free Docks: </b> 12 <br>\n<b>Available Bikes:</b> 23<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385520" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.977, 40.763 ] 
+},
+"properties": {
+ "name": "W 56 St & 6 Ave",
+"idx":    138,
+"timestamp": "2013-08-19T22:32:15.385556",
+"number":    352,
+"free":     20,
+"bikes":     13,
+"coordinates": "",
+"address": "W 56 St & 6 Ave",
+"lat": 4.0763e+07,
+"lng": -7.3977e+07,
+"id":    138,
+"fillColor": "#FDAE61",
+"popup": "<b>W 56 St &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 13<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385556" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.974, 40.685 ] 
+},
+"properties": {
+ "name": "S Portland Ave & Hanson Pl",
+"idx":    139,
+"timestamp": "2013-08-19T22:32:15.385592",
+"number":    353,
+"free":     18,
+"bikes":      4,
+"coordinates": "",
+"address": "S Portland Ave & Hanson Pl",
+"lat": 4.0685e+07,
+"lng": -7.3974e+07,
+"id":    139,
+"fillColor": "#D7191C",
+"popup": "<b>S Portland Ave &amp; Hanson Pl</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385592" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.962, 40.694 ] 
+},
+"properties": {
+ "name": "Myrtle Ave & Emerson Pl",
+"idx":    140,
+"timestamp": "2013-08-19T22:32:15.385629",
+"number":    354,
+"free":     30,
+"bikes":      0,
+"coordinates": "",
+"address": "Myrtle Ave & Emerson Pl",
+"lat": 4.0694e+07,
+"lng": -7.3962e+07,
+"id":    140,
+"fillColor": "#D7191C",
+"popup": "<b>Myrtle Ave &amp; Emerson Pl</b><br>\n<b>Free Docks: </b> 30 <br>\n<b>Available Bikes:</b> 0<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385629" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [    -74, 40.716 ] 
+},
+"properties": {
+ "name": "Bayard St & Baxter St",
+"idx":    141,
+"timestamp": "2013-08-19T22:32:15.385665",
+"number":    355,
+"free":     24,
+"bikes":     18,
+"coordinates": "",
+"address": "Bayard St & Baxter St",
+"lat": 4.0716e+07,
+"lng": -7.4e+07,
+"id":    141,
+"fillColor": "#FFFFBF",
+"popup": "<b>Bayard St &amp; Baxter St</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 18<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385665" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983, 40.716 ] 
+},
+"properties": {
+ "name": "Bialystoker Pl & Delancey St",
+"idx":    142,
+"timestamp": "2013-08-19T22:32:15.385702",
+"number":    356,
+"free":      5,
+"bikes":     17,
+"coordinates": "",
+"address": "Bialystoker Pl & Delancey St",
+"lat": 4.0716e+07,
+"lng": -7.3983e+07,
+"id":    142,
+"fillColor": "#A6D96A",
+"popup": "<b>Bialystoker Pl &amp; Delancey St</b><br>\n<b>Free Docks: </b> 5 <br>\n<b>Available Bikes:</b> 17<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385702" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.992, 40.733 ] 
+},
+"properties": {
+ "name": "E 11 St & Broadway",
+"idx":    143,
+"timestamp": "2013-08-19T22:32:15.385739",
+"number":    357,
+"free":     25,
+"bikes":      0,
+"coordinates": "",
+"address": "E 11 St & Broadway",
+"lat": 4.0733e+07,
+"lng": -7.3992e+07,
+"id":    143,
+"fillColor": "#D7191C",
+"popup": "<b>E 11 St &amp; Broadway</b><br>\n<b>Free Docks: </b> 25 <br>\n<b>Available Bikes:</b> 0<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385739" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.007, 40.733 ] 
+},
+"properties": {
+ "name": "Christopher St & Greenwich St",
+"idx":    144,
+"timestamp": "2013-08-19T22:32:15.385777",
+"number":    358,
+"free":     22,
+"bikes":      9,
+"coordinates": "",
+"address": "Christopher St & Greenwich St",
+"lat": 4.0733e+07,
+"lng": -7.4007e+07,
+"id":    144,
+"fillColor": "#FDAE61",
+"popup": "<b>Christopher St &amp; Greenwich St</b><br>\n<b>Free Docks: </b> 22 <br>\n<b>Available Bikes:</b> 9<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385777" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.975, 40.755 ] 
+},
+"properties": {
+ "name": "E 47 St & Park Av",
+"idx":    145,
+"timestamp": "2013-08-19T22:32:15.385814",
+"number":    359,
+"free":     31,
+"bikes":     20,
+"coordinates": "",
+"address": "E 47 St & Park Ave",
+"lat": 4.0755e+07,
+"lng": -7.3975e+07,
+"id":    145,
+"fillColor": "#FDAE61",
+"popup": "<b>E 47 St &amp; Park Av</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385814" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.009, 40.707 ] 
+},
+"properties": {
+ "name": "William St & Pine St",
+"idx":    146,
+"timestamp": "2013-08-19T22:32:15.385850",
+"number":    360,
+"free":     18,
+"bikes":     20,
+"coordinates": "",
+"address": "William St & Pine St",
+"lat": 4.0707e+07,
+"lng": -7.4009e+07,
+"id":    146,
+"fillColor": "#FFFFBF",
+"popup": "<b>William St &amp; Pine St</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385850" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.992, 40.716 ] 
+},
+"properties": {
+ "name": "Allen St & Hester St",
+"idx":    147,
+"timestamp": "2013-08-19T22:32:15.385887",
+"number":    361,
+"free":     27,
+"bikes":     13,
+"coordinates": "",
+"address": "Allen St & Hester St",
+"lat": 4.0716e+07,
+"lng": -7.3992e+07,
+"id":    147,
+"fillColor": "#FDAE61",
+"popup": "<b>Allen St &amp; Hester St</b><br>\n<b>Free Docks: </b> 27 <br>\n<b>Available Bikes:</b> 13<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385887" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.752 ] 
+},
+"properties": {
+ "name": "Broadway & W 37 St",
+"idx":    148,
+"timestamp": "2013-08-19T22:32:15.385924",
+"number":    362,
+"free":     54,
+"bikes":      3,
+"coordinates": "",
+"address": "Broadway & W 37 St",
+"lat": 4.0752e+07,
+"lng": -7.3988e+07,
+"id":    148,
+"fillColor": "#D7191C",
+"popup": "<b>Broadway &amp; W 37 St</b><br>\n<b>Free Docks: </b> 54 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385924" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.017, 40.708 ] 
+},
+"properties": {
+ "name": "West Thames St",
+"idx":    149,
+"timestamp": "2013-08-19T22:32:15.385963",
+"number":    363,
+"free":     43,
+"bikes":      5,
+"coordinates": "",
+"address": "West Thames St",
+"lat": 4.0708e+07,
+"lng": -7.4017e+07,
+"id":    149,
+"fillColor": "#D7191C",
+"popup": "<b>West Thames St</b><br>\n<b>Free Docks: </b> 43 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.385963" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.96, 40.689 ] 
+},
+"properties": {
+ "name": "Lafayette Ave & Classon Ave",
+"idx":    150,
+"timestamp": "2013-08-19T22:32:15.386024",
+"number":    364,
+"free":     24,
+"bikes":      1,
+"coordinates": "",
+"address": "Lafayette Ave & Classon Ave",
+"lat": 4.0689e+07,
+"lng": -7.396e+07,
+"id":    150,
+"fillColor": "#D7191C",
+"popup": "<b>Lafayette Ave &amp; Classon Ave</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386024" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.961, 40.682 ] 
+},
+"properties": {
+ "name": "Fulton St & Grand Ave",
+"idx":    151,
+"timestamp": "2013-08-19T22:32:15.386062",
+"number":    365,
+"free":     22,
+"bikes":      8,
+"coordinates": "",
+"address": "Fulton St & Grand Ave",
+"lat": 4.0682e+07,
+"lng": -7.3961e+07,
+"id":    151,
+"fillColor": "#FDAE61",
+"popup": "<b>Fulton St &amp; Grand Ave</b><br>\n<b>Free Docks: </b> 22 <br>\n<b>Available Bikes:</b> 8<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386062" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.969, 40.693 ] 
+},
+"properties": {
+ "name": "Clinton Ave & Myrtle Ave",
+"idx":    152,
+"timestamp": "2013-08-19T22:32:15.386098",
+"number":    366,
+"free":     24,
+"bikes":      4,
+"coordinates": "",
+"address": "Clinton Ave & Myrtle Ave",
+"lat": 4.0693e+07,
+"lng": -7.3969e+07,
+"id":    152,
+"fillColor": "#D7191C",
+"popup": "<b>Clinton Ave &amp; Myrtle Ave</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386098" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.971, 40.758 ] 
+},
+"properties": {
+ "name": "E 53 St & Lexington Ave",
+"idx":    153,
+"timestamp": "2013-08-19T22:32:15.386135",
+"number":    367,
+"free":     24,
+"bikes":     10,
+"coordinates": "",
+"address": "E 53 St & Lexington Ave",
+"lat": 4.0758e+07,
+"lng": -7.3971e+07,
+"id":    153,
+"fillColor": "#FDAE61",
+"popup": "<b>E 53 St &amp; Lexington Ave</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 10<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386135" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.002,  40.73 ] 
+},
+"properties": {
+ "name": "Carmine St & 6 Ave",
+"idx":    154,
+"timestamp": "2013-08-19T22:32:15.386173",
+"number":    368,
+"free":     28,
+"bikes":      4,
+"coordinates": "",
+"address": "Carmine St & 6 Ave",
+"lat": 4.073e+07,
+"lng": -7.4002e+07,
+"id":    154,
+"fillColor": "#D7191C",
+"popup": "<b>Carmine St &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386173" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [    -74, 40.732 ] 
+},
+"properties": {
+ "name": "Washington Pl & 6 Ave",
+"idx":    155,
+"timestamp": "2013-08-19T22:32:15.386210",
+"number":    369,
+"free":     27,
+"bikes":      4,
+"coordinates": "",
+"address": "Washington Pl & 6 Ave",
+"lat": 4.0732e+07,
+"lng": -7.4e+07,
+"id":    155,
+"fillColor": "#D7191C",
+"popup": "<b>Washington Pl &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 27 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386210" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.958, 40.695 ] 
+},
+"properties": {
+ "name": "Franklin Ave & Myrtle Ave",
+"idx":    156,
+"timestamp": "2013-08-19T22:32:15.386247",
+"number":    372,
+"free":     11,
+"bikes":     14,
+"coordinates": "",
+"address": "Franklin Ave & Myrtle Ave",
+"lat": 4.0695e+07,
+"lng": -7.3958e+07,
+"id":    156,
+"fillColor": "#FFFFBF",
+"popup": "<b>Franklin Ave &amp; Myrtle Ave</b><br>\n<b>Free Docks: </b> 11 <br>\n<b>Available Bikes:</b> 14<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386247" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.954, 40.693 ] 
+},
+"properties": {
+ "name": "Willoughby Ave & Walworth St",
+"idx":    157,
+"timestamp": "2013-08-19T22:32:15.386281",
+"number":    373,
+"free":     14,
+"bikes":      5,
+"coordinates": "",
+"address": "Willoughby Ave & Walworth St",
+"lat": 4.0693e+07,
+"lng": -7.3954e+07,
+"id":    157,
+"fillColor": "#FDAE61",
+"popup": "<b>Willoughby Ave &amp; Walworth St</b><br>\n<b>Free Docks: </b> 14 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386281" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.997, 40.727 ] 
+},
+"properties": {
+ "name": "Mercer St & Bleecker St",
+"idx":    158,
+"timestamp": "2013-08-19T22:32:15.386318",
+"number":    375,
+"free":      3,
+"bikes":     23,
+"coordinates": "",
+"address": "Mercer St & Bleecker St",
+"lat": 4.0727e+07,
+"lng": -7.3997e+07,
+"id":    158,
+"fillColor": "#1A9641",
+"popup": "<b>Mercer St &amp; Bleecker St</b><br>\n<b>Free Docks: </b> 3 <br>\n<b>Available Bikes:</b> 23<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386318" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.007, 40.709 ] 
+},
+"properties": {
+ "name": "John St & William St",
+"idx":    159,
+"timestamp": "2013-08-19T22:32:15.386356",
+"number":    376,
+"free":      4,
+"bikes":     36,
+"coordinates": "",
+"address": "John St & William St",
+"lat": 4.0709e+07,
+"lng": -7.4007e+07,
+"id":    159,
+"fillColor": "#1A9641",
+"popup": "<b>John St &amp; William St</b><br>\n<b>Free Docks: </b> 4 <br>\n<b>Available Bikes:</b> 36<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386356" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.722 ] 
+},
+"properties": {
+ "name": "6 Ave & Canal St",
+"idx":    160,
+"timestamp": "2013-08-19T22:32:15.386393",
+"number":    377,
+"free":     20,
+"bikes":     24,
+"coordinates": "",
+"address": "6 Ave & Canal St",
+"lat": 4.0722e+07,
+"lng": -7.4006e+07,
+"id":    160,
+"fillColor": "#FFFFBF",
+"popup": "<b>6 Ave &amp; Canal St</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 24<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386393" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.992, 40.749 ] 
+},
+"properties": {
+ "name": "W 31 St & 7 Ave",
+"idx":    161,
+"timestamp": "2013-08-19T22:32:15.386429",
+"number":    379,
+"free":     20,
+"bikes":     33,
+"coordinates": "",
+"address": "W 31 St & 7 Ave",
+"lat": 4.0749e+07,
+"lng": -7.3992e+07,
+"id":    161,
+"fillColor": "#A6D96A",
+"popup": "<b>W 31 St &amp; 7 Ave</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 33<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386429" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.003, 40.734 ] 
+},
+"properties": {
+ "name": "W 4 St & 7 Ave S",
+"idx":    162,
+"timestamp": "2013-08-19T22:32:15.386465",
+"number":    380,
+"free":     30,
+"bikes":      7,
+"coordinates": "",
+"address": "W 4 St & 7 Ave S",
+"lat": 4.0734e+07,
+"lng": -7.4003e+07,
+"id":    162,
+"fillColor": "#D7191C",
+"popup": "<b>W 4 St &amp; 7 Ave S</b><br>\n<b>Free Docks: </b> 30 <br>\n<b>Available Bikes:</b> 7<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386465" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.992, 40.735 ] 
+},
+"properties": {
+ "name": "University Pl & E 14 St",
+"idx":    163,
+"timestamp": "2013-08-19T22:32:15.386502",
+"number":    382,
+"free":     13,
+"bikes":     17,
+"coordinates": "",
+"address": "University Pl & E 14 St",
+"lat": 4.0735e+07,
+"lng": -7.3992e+07,
+"id":    163,
+"fillColor": "#FFFFBF",
+"popup": "<b>University Pl &amp; E 14 St</b><br>\n<b>Free Docks: </b> 13 <br>\n<b>Available Bikes:</b> 17<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386502" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.001, 40.736 ] 
+},
+"properties": {
+ "name": "Greenwich Ave & 7 Ave",
+"idx":    164,
+"timestamp": "2013-08-19T22:32:15.386537",
+"number":    383,
+"free":     35,
+"bikes":      4,
+"coordinates": "",
+"address": "Greenwich Ave & 7 Ave",
+"lat": 4.0736e+07,
+"lng": -7.4001e+07,
+"id":    164,
+"fillColor": "#D7191C",
+"popup": "<b>Greenwich Ave &amp; 7 Ave</b><br>\n<b>Free Docks: </b> 35 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386537" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.966, 40.683 ] 
+},
+"properties": {
+ "name": "Fulton St & Waverly Ave",
+"idx":    165,
+"timestamp": "2013-08-19T22:32:15.386571",
+"number":    384,
+"free":     15,
+"bikes":     15,
+"coordinates": "",
+"address": "Fulton St & Waverly Ave",
+"lat": 4.0683e+07,
+"lng": -7.3966e+07,
+"id":    165,
+"fillColor": "#FFFFBF",
+"popup": "<b>Fulton St &amp; Waverly Ave</b><br>\n<b>Free Docks: </b> 15 <br>\n<b>Available Bikes:</b> 15<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386571" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.966, 40.758 ] 
+},
+"properties": {
+ "name": "E 55 St & 2 Ave",
+"idx":    166,
+"timestamp": "2013-08-19T22:32:15.386607",
+"number":    385,
+"free":     24,
+"bikes":      4,
+"coordinates": "",
+"address": "E 55 St & 2 Ave",
+"lat": 4.0758e+07,
+"lng": -7.3966e+07,
+"id":    166,
+"fillColor": "#D7191C",
+"popup": "<b>E 55 St &amp; 2 Ave</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386607" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.002, 40.715 ] 
+},
+"properties": {
+ "name": "Centre St & Worth St",
+"idx":    167,
+"timestamp": "2013-08-19T22:32:15.386642",
+"number":    386,
+"free":     13,
+"bikes":     19,
+"coordinates": "",
+"address": "Centre St & Worth St",
+"lat": 4.0715e+07,
+"lng": -7.4002e+07,
+"id":    167,
+"fillColor": "#FFFFBF",
+"popup": "<b>Centre St &amp; Worth St</b><br>\n<b>Free Docks: </b> 13 <br>\n<b>Available Bikes:</b> 19<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386642" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.005, 40.713 ] 
+},
+"properties": {
+ "name": "Centre St & Chambers St",
+"idx":    168,
+"timestamp": "2013-08-19T22:32:15.386676",
+"number":    387,
+"free":     24,
+"bikes":     13,
+"coordinates": "",
+"address": "Centre St & Chambers St",
+"lat": 4.0713e+07,
+"lng": -7.4005e+07,
+"id":    168,
+"fillColor": "#FDAE61",
+"popup": "<b>Centre St &amp; Chambers St</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 13<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386676" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.003,  40.75 ] 
+},
+"properties": {
+ "name": "W 26 St & 10 Ave",
+"idx":    169,
+"timestamp": "2013-08-19T22:32:15.386713",
+"number":    388,
+"free":     14,
+"bikes":      7,
+"coordinates": "",
+"address": "W 26 St & 10 Ave",
+"lat": 4.075e+07,
+"lng": -7.4003e+07,
+"id":    169,
+"fillColor": "#FDAE61",
+"popup": "<b>W 26 St &amp; 10 Ave</b><br>\n<b>Free Docks: </b> 14 <br>\n<b>Available Bikes:</b> 7<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386713" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.965,  40.71 ] 
+},
+"properties": {
+ "name": "Broadway & Berry St",
+"idx":    170,
+"timestamp": "2013-08-19T22:32:15.386749",
+"number":    389,
+"free":     16,
+"bikes":     11,
+"coordinates": "",
+"address": "Broadway & Berry St",
+"lat": 4.071e+07,
+"lng": -7.3965e+07,
+"id":    170,
+"fillColor": "#FFFFBF",
+"popup": "<b>Broadway &amp; Berry St</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 11<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386749" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.984, 40.692 ] 
+},
+"properties": {
+ "name": "Duffield St & Willoughby St",
+"idx":    171,
+"timestamp": "2013-08-19T22:32:15.386785",
+"number":    390,
+"free":     26,
+"bikes":      5,
+"coordinates": "",
+"address": "Duffield St & Willoughby St",
+"lat": 4.0692e+07,
+"lng": -7.3984e+07,
+"id":    171,
+"fillColor": "#D7191C",
+"popup": "<b>Duffield St &amp; Willoughby St</b><br>\n<b>Free Docks: </b> 26 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386785" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.993, 40.698 ] 
+},
+"properties": {
+ "name": "Clark St & Henry St",
+"idx":    172,
+"timestamp": "2013-08-19T22:32:15.386821",
+"number":    391,
+"free":     18,
+"bikes":     11,
+"coordinates": "",
+"address": "Clark St & Henry St",
+"lat": 4.0698e+07,
+"lng": -7.3993e+07,
+"id":    172,
+"fillColor": "#FDAE61",
+"popup": "<b>Clark St &amp; Henry St</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 11<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386821" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.987, 40.695 ] 
+},
+"properties": {
+ "name": "Jay St & Tech Pl",
+"idx":    173,
+"timestamp": "2013-08-19T22:32:15.386858",
+"number":    392,
+"free":      7,
+"bikes":     23,
+"coordinates": "",
+"address": "Jay St & Tech Pl",
+"lat": 4.0695e+07,
+"lng": -7.3987e+07,
+"id":    173,
+"fillColor": "#A6D96A",
+"popup": "<b>Jay St &amp; Tech Pl</b><br>\n<b>Free Docks: </b> 7 <br>\n<b>Available Bikes:</b> 23<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386858" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.98, 40.723 ] 
+},
+"properties": {
+ "name": "E 5 St & Avenue C",
+"idx":    174,
+"timestamp": "2013-08-19T22:32:15.386897",
+"number":    393,
+"free":     26,
+"bikes":      4,
+"coordinates": "",
+"address": "E 5 St & Avenue C",
+"lat": 4.0723e+07,
+"lng": -7.398e+07,
+"id":    174,
+"fillColor": "#D7191C",
+"popup": "<b>E 5 St &amp; Avenue C</b><br>\n<b>Free Docks: </b> 26 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386897" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.978, 40.725 ] 
+},
+"properties": {
+ "name": "E 9 St & Avenue C",
+"idx":    175,
+"timestamp": "2013-08-19T22:32:15.386933",
+"number":    394,
+"free":     19,
+"bikes":     16,
+"coordinates": "",
+"address": "E 9 St & Avenue C",
+"lat": 4.0725e+07,
+"lng": -7.3978e+07,
+"id":    175,
+"fillColor": "#FFFFBF",
+"popup": "<b>E 9 St &amp; Avenue C</b><br>\n<b>Free Docks: </b> 19 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386933" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.984, 40.688 ] 
+},
+"properties": {
+ "name": "Bond St & Schermerhorn St",
+"idx":    176,
+"timestamp": "2013-08-19T22:32:15.386987",
+"number":    395,
+"free":     23,
+"bikes":      3,
+"coordinates": "",
+"address": "Bond St & Schermerhorn St",
+"lat": 4.0688e+07,
+"lng": -7.3984e+07,
+"id":    176,
+"fillColor": "#D7191C",
+"popup": "<b>Bond St &amp; Schermerhorn St</b><br>\n<b>Free Docks: </b> 23 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.386987" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.956,  40.68 ] 
+},
+"properties": {
+ "name": "Lefferts Pl & Franklin Ave",
+"idx":    177,
+"timestamp": "2013-08-19T22:32:15.387026",
+"number":    396,
+"free":      9,
+"bikes":     13,
+"coordinates": "",
+"address": "Lefferts Pl & Franklin Ave",
+"lat": 4.068e+07,
+"lng": -7.3956e+07,
+"id":    177,
+"fillColor": "#FFFFBF",
+"popup": "<b>Lefferts Pl &amp; Franklin Ave</b><br>\n<b>Free Docks: </b> 9 <br>\n<b>Available Bikes:</b> 13<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387026" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.969, 40.684 ] 
+},
+"properties": {
+ "name": "Fulton St & Clermont Ave",
+"idx":    178,
+"timestamp": "2013-08-19T22:32:15.387064",
+"number":    397,
+"free":     24,
+"bikes":      3,
+"coordinates": "",
+"address": "Fulton St & Clermont Ave",
+"lat": 4.0684e+07,
+"lng": -7.3969e+07,
+"id":    178,
+"fillColor": "#D7191C",
+"popup": "<b>Fulton St &amp; Clermont Ave</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387064" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [    -74, 40.692 ] 
+},
+"properties": {
+ "name": "Atlantic Ave & Furman St",
+"idx":    179,
+"timestamp": "2013-08-19T22:32:15.387100",
+"number":    398,
+"free":     12,
+"bikes":     16,
+"coordinates": "",
+"address": "Atlantic Ave & Furman St",
+"lat": 4.0692e+07,
+"lng": -7.4e+07,
+"id":    179,
+"fillColor": "#FFFFBF",
+"popup": "<b>Atlantic Ave &amp; Furman St</b><br>\n<b>Free Docks: </b> 12 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387100" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.965, 40.689 ] 
+},
+"properties": {
+ "name": "St James Pl & Lafayette Ave",
+"idx":    180,
+"timestamp": "2013-08-19T22:32:15.387137",
+"number":    399,
+"free":      9,
+"bikes":     16,
+"coordinates": "",
+"address": "St James Pl & Lafayette Ave",
+"lat": 4.0689e+07,
+"lng": -7.3965e+07,
+"id":    180,
+"fillColor": "#A6D96A",
+"popup": "<b>St James Pl &amp; Lafayette Ave</b><br>\n<b>Free Docks: </b> 9 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387137" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.982, 40.719 ] 
+},
+"properties": {
+ "name": "Pitt St & Stanton St",
+"idx":    181,
+"timestamp": "2013-08-19T22:32:15.387173",
+"number":    400,
+"free":     15,
+"bikes":      0,
+"coordinates": "",
+"address": "Pitt St & Stanton St",
+"lat": 4.0719e+07,
+"lng": -7.3982e+07,
+"id":    181,
+"fillColor": "#D7191C",
+"popup": "<b>Pitt St &amp; Stanton St</b><br>\n<b>Free Docks: </b> 15 <br>\n<b>Available Bikes:</b> 0<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387173" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.99,  40.72 ] 
+},
+"properties": {
+ "name": "Allen St & Rivington St",
+"idx":    182,
+"timestamp": "2013-08-19T22:32:15.387211",
+"number":    401,
+"free":     32,
+"bikes":      3,
+"coordinates": "",
+"address": "Allen St & Rivington St",
+"lat": 4.072e+07,
+"lng": -7.399e+07,
+"id":    182,
+"fillColor": "#D7191C",
+"popup": "<b>Allen St &amp; Rivington St</b><br>\n<b>Free Docks: </b> 32 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387211" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.99,  40.74 ] 
+},
+"properties": {
+ "name": "Broadway & E 22 St",
+"idx":    183,
+"timestamp": "2013-08-19T22:32:15.387247",
+"number":    402,
+"free":      8,
+"bikes":     27,
+"coordinates": "",
+"address": "Broadway & E 22 St",
+"lat": 4.074e+07,
+"lng": -7.399e+07,
+"id":    183,
+"fillColor": "#A6D96A",
+"popup": "<b>Broadway &amp; E 22 St</b><br>\n<b>Free Docks: </b> 8 <br>\n<b>Available Bikes:</b> 27<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387247" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991, 40.725 ] 
+},
+"properties": {
+ "name": "E 2 St & 2 Ave",
+"idx":    184,
+"timestamp": "2013-08-19T22:32:15.387281",
+"number":    403,
+"free":     28,
+"bikes":      1,
+"coordinates": "",
+"address": "E 2 St & 2 Ave",
+"lat": 4.0725e+07,
+"lng": -7.3991e+07,
+"id":    184,
+"fillColor": "#D7191C",
+"popup": "<b>E 2 St &amp; 2 Ave</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387281" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.741 ] 
+},
+"properties": {
+ "name": "9 Ave & W 14 St",
+"idx":    185,
+"timestamp": "2013-08-19T22:32:15.387317",
+"number":    404,
+"free":     21,
+"bikes":     16,
+"coordinates": "",
+"address": "9 Ave & W 14 St",
+"lat": 4.0741e+07,
+"lng": -7.4006e+07,
+"id":    185,
+"fillColor": "#FFFFBF",
+"popup": "<b>9 Ave &amp; W 14 St</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387317" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.008, 40.739 ] 
+},
+"properties": {
+ "name": "Washington St & Gansevoort St",
+"idx":    186,
+"timestamp": "2013-08-19T22:32:15.387355",
+"number":    405,
+"free":     34,
+"bikes":      4,
+"coordinates": "",
+"address": "Washington St & Gansevoort St",
+"lat": 4.0739e+07,
+"lng": -7.4008e+07,
+"id":    186,
+"fillColor": "#D7191C",
+"popup": "<b>Washington St &amp; Gansevoort St</b><br>\n<b>Free Docks: </b> 34 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387355" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.996, 40.695 ] 
+},
+"properties": {
+ "name": "Hicks St & Montague St",
+"idx":    187,
+"timestamp": "2013-08-19T22:32:15.387392",
+"number":    406,
+"free":     29,
+"bikes":      3,
+"coordinates": "",
+"address": "Hicks St & Montague St",
+"lat": 4.0695e+07,
+"lng": -7.3996e+07,
+"id":    187,
+"fillColor": "#D7191C",
+"popup": "<b>Hicks St &amp; Montague St</b><br>\n<b>Free Docks: </b> 29 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387392" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991,   40.7 ] 
+},
+"properties": {
+ "name": "Henry St & Poplar St",
+"idx":    188,
+"timestamp": "2013-08-19T22:32:15.387429",
+"number":    407,
+"free":     38,
+"bikes":      3,
+"coordinates": "",
+"address": "Henry St & Poplar St",
+"lat": 4.07e+07,
+"lng": -7.3991e+07,
+"id":    188,
+"fillColor": "#D7191C",
+"popup": "<b>Henry St &amp; Poplar St</b><br>\n<b>Free Docks: </b> 38 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387429" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.994, 40.711 ] 
+},
+"properties": {
+ "name": "Market St & Cherry St",
+"idx":    189,
+"timestamp": "2013-08-19T22:32:15.387465",
+"number":    408,
+"free":     20,
+"bikes":      1,
+"coordinates": "",
+"address": "Market St & Cherry St",
+"lat": 4.0711e+07,
+"lng": -7.3994e+07,
+"id":    189,
+"fillColor": "#D7191C",
+"popup": "<b>Market St &amp; Cherry St</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387465" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.956, 40.691 ] 
+},
+"properties": {
+ "name": "DeKalb Ave & Skillman St",
+"idx":    190,
+"timestamp": "2013-08-19T22:32:15.387501",
+"number":    409,
+"free":      9,
+"bikes":      7,
+"coordinates": "",
+"address": "DeKalb Ave & Skillman St",
+"lat": 4.0691e+07,
+"lng": -7.3956e+07,
+"id":    190,
+"fillColor": "#FFFFBF",
+"popup": "<b>DeKalb Ave &amp; Skillman St</b><br>\n<b>Free Docks: </b> 9 <br>\n<b>Available Bikes:</b> 7<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387501" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.985, 40.721 ] 
+},
+"properties": {
+ "name": "Suffolk St & Stanton St",
+"idx":    191,
+"timestamp": "2013-08-19T22:32:15.387538",
+"number":    410,
+"free":     31,
+"bikes":      2,
+"coordinates": "",
+"address": "Suffolk St & Stanton St",
+"lat": 4.0721e+07,
+"lng": -7.3985e+07,
+"id":    191,
+"fillColor": "#D7191C",
+"popup": "<b>Suffolk St &amp; Stanton St</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387538" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.977, 40.722 ] 
+},
+"properties": {
+ "name": "E 6 St & Avenue D",
+"idx":    192,
+"timestamp": "2013-08-19T22:32:15.387573",
+"number":    411,
+"free":     17,
+"bikes":      1,
+"coordinates": "",
+"address": "E 6 St & Avenue D",
+"lat": 4.0722e+07,
+"lng": -7.3977e+07,
+"id":    192,
+"fillColor": "#D7191C",
+"popup": "<b>E 6 St &amp; Avenue D</b><br>\n<b>Free Docks: </b> 17 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387573" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.994, 40.716 ] 
+},
+"properties": {
+ "name": "Forsyth St & Canal St",
+"idx":    193,
+"timestamp": "2013-08-19T22:32:15.387656",
+"number":    412,
+"free":     14,
+"bikes":     12,
+"coordinates": "",
+"address": "Forsyth St & Canal St",
+"lat": 4.0716e+07,
+"lng": -7.3994e+07,
+"id":    193,
+"fillColor": "#FFFFBF",
+"popup": "<b>Forsyth St &amp; Canal St</b><br>\n<b>Free Docks: </b> 14 <br>\n<b>Available Bikes:</b> 12<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387656" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.703 ] 
+},
+"properties": {
+ "name": "Pearl St & Anchorage Pl",
+"idx":    194,
+"timestamp": "2013-08-19T22:32:15.387697",
+"number":    414,
+"free":      0,
+"bikes":     23,
+"coordinates": "",
+"address": "Pearl St & Anchorage Pl",
+"lat": 4.0703e+07,
+"lng": -7.3988e+07,
+"id":    194,
+"fillColor": "#1A9641",
+"popup": "<b>Pearl St &amp; Anchorage Pl</b><br>\n<b>Free Docks: </b> 0 <br>\n<b>Available Bikes:</b> 23<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387697" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.009, 40.705 ] 
+},
+"properties": {
+ "name": "Pearl St & Hanover Square",
+"idx":    195,
+"timestamp": "2013-08-19T22:32:15.387744",
+"number":    415,
+"free":      5,
+"bikes":     31,
+"coordinates": "",
+"address": "Pearl St & Hanover Square",
+"lat": 4.0705e+07,
+"lng": -7.4009e+07,
+"id":    195,
+"fillColor": "#1A9641",
+"popup": "<b>Pearl St &amp; Hanover Square</b><br>\n<b>Free Docks: </b> 5 <br>\n<b>Available Bikes:</b> 31<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387744" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.973, 40.688 ] 
+},
+"properties": {
+ "name": "Cumberland St & Lafayette Ave",
+"idx":    196,
+"timestamp": "2013-08-19T22:32:15.387780",
+"number":    416,
+"free":     31,
+"bikes":      0,
+"coordinates": "",
+"address": "Cumberland St & Lafayette Ave",
+"lat": 4.0688e+07,
+"lng": -7.3973e+07,
+"id":    196,
+"fillColor": "#D7191C",
+"popup": "<b>Cumberland St &amp; Lafayette Ave</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 0<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387780" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.01, 40.713 ] 
+},
+"properties": {
+ "name": "Barclay St & Church St",
+"idx":    197,
+"timestamp": "2013-08-19T22:32:15.387817",
+"number":    417,
+"free":     22,
+"bikes":     22,
+"coordinates": "",
+"address": "Barclay St & Church St",
+"lat": 4.0713e+07,
+"lng": -7.401e+07,
+"id":    197,
+"fillColor": "#FFFFBF",
+"popup": "<b>Barclay St &amp; Church St</b><br>\n<b>Free Docks: </b> 22 <br>\n<b>Available Bikes:</b> 22<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387817" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983, 40.702 ] 
+},
+"properties": {
+ "name": "Front St & Gold St",
+"idx":    198,
+"timestamp": "2013-08-19T22:32:15.387850",
+"number":    418,
+"free":     13,
+"bikes":     10,
+"coordinates": "",
+"address": "Front St & Gold St",
+"lat": 4.0702e+07,
+"lng": -7.3983e+07,
+"id":    198,
+"fillColor": "#FFFFBF",
+"popup": "<b>Front St &amp; Gold St</b><br>\n<b>Free Docks: </b> 13 <br>\n<b>Available Bikes:</b> 10<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387850" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.974, 40.696 ] 
+},
+"properties": {
+ "name": "Carlton Ave & Park Ave",
+"idx":    199,
+"timestamp": "2013-08-19T22:32:15.387886",
+"number":    419,
+"free":     18,
+"bikes":      3,
+"coordinates": "",
+"address": "Carlton Ave & Park Ave",
+"lat": 4.0696e+07,
+"lng": -7.3974e+07,
+"id":    199,
+"fillColor": "#D7191C",
+"popup": "<b>Carlton Ave &amp; Park Ave</b><br>\n<b>Free Docks: </b> 18 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387886" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.97, 40.688 ] 
+},
+"properties": {
+ "name": "Clermont Ave & Lafayette Ave",
+"idx":    200,
+"timestamp": "2013-08-19T22:32:15.387921",
+"number":    420,
+"free":     16,
+"bikes":      7,
+"coordinates": "",
+"address": "Clermont Ave & Lafayette Ave",
+"lat": 4.0688e+07,
+"lng": -7.397e+07,
+"id":    200,
+"fillColor": "#FDAE61",
+"popup": "<b>Clermont Ave &amp; Lafayette Ave</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 7<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387921" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.971, 40.696 ] 
+},
+"properties": {
+ "name": "Clermont Ave & Park Ave",
+"idx":    201,
+"timestamp": "2013-08-19T22:32:15.387955",
+"number":    421,
+"free":     16,
+"bikes":      2,
+"coordinates": "",
+"address": "Clermont Ave & Park Ave",
+"lat": 4.0696e+07,
+"lng": -7.3971e+07,
+"id":    201,
+"fillColor": "#D7191C",
+"popup": "<b>Clermont Ave &amp; Park Ave</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.387955" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.771 ] 
+},
+"properties": {
+ "name": "W 59 St & 10 Ave",
+"idx":    202,
+"timestamp": "2013-08-19T22:32:15.388013",
+"number":    422,
+"free":     50,
+"bikes":      4,
+"coordinates": "",
+"address": "W 59 St & 10 Ave",
+"lat": 4.0771e+07,
+"lng": -7.3988e+07,
+"id":    202,
+"fillColor": "#D7191C",
+"popup": "<b>W 59 St &amp; 10 Ave</b><br>\n<b>Free Docks: </b> 50 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388013" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.987, 40.766 ] 
+},
+"properties": {
+ "name": "W 54 St & 9 Ave",
+"idx":    203,
+"timestamp": "2013-08-19T22:32:15.388049",
+"number":    423,
+"free":     36,
+"bikes":      2,
+"coordinates": "",
+"address": "W 54 St & 9 Ave",
+"lat": 4.0766e+07,
+"lng": -7.3987e+07,
+"id":    203,
+"fillColor": "#D7191C",
+"popup": "<b>W 54 St &amp; 9 Ave</b><br>\n<b>Free Docks: </b> 36 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388049" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.013, 40.718 ] 
+},
+"properties": {
+ "name": "West St & Chambers St",
+"idx":    204,
+"timestamp": "2013-08-19T22:32:15.388086",
+"number":    426,
+"free":      7,
+"bikes":     20,
+"coordinates": "",
+"address": "West St & Chambers St",
+"lat": 4.0718e+07,
+"lng": -7.4013e+07,
+"id":    204,
+"fillColor": "#A6D96A",
+"popup": "<b>West St &amp; Chambers St</b><br>\n<b>Free Docks: </b> 7 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388086" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.014, 40.703 ] 
+},
+"properties": {
+ "name": "State St",
+"idx":    205,
+"timestamp": "2013-08-19T22:32:15.388123",
+"number":    427,
+"free":     10,
+"bikes":     49,
+"coordinates": "",
+"address": "State St",
+"lat": 4.0703e+07,
+"lng": -7.4014e+07,
+"id":    205,
+"fillColor": "#1A9641",
+"popup": "<b>State St</b><br>\n<b>Free Docks: </b> 10 <br>\n<b>Available Bikes:</b> 49<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388123" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.725 ] 
+},
+"properties": {
+ "name": "E 3 St & 1 Ave",
+"idx":    206,
+"timestamp": "2013-08-19T22:32:15.388161",
+"number":    428,
+"free":     27,
+"bikes":      4,
+"coordinates": "",
+"address": "E 3 St & 1 Ave",
+"lat": 4.0725e+07,
+"lng": -7.3988e+07,
+"id":    206,
+"fillColor": "#D7191C",
+"popup": "<b>E 3 St &amp; 1 Ave</b><br>\n<b>Free Docks: </b> 27 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388161" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.987, 40.701 ] 
+},
+"properties": {
+ "name": "York St & Jay St",
+"idx":    207,
+"timestamp": "2013-08-19T22:32:15.388197",
+"number":    430,
+"free":      7,
+"bikes":     18,
+"coordinates": "",
+"address": "York St & Jay St",
+"lat": 4.0701e+07,
+"lng": -7.3987e+07,
+"id":    207,
+"fillColor": "#A6D96A",
+"popup": "<b>York St &amp; Jay St</b><br>\n<b>Free Docks: </b> 7 <br>\n<b>Available Bikes:</b> 18<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388197" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983, 40.689 ] 
+},
+"properties": {
+ "name": "Hanover Pl & Livingston St",
+"idx":    208,
+"timestamp": "2013-08-19T22:32:15.388233",
+"number":    431,
+"free":     23,
+"bikes":      7,
+"coordinates": "",
+"address": "Hanover Pl & Livingston St",
+"lat": 4.0689e+07,
+"lng": -7.3983e+07,
+"id":    208,
+"fillColor": "#FDAE61",
+"popup": "<b>Hanover Pl &amp; Livingston St</b><br>\n<b>Free Docks: </b> 23 <br>\n<b>Available Bikes:</b> 7<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388233" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.984, 40.726 ] 
+},
+"properties": {
+ "name": "E 7 St & Avenue A",
+"idx":    209,
+"timestamp": "2013-08-19T22:32:15.388269",
+"number":    432,
+"free":     26,
+"bikes":      4,
+"coordinates": "",
+"address": "E 7 St & Avenue A",
+"lat": 4.0726e+07,
+"lng": -7.3984e+07,
+"id":    209,
+"fillColor": "#D7191C",
+"popup": "<b>E 7 St &amp; Avenue A</b><br>\n<b>Free Docks: </b> 26 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388269" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.981,  40.73 ] 
+},
+"properties": {
+ "name": "E 13 St & Avenue A",
+"idx":    210,
+"timestamp": "2013-08-19T22:32:15.388305",
+"number":    433,
+"free":     33,
+"bikes":      3,
+"coordinates": "",
+"address": "E 13 St & Avenue A",
+"lat": 4.073e+07,
+"lng": -7.3981e+07,
+"id":    210,
+"fillColor": "#D7191C",
+"popup": "<b>E 13 St &amp; Avenue A</b><br>\n<b>Free Docks: </b> 33 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388305" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.004, 40.743 ] 
+},
+"properties": {
+ "name": "9 Ave & W 18 St",
+"idx":    211,
+"timestamp": "2013-08-19T22:32:15.388345",
+"number":    434,
+"free":      8,
+"bikes":     19,
+"coordinates": "",
+"address": "9 Ave & W 18 St",
+"lat": 4.0743e+07,
+"lng": -7.4004e+07,
+"id":    211,
+"fillColor": "#A6D96A",
+"popup": "<b>9 Ave &amp; W 18 St</b><br>\n<b>Free Docks: </b> 8 <br>\n<b>Available Bikes:</b> 19<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388345" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.994, 40.742 ] 
+},
+"properties": {
+ "name": "W 21 St & 6 Ave",
+"idx":    212,
+"timestamp": "2013-08-19T22:32:15.388383",
+"number":    435,
+"free":     15,
+"bikes":     27,
+"coordinates": "",
+"address": "W 21 St & 6 Ave",
+"lat": 4.0742e+07,
+"lng": -7.3994e+07,
+"id":    212,
+"fillColor": "#A6D96A",
+"popup": "<b>W 21 St &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 15 <br>\n<b>Available Bikes:</b> 27<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388383" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.954, 40.682 ] 
+},
+"properties": {
+ "name": "Hancock St & Bedford Ave",
+"idx":    213,
+"timestamp": "2013-08-19T22:32:15.388419",
+"number":    436,
+"free":     12,
+"bikes":     14,
+"coordinates": "",
+"address": "Hancock St & Bedford Ave",
+"lat": 4.0682e+07,
+"lng": -7.3954e+07,
+"id":    213,
+"fillColor": "#FFFFBF",
+"popup": "<b>Hancock St &amp; Bedford Ave</b><br>\n<b>Free Docks: </b> 12 <br>\n<b>Available Bikes:</b> 14<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388419" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.95, 40.681 ] 
+},
+"properties": {
+ "name": "Macon St & Nostrand Ave",
+"idx":    214,
+"timestamp": "2013-08-19T22:32:15.388456",
+"number":    437,
+"free":     22,
+"bikes":      3,
+"coordinates": "",
+"address": "Macon St & Nostrand Ave",
+"lat": 4.0681e+07,
+"lng": -7.395e+07,
+"id":    214,
+"fillColor": "#D7191C",
+"popup": "<b>Macon St &amp; Nostrand Ave</b><br>\n<b>Free Docks: </b> 22 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388456" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.986, 40.728 ] 
+},
+"properties": {
+ "name": "St Marks Pl & 1 Ave",
+"idx":    215,
+"timestamp": "2013-08-19T22:32:15.388493",
+"number":    438,
+"free":     23,
+"bikes":      4,
+"coordinates": "",
+"address": "St Marks Pl & 1 Ave",
+"lat": 4.0728e+07,
+"lng": -7.3986e+07,
+"id":    215,
+"fillColor": "#D7191C",
+"popup": "<b>St Marks Pl &amp; 1 Ave</b><br>\n<b>Free Docks: </b> 23 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388493" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.99, 40.726 ] 
+},
+"properties": {
+ "name": "E 4 St & 2 Ave",
+"idx":    216,
+"timestamp": "2013-08-19T22:32:15.388529",
+"number":    439,
+"free":     36,
+"bikes":      1,
+"coordinates": "",
+"address": "E 4 St & 2 Ave",
+"lat": 4.0726e+07,
+"lng": -7.399e+07,
+"id":    216,
+"fillColor": "#D7191C",
+"popup": "<b>E 4 St &amp; 2 Ave</b><br>\n<b>Free Docks: </b> 36 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388529" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.973, 40.753 ] 
+},
+"properties": {
+ "name": "E 45 St & 3 Ave",
+"idx":    217,
+"timestamp": "2013-08-19T22:32:15.388565",
+"number":    440,
+"free":     11,
+"bikes":     20,
+"coordinates": "",
+"address": "E 45 St & 3 Ave",
+"lat": 4.0753e+07,
+"lng": -7.3973e+07,
+"id":    217,
+"fillColor": "#A6D96A",
+"popup": "<b>E 45 St &amp; 3 Ave</b><br>\n<b>Free Docks: </b> 11 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388565" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.994, 40.747 ] 
+},
+"properties": {
+ "name": "W 27 St & 7 Ave",
+"idx":    218,
+"timestamp": "2013-08-19T22:32:15.388603",
+"number":    442,
+"free":     47,
+"bikes":      3,
+"coordinates": "",
+"address": "W 27 St & 7 Ave",
+"lat": 4.0747e+07,
+"lng": -7.3994e+07,
+"id":    218,
+"fillColor": "#D7191C",
+"popup": "<b>W 27 St &amp; 7 Ave</b><br>\n<b>Free Docks: </b> 47 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388603" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.964, 40.709 ] 
+},
+"properties": {
+ "name": "Bedford Ave & S 9 St",
+"idx":    219,
+"timestamp": "2013-08-19T22:32:15.388716",
+"number":    443,
+"free":     13,
+"bikes":     10,
+"coordinates": "",
+"address": "Bedford Ave & S 9th St",
+"lat": 4.0709e+07,
+"lng": -7.3964e+07,
+"id":    219,
+"fillColor": "#FFFFBF",
+"popup": "<b>Bedford Ave &amp; S 9 St</b><br>\n<b>Free Docks: </b> 13 <br>\n<b>Available Bikes:</b> 10<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388716" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.989, 40.742 ] 
+},
+"properties": {
+ "name": "Broadway & W 24 St",
+"idx":    220,
+"timestamp": "2013-08-19T22:32:15.388761",
+"number":    444,
+"free":     27,
+"bikes":     20,
+"coordinates": "",
+"address": "Broadway & W 24 St",
+"lat": 4.0742e+07,
+"lng": -7.3989e+07,
+"id":    220,
+"fillColor": "#FFFFBF",
+"popup": "<b>Broadway &amp; W 24 St</b><br>\n<b>Free Docks: </b> 27 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388761" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.981, 40.727 ] 
+},
+"properties": {
+ "name": "E 10 St & Avenue A",
+"idx":    221,
+"timestamp": "2013-08-19T22:32:15.388797",
+"number":    445,
+"free":     28,
+"bikes":      7,
+"coordinates": "",
+"address": "E 10 St & Avenue A",
+"lat": 4.0727e+07,
+"lng": -7.3981e+07,
+"id":    221,
+"fillColor": "#D7191C",
+"popup": "<b>E 10 St &amp; Avenue A</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 7<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388797" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.995, 40.745 ] 
+},
+"properties": {
+ "name": "W 24 St & 7 Ave",
+"idx":    222,
+"timestamp": "2013-08-19T22:32:15.388830",
+"number":    446,
+"free":      9,
+"bikes":     26,
+"coordinates": "",
+"address": "W 24 St & 7 Ave",
+"lat": 4.0745e+07,
+"lng": -7.3995e+07,
+"id":    222,
+"fillColor": "#A6D96A",
+"popup": "<b>W 24 St &amp; 7 Ave</b><br>\n<b>Free Docks: </b> 9 <br>\n<b>Available Bikes:</b> 26<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388830" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.985, 40.764 ] 
+},
+"properties": {
+ "name": "8  Ave & W 52 St",
+"idx":    223,
+"timestamp": "2013-08-19T22:32:15.388865",
+"number":    447,
+"free":     25,
+"bikes":      0,
+"coordinates": "",
+"address": "8 Ave & W 52 St",
+"lat": 4.0764e+07,
+"lng": -7.3985e+07,
+"id":    223,
+"fillColor": "#D7191C",
+"popup": "<b>8  Ave &amp; W 52 St</b><br>\n<b>Free Docks: </b> 25 <br>\n<b>Available Bikes:</b> 0<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388865" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.998, 40.757 ] 
+},
+"properties": {
+ "name": "W 37 St & 10 Ave",
+"idx":    224,
+"timestamp": "2013-08-19T22:32:15.388902",
+"number":    448,
+"free":     26,
+"bikes":      2,
+"coordinates": "",
+"address": "W 37 St & 10 Ave",
+"lat": 4.0757e+07,
+"lng": -7.3998e+07,
+"id":    224,
+"fillColor": "#D7191C",
+"popup": "<b>W 37 St &amp; 10 Ave</b><br>\n<b>Free Docks: </b> 26 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388902" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.765 ] 
+},
+"properties": {
+ "name": "W 52 St & 9 Ave",
+"idx":    225,
+"timestamp": "2013-08-19T22:32:15.388939",
+"number":    449,
+"free":     28,
+"bikes":      1,
+"coordinates": "",
+"address": "W 52 St & 9 Ave",
+"lat": 4.0765e+07,
+"lng": -7.3988e+07,
+"id":    225,
+"fillColor": "#D7191C",
+"popup": "<b>W 52 St &amp; 9 Ave</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388939" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.762 ] 
+},
+"properties": {
+ "name": "W 49 St & 8 Ave",
+"idx":    226,
+"timestamp": "2013-08-19T22:32:15.388973",
+"number":    450,
+"free":     45,
+"bikes":     12,
+"coordinates": "",
+"address": "W 49 St & 8 Ave",
+"lat": 4.0762e+07,
+"lng": -7.3988e+07,
+"id":    226,
+"fillColor": "#FDAE61",
+"popup": "<b>W 49 St &amp; 8 Ave</b><br>\n<b>Free Docks: </b> 45 <br>\n<b>Available Bikes:</b> 12<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.388973" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.999, 40.745 ] 
+},
+"properties": {
+ "name": "W 22 St & 8 Ave",
+"idx":    227,
+"timestamp": "2013-08-19T22:32:15.389042",
+"number":    453,
+"free":     27,
+"bikes":     10,
+"coordinates": "",
+"address": "W 22 St & 8 Ave",
+"lat": 4.0745e+07,
+"lng": -7.3999e+07,
+"id":    227,
+"fillColor": "#FDAE61",
+"popup": "<b>W 22 St &amp; 8 Ave</b><br>\n<b>Free Docks: </b> 27 <br>\n<b>Available Bikes:</b> 10<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389042" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.966, 40.755 ] 
+},
+"properties": {
+ "name": "E 51 St & 1 Ave",
+"idx":    228,
+"timestamp": "2013-08-19T22:32:15.389080",
+"number":    454,
+"free":     23,
+"bikes":      8,
+"coordinates": "",
+"address": "E 51 St & 1 Ave",
+"lat": 4.0755e+07,
+"lng": -7.3966e+07,
+"id":    228,
+"fillColor": "#FDAE61",
+"popup": "<b>E 51 St &amp; 1 Ave</b><br>\n<b>Free Docks: </b> 23 <br>\n<b>Available Bikes:</b> 8<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389080" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.969,  40.75 ] 
+},
+"properties": {
+ "name": "1 Ave & E 44 St",
+"idx":    229,
+"timestamp": "2013-08-19T22:32:15.389117",
+"number":    455,
+"free":      3,
+"bikes":     33,
+"coordinates": "",
+"address": "1 Ave & E 44 St",
+"lat": 4.075e+07,
+"lng": -7.3969e+07,
+"id":    229,
+"fillColor": "#1A9641",
+"popup": "<b>1 Ave &amp; E 44 St</b><br>\n<b>Free Docks: </b> 3 <br>\n<b>Available Bikes:</b> 33<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389117" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.974,  40.76 ] 
+},
+"properties": {
+ "name": "E 53 St & Madison Ave",
+"idx":    230,
+"timestamp": "2013-08-19T22:32:15.389152",
+"number":    456,
+"free":     21,
+"bikes":     12,
+"coordinates": "",
+"address": "E 53 St & Madison Ave",
+"lat": 4.076e+07,
+"lng": -7.3974e+07,
+"id":    230,
+"fillColor": "#FDAE61",
+"popup": "<b>E 53 St &amp; Madison Ave</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 12<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389152" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.982, 40.767 ] 
+},
+"properties": {
+ "name": "Broadway & W 57 St",
+"idx":    231,
+"timestamp": "2013-08-19T22:32:15.389186",
+"number":    457,
+"free":     50,
+"bikes":      4,
+"coordinates": "",
+"address": "Broadway & W 57 St",
+"lat": 4.0767e+07,
+"lng": -7.3982e+07,
+"id":    231,
+"fillColor": "#D7191C",
+"popup": "<b>Broadway &amp; W 57 St</b><br>\n<b>Free Docks: </b> 50 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389186" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.007, 40.748 ] 
+},
+"properties": {
+ "name": "W 22 St & 11 Ave",
+"idx":    232,
+"timestamp": "2013-08-19T22:32:15.389221",
+"number":    458,
+"free":      7,
+"bikes":     16,
+"coordinates": "",
+"address": "W 22 St & 11 Ave",
+"lat": 4.0748e+07,
+"lng": -7.4007e+07,
+"id":    232,
+"fillColor": "#A6D96A",
+"popup": "<b>W 22 St &amp; 11 Ave</b><br>\n<b>Free Docks: </b> 7 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389221" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.008, 40.745 ] 
+},
+"properties": {
+ "name": "W 18 St & 11 Ave",
+"idx":    233,
+"timestamp": "2013-08-19T22:32:15.389255",
+"number":    459,
+"free":      3,
+"bikes":     16,
+"coordinates": "",
+"address": "W 18 St & 11 Ave",
+"lat": 4.0745e+07,
+"lng": -7.4008e+07,
+"id":    233,
+"fillColor": "#1A9641",
+"popup": "<b>W 18 St &amp; 11 Ave</b><br>\n<b>Free Docks: </b> 3 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389255" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.966, 40.713 ] 
+},
+"properties": {
+ "name": "S 4 St & Wythe Ave",
+"idx":    234,
+"timestamp": "2013-08-19T22:32:15.389291",
+"number":    460,
+"free":     16,
+"bikes":      5,
+"coordinates": "",
+"address": "S 4 St & Wythe Ave",
+"lat": 4.0713e+07,
+"lng": -7.3966e+07,
+"id":    234,
+"fillColor": "#FDAE61",
+"popup": "<b>S 4 St &amp; Wythe Ave</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389291" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.982, 40.736 ] 
+},
+"properties": {
+ "name": "E 20 St & 2 Ave",
+"idx":    235,
+"timestamp": "2013-08-19T22:32:15.389328",
+"number":    461,
+"free":     34,
+"bikes":      3,
+"coordinates": "",
+"address": "E 20 St & 2 Ave",
+"lat": 4.0736e+07,
+"lng": -7.3982e+07,
+"id":    235,
+"fillColor": "#D7191C",
+"popup": "<b>E 20 St &amp; 2 Ave</b><br>\n<b>Free Docks: </b> 34 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389328" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.005, 40.747 ] 
+},
+"properties": {
+ "name": "W 22 St & 10 Ave",
+"idx":    236,
+"timestamp": "2013-08-19T22:32:15.389367",
+"number":    462,
+"free":     11,
+"bikes":     34,
+"coordinates": "",
+"address": "W 22 St & 10 Ave",
+"lat": 4.0747e+07,
+"lng": -7.4005e+07,
+"id":    236,
+"fillColor": "#A6D96A",
+"popup": "<b>W 22 St &amp; 10 Ave</b><br>\n<b>Free Docks: </b> 11 <br>\n<b>Available Bikes:</b> 34<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389367" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.004, 40.742 ] 
+},
+"properties": {
+ "name": "9 Ave & W 16 St",
+"idx":    237,
+"timestamp": "2013-08-19T22:32:15.389400",
+"number":    463,
+"free":     10,
+"bikes":     12,
+"coordinates": "",
+"address": "9 Ave & W 16 St",
+"lat": 4.0742e+07,
+"lng": -7.4004e+07,
+"id":    237,
+"fillColor": "#FFFFBF",
+"popup": "<b>9 Ave &amp; W 16 St</b><br>\n<b>Free Docks: </b> 10 <br>\n<b>Available Bikes:</b> 12<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389400" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.968, 40.759 ] 
+},
+"properties": {
+ "name": "E 56 St & 3 Ave",
+"idx":    238,
+"timestamp": "2013-08-19T22:32:15.389436",
+"number":    464,
+"free":     11,
+"bikes":     40,
+"coordinates": "",
+"address": "E 56 St & 3 Ave",
+"lat": 4.0759e+07,
+"lng": -7.3968e+07,
+"id":    238,
+"fillColor": "#A6D96A",
+"popup": "<b>E 56 St &amp; 3 Ave</b><br>\n<b>Free Docks: </b> 11 <br>\n<b>Available Bikes:</b> 40<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389436" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.987, 40.755 ] 
+},
+"properties": {
+ "name": "Broadway & W 41 St",
+"idx":    239,
+"timestamp": "2013-08-19T22:32:15.389474",
+"number":    465,
+"free":     37,
+"bikes":      1,
+"coordinates": "",
+"address": "Broadway & W 41 St",
+"lat": 4.0755e+07,
+"lng": -7.3987e+07,
+"id":    239,
+"fillColor": "#D7191C",
+"popup": "<b>Broadway &amp; W 41 St</b><br>\n<b>Free Docks: </b> 37 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389474" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991, 40.744 ] 
+},
+"properties": {
+ "name": "W 25 St & 6 Ave",
+"idx":    240,
+"timestamp": "2013-08-19T22:32:15.389511",
+"number":    466,
+"free":     13,
+"bikes":     20,
+"coordinates": "",
+"address": "W 25 St & 6 Ave",
+"lat": 4.0744e+07,
+"lng": -7.3991e+07,
+"id":    240,
+"fillColor": "#A6D96A",
+"popup": "<b>W 25 St &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 13 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389511" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.979, 40.683 ] 
+},
+"properties": {
+ "name": "Dean St & 4 Ave",
+"idx":    241,
+"timestamp": "2013-08-19T22:32:15.389544",
+"number":    467,
+"free":     27,
+"bikes":      5,
+"coordinates": "",
+"address": "Dean St & 4 Ave",
+"lat": 4.0683e+07,
+"lng": -7.3979e+07,
+"id":    241,
+"fillColor": "#D7191C",
+"popup": "<b>Dean St &amp; 4 Ave</b><br>\n<b>Free Docks: </b> 27 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389544" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.982, 40.765 ] 
+},
+"properties": {
+ "name": "Broadway & W 55 St",
+"idx":    242,
+"timestamp": "2013-08-19T22:32:15.389579",
+"number":    468,
+"free":     50,
+"bikes":      7,
+"coordinates": "",
+"address": "Broadway & W 55 St",
+"lat": 4.0765e+07,
+"lng": -7.3982e+07,
+"id":    242,
+"fillColor": "#D7191C",
+"popup": "<b>Broadway &amp; W 55 St</b><br>\n<b>Free Docks: </b> 50 <br>\n<b>Available Bikes:</b> 7<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389579" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983, 40.763 ] 
+},
+"properties": {
+ "name": "Broadway & W 53 St",
+"idx":    243,
+"timestamp": "2013-08-19T22:32:15.389615",
+"number":    469,
+"free":     45,
+"bikes":      9,
+"coordinates": "",
+"address": "Broadway & W 53 St",
+"lat": 4.0763e+07,
+"lng": -7.3983e+07,
+"id":    243,
+"fillColor": "#D7191C",
+"popup": "<b>Broadway &amp; W 53 St</b><br>\n<b>Free Docks: </b> 45 <br>\n<b>Available Bikes:</b> 9<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389615" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [    -74, 40.743 ] 
+},
+"properties": {
+ "name": "W 20 St & 8 Ave",
+"idx":    244,
+"timestamp": "2013-08-19T22:32:15.389648",
+"number":    470,
+"free":     30,
+"bikes":      4,
+"coordinates": "",
+"address": "W 20 St & 8 Ave",
+"lat": 4.0743e+07,
+"lng": -7.4e+07,
+"id":    244,
+"fillColor": "#D7191C",
+"popup": "<b>W 20 St &amp; 8 Ave</b><br>\n<b>Free Docks: </b> 30 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389648" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.957, 40.713 ] 
+},
+"properties": {
+ "name": "Grand St & Havemeyer St",
+"idx":    245,
+"timestamp": "2013-08-19T22:32:15.389683",
+"number":    471,
+"free":     13,
+"bikes":     10,
+"coordinates": "",
+"address": "Grand St & Havemeyer St",
+"lat": 4.0713e+07,
+"lng": -7.3957e+07,
+"id":    245,
+"fillColor": "#FFFFBF",
+"popup": "<b>Grand St &amp; Havemeyer St</b><br>\n<b>Free Docks: </b> 13 <br>\n<b>Available Bikes:</b> 10<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389683" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.982, 40.746 ] 
+},
+"properties": {
+ "name": "E 32 St & Park Av",
+"idx":    246,
+"timestamp": "2013-08-19T22:32:15.389718",
+"number":    472,
+"free":     10,
+"bikes":     26,
+"coordinates": "",
+"address": "E 32 St & Park Av",
+"lat": 4.0746e+07,
+"lng": -7.3982e+07,
+"id":    246,
+"fillColor": "#A6D96A",
+"popup": "<b>E 32 St &amp; Park Av</b><br>\n<b>Free Docks: </b> 10 <br>\n<b>Available Bikes:</b> 26<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389718" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.992, 40.721 ] 
+},
+"properties": {
+ "name": "Rivington St & Chrystie St",
+"idx":    247,
+"timestamp": "2013-08-19T22:32:15.389755",
+"number":    473,
+"free":     31,
+"bikes":      8,
+"coordinates": "",
+"address": "Rivington St & Chrystie St",
+"lat": 4.0721e+07,
+"lng": -7.3992e+07,
+"id":    247,
+"fillColor": "#FDAE61",
+"popup": "<b>Rivington St &amp; Chrystie St</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 8<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389755" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.987, 40.745 ] 
+},
+"properties": {
+ "name": "5 Ave & E 29 St",
+"idx":    248,
+"timestamp": "2013-08-19T22:32:15.389791",
+"number":    474,
+"free":      9,
+"bikes":     38,
+"coordinates": "",
+"address": "5 Ave & E 29 St",
+"lat": 4.0745e+07,
+"lng": -7.3987e+07,
+"id":    248,
+"fillColor": "#1A9641",
+"popup": "<b>5 Ave &amp; E 29 St</b><br>\n<b>Free Docks: </b> 9 <br>\n<b>Available Bikes:</b> 38<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389791" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.735 ] 
+},
+"properties": {
+ "name": "E 16 St & Irving Pl",
+"idx":    249,
+"timestamp": "2013-08-19T22:32:15.389828",
+"number":    475,
+"free":     33,
+"bikes":      1,
+"coordinates": "",
+"address": "E 16 St & Irving Pl",
+"lat": 4.0735e+07,
+"lng": -7.3988e+07,
+"id":    249,
+"fillColor": "#D7191C",
+"popup": "<b>E 16 St &amp; Irving Pl</b><br>\n<b>Free Docks: </b> 33 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389828" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.98, 40.744 ] 
+},
+"properties": {
+ "name": "E 31 St & 3 Ave",
+"idx":    250,
+"timestamp": "2013-08-19T22:32:15.389864",
+"number":    476,
+"free":     37,
+"bikes":      4,
+"coordinates": "",
+"address": "E 31 St & 3 Ave",
+"lat": 4.0744e+07,
+"lng": -7.398e+07,
+"id":    250,
+"fillColor": "#D7191C",
+"popup": "<b>E 31 St &amp; 3 Ave</b><br>\n<b>Free Docks: </b> 37 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389864" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.99, 40.756 ] 
+},
+"properties": {
+ "name": "W 41 St & 8 Ave",
+"idx":    251,
+"timestamp": "2013-08-19T22:32:15.389901",
+"number":    477,
+"free":     44,
+"bikes":     14,
+"coordinates": "",
+"address": "W 41 St & 8 Ave",
+"lat": 4.0756e+07,
+"lng": -7.399e+07,
+"id":    251,
+"fillColor": "#FDAE61",
+"popup": "<b>W 41 St &amp; 8 Ave</b><br>\n<b>Free Docks: </b> 44 <br>\n<b>Available Bikes:</b> 14<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389901" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.999,  40.76 ] 
+},
+"properties": {
+ "name": "11 Ave & W 41 St",
+"idx":    252,
+"timestamp": "2013-08-19T22:32:15.389938",
+"number":    478,
+"free":     21,
+"bikes":      7,
+"coordinates": "",
+"address": "11 Ave & W 41 St",
+"lat": 4.076e+07,
+"lng": -7.3999e+07,
+"id":    252,
+"fillColor": "#FDAE61",
+"popup": "<b>11 Ave &amp; W 41 St</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 7<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389938" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991,  40.76 ] 
+},
+"properties": {
+ "name": "9 Ave & W 45 St",
+"idx":    253,
+"timestamp": "2013-08-19T22:32:15.389974",
+"number":    479,
+"free":     20,
+"bikes":      9,
+"coordinates": "",
+"address": "9 Ave & W 45 St",
+"lat": 4.076e+07,
+"lng": -7.3991e+07,
+"id":    253,
+"fillColor": "#FDAE61",
+"popup": "<b>9 Ave &amp; W 45 St</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 9<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.389974" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991, 40.767 ] 
+},
+"properties": {
+ "name": "W 53 St & 10 Ave",
+"idx":    254,
+"timestamp": "2013-08-19T22:32:15.390035",
+"number":    480,
+"free":     25,
+"bikes":      1,
+"coordinates": "",
+"address": "W 53 St & 10 Ave",
+"lat": 4.0767e+07,
+"lng": -7.3991e+07,
+"id":    254,
+"fillColor": "#D7191C",
+"popup": "<b>W 53 St &amp; 10 Ave</b><br>\n<b>Free Docks: </b> 25 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390035" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.963, 40.713 ] 
+},
+"properties": {
+ "name": "S 3 St & Bedford Ave",
+"idx":    255,
+"timestamp": "2013-08-19T22:32:15.390071",
+"number":    481,
+"free":     24,
+"bikes":      1,
+"coordinates": "",
+"address": "S 3 St & Bedford Ave",
+"lat": 4.0713e+07,
+"lng": -7.3963e+07,
+"id":    255,
+"fillColor": "#D7191C",
+"popup": "<b>S 3 St &amp; Bedford Ave</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390071" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.999, 40.739 ] 
+},
+"properties": {
+ "name": "W 15 St & 7 Ave",
+"idx":    256,
+"timestamp": "2013-08-19T22:32:15.390107",
+"number":    482,
+"free":     31,
+"bikes":      5,
+"coordinates": "",
+"address": "W 15 St & 7 Ave",
+"lat": 4.0739e+07,
+"lng": -7.3999e+07,
+"id":    256,
+"fillColor": "#D7191C",
+"popup": "<b>W 15 St &amp; 7 Ave</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390107" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.989, 40.732 ] 
+},
+"properties": {
+ "name": "E 12 St & 3 Ave",
+"idx":    257,
+"timestamp": "2013-08-19T22:32:15.390143",
+"number":    483,
+"free":     27,
+"bikes":      8,
+"coordinates": "",
+"address": "E 12 St & 3 Ave",
+"lat": 4.0732e+07,
+"lng": -7.3989e+07,
+"id":    257,
+"fillColor": "#FDAE61",
+"popup": "<b>E 12 St &amp; 3 Ave</b><br>\n<b>Free Docks: </b> 27 <br>\n<b>Available Bikes:</b> 8<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390143" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.98, 40.755 ] 
+},
+"properties": {
+ "name": "W 44 St & 5 Ave",
+"idx":    258,
+"timestamp": "2013-08-19T22:32:15.390179",
+"number":    484,
+"free":      9,
+"bikes":     32,
+"coordinates": "",
+"address": "W 44 St & 5 Ave",
+"lat": 4.0755e+07,
+"lng": -7.398e+07,
+"id":    258,
+"fillColor": "#A6D96A",
+"popup": "<b>W 44 St &amp; 5 Ave</b><br>\n<b>Free Docks: </b> 9 <br>\n<b>Available Bikes:</b> 32<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390179" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983,  40.75 ] 
+},
+"properties": {
+ "name": "W 37 St & 5 Ave",
+"idx":    259,
+"timestamp": "2013-08-19T22:32:15.390212",
+"number":    485,
+"free":     33,
+"bikes":      4,
+"coordinates": "",
+"address": "W 37 St & 5 Ave",
+"lat": 4.075e+07,
+"lng": -7.3983e+07,
+"id":    259,
+"fillColor": "#D7191C",
+"popup": "<b>W 37 St &amp; 5 Ave</b><br>\n<b>Free Docks: </b> 33 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390212" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.989, 40.746 ] 
+},
+"properties": {
+ "name": "Broadway & W 29 St",
+"idx":    260,
+"timestamp": "2013-08-19T22:32:15.390248",
+"number":    486,
+"free":     19,
+"bikes":     14,
+"coordinates": "",
+"address": "Broadway & W 29 St",
+"lat": 4.0746e+07,
+"lng": -7.3989e+07,
+"id":    260,
+"fillColor": "#FFFFBF",
+"popup": "<b>Broadway &amp; W 29 St</b><br>\n<b>Free Docks: </b> 19 <br>\n<b>Available Bikes:</b> 14<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390248" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.976, 40.733 ] 
+},
+"properties": {
+ "name": "E 20 St & FDR Drive",
+"idx":    261,
+"timestamp": "2013-08-19T22:32:15.390284",
+"number":    487,
+"free":     32,
+"bikes":      2,
+"coordinates": "",
+"address": "E 20 St & FDR Drive",
+"lat": 4.0733e+07,
+"lng": -7.3976e+07,
+"id":    261,
+"fillColor": "#D7191C",
+"popup": "<b>E 20 St &amp; FDR Drive</b><br>\n<b>Free Docks: </b> 32 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390284" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.994, 40.756 ] 
+},
+"properties": {
+ "name": "W 39 St & 9 Ave",
+"idx":    262,
+"timestamp": "2013-08-19T22:32:15.390319",
+"number":    488,
+"free":     26,
+"bikes":     10,
+"coordinates": "",
+"address": "W 39 St & 9 Ave",
+"lat": 4.0756e+07,
+"lng": -7.3994e+07,
+"id":    262,
+"fillColor": "#FDAE61",
+"popup": "<b>W 39 St &amp; 9 Ave</b><br>\n<b>Free Docks: </b> 26 <br>\n<b>Available Bikes:</b> 10<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390319" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.002, 40.751 ] 
+},
+"properties": {
+ "name": "10 Ave & W 28 St",
+"idx":    263,
+"timestamp": "2013-08-19T22:32:15.390355",
+"number":    489,
+"free":      3,
+"bikes":     29,
+"coordinates": "",
+"address": "10 Ave & W 28 St",
+"lat": 4.0751e+07,
+"lng": -7.4002e+07,
+"id":    263,
+"fillColor": "#1A9641",
+"popup": "<b>10 Ave &amp; W 28 St</b><br>\n<b>Free Docks: </b> 3 <br>\n<b>Available Bikes:</b> 29<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390355" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.994, 40.752 ] 
+},
+"properties": {
+ "name": "W 33 St & 8 Ave",
+"idx":    264,
+"timestamp": "2013-08-19T22:32:15.390392",
+"number":    490,
+"free":     37,
+"bikes":     16,
+"coordinates": "",
+"address": "W 33 St & 8 Ave",
+"lat": 4.0752e+07,
+"lng": -7.3994e+07,
+"id":    264,
+"fillColor": "#FDAE61",
+"popup": "<b>W 33 St &amp; 8 Ave</b><br>\n<b>Free Docks: </b> 37 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390392" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.986, 40.741 ] 
+},
+"properties": {
+ "name": "E 24 St & Park Ave S",
+"idx":    265,
+"timestamp": "2013-08-19T22:32:15.390426",
+"number":    491,
+"free":     41,
+"bikes":     12,
+"coordinates": "",
+"address": "E 24 St & Park Ave S",
+"lat": 4.0741e+07,
+"lng": -7.3986e+07,
+"id":    265,
+"fillColor": "#FDAE61",
+"popup": "<b>E 24 St &amp; Park Ave S</b><br>\n<b>Free Docks: </b> 41 <br>\n<b>Available Bikes:</b> 12<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390426" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991,  40.75 ] 
+},
+"properties": {
+ "name": "W 33 St & 7 Ave",
+"idx":    266,
+"timestamp": "2013-08-19T22:32:15.390460",
+"number":    492,
+"free":     29,
+"bikes":     17,
+"coordinates": "",
+"address": "W 33 St & 7 Ave",
+"lat": 4.075e+07,
+"lng": -7.3991e+07,
+"id":    266,
+"fillColor": "#FDAE61",
+"popup": "<b>W 33 St &amp; 7 Ave</b><br>\n<b>Free Docks: </b> 29 <br>\n<b>Available Bikes:</b> 17<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390460" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983, 40.757 ] 
+},
+"properties": {
+ "name": "W 45 St & 6 Ave",
+"idx":    267,
+"timestamp": "2013-08-19T22:32:15.390495",
+"number":    493,
+"free":     24,
+"bikes":     10,
+"coordinates": "",
+"address": "W 45 St & 6 Ave",
+"lat": 4.0757e+07,
+"lng": -7.3983e+07,
+"id":    267,
+"fillColor": "#FDAE61",
+"popup": "<b>W 45 St &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 10<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390495" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.997, 40.747 ] 
+},
+"properties": {
+ "name": "W 26 St & 8 Ave",
+"idx":    268,
+"timestamp": "2013-08-19T22:32:15.390532",
+"number":    494,
+"free":     31,
+"bikes":      3,
+"coordinates": "",
+"address": "W 26 St & 8 Ave",
+"lat": 4.0747e+07,
+"lng": -7.3997e+07,
+"id":    268,
+"fillColor": "#D7191C",
+"popup": "<b>W 26 St &amp; 8 Ave</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 3<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390532" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.993, 40.763 ] 
+},
+"properties": {
+ "name": "W 47 St & 10 Ave",
+"idx":    269,
+"timestamp": "2013-08-19T22:32:15.390569",
+"number":    495,
+"free":     19,
+"bikes":      5,
+"coordinates": "",
+"address": "W 47 St & 10 Ave",
+"lat": 4.0763e+07,
+"lng": -7.3993e+07,
+"id":    269,
+"fillColor": "#FDAE61",
+"popup": "<b>W 47 St &amp; 10 Ave</b><br>\n<b>Free Docks: </b> 19 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390569" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.992, 40.737 ] 
+},
+"properties": {
+ "name": "E 16 St & 5 Ave",
+"idx":    270,
+"timestamp": "2013-08-19T22:32:15.390606",
+"number":    496,
+"free":      4,
+"bikes":     36,
+"coordinates": "",
+"address": "E 16 St & 5 Ave",
+"lat": 4.0737e+07,
+"lng": -7.3992e+07,
+"id":    270,
+"fillColor": "#1A9641",
+"popup": "<b>E 16 St &amp; 5 Ave</b><br>\n<b>Free Docks: </b> 4 <br>\n<b>Available Bikes:</b> 36<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390606" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.99, 40.737 ] 
+},
+"properties": {
+ "name": "E 17 St & Broadway",
+"idx":    271,
+"timestamp": "2013-08-19T22:32:15.390640",
+"number":    497,
+"free":     17,
+"bikes":     36,
+"coordinates": "",
+"address": "E 17 St & Broadway",
+"lat": 4.0737e+07,
+"lng": -7.399e+07,
+"id":    271,
+"fillColor": "#A6D96A",
+"popup": "<b>E 17 St &amp; Broadway</b><br>\n<b>Free Docks: </b> 17 <br>\n<b>Available Bikes:</b> 36<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390640" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.749 ] 
+},
+"properties": {
+ "name": "Broadway & W 32 St",
+"idx":    272,
+"timestamp": "2013-08-19T22:32:15.390675",
+"number":    498,
+"free":     13,
+"bikes":     15,
+"coordinates": "",
+"address": "Broadway & W 32 St",
+"lat": 4.0749e+07,
+"lng": -7.3988e+07,
+"id":    272,
+"fillColor": "#FFFFBF",
+"popup": "<b>Broadway &amp; W 32 St</b><br>\n<b>Free Docks: </b> 13 <br>\n<b>Available Bikes:</b> 15<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390675" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.982, 40.769 ] 
+},
+"properties": {
+ "name": "Broadway & W 60 St",
+"idx":    273,
+"timestamp": "2013-08-19T22:32:15.390711",
+"number":    499,
+"free":     21,
+"bikes":     12,
+"coordinates": "",
+"address": "Broadway & W 60 St",
+"lat": 4.0769e+07,
+"lng": -7.3982e+07,
+"id":    273,
+"fillColor": "#FDAE61",
+"popup": "<b>Broadway &amp; W 60 St</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 12<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390711" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983, 40.762 ] 
+},
+"properties": {
+ "name": "Broadway & W 51 St",
+"idx":    274,
+"timestamp": "2013-08-19T22:32:15.390744",
+"number":    500,
+"free":     16,
+"bikes":     33,
+"coordinates": "",
+"address": "Broadway & W 51 St",
+"lat": 4.0762e+07,
+"lng": -7.3983e+07,
+"id":    274,
+"fillColor": "#A6D96A",
+"popup": "<b>Broadway &amp; W 51 St</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 33<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390744" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.971, 40.744 ] 
+},
+"properties": {
+ "name": "FDR Drive & E 35 St",
+"idx":    275,
+"timestamp": "2013-08-19T22:32:15.390777",
+"number":    501,
+"free":     30,
+"bikes":     13,
+"coordinates": "",
+"address": "FDR Drive & E 35 St",
+"lat": 4.0744e+07,
+"lng": -7.3971e+07,
+"id":    275,
+"fillColor": "#FDAE61",
+"popup": "<b>FDR Drive &amp; E 35 St</b><br>\n<b>Free Docks: </b> 30 <br>\n<b>Available Bikes:</b> 13<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390777" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983, 40.715 ] 
+},
+"properties": {
+ "name": "E Broadway & Grand St",
+"idx":    276,
+"timestamp": "2013-08-19T22:32:15.390812",
+"number":    502,
+"free":     25,
+"bikes":      6,
+"coordinates": "",
+"address": "E Broadway & Grand St",
+"lat": 4.0715e+07,
+"lng": -7.3983e+07,
+"id":    276,
+"fillColor": "#D7191C",
+"popup": "<b>E Broadway &amp; Grand St</b><br>\n<b>Free Docks: </b> 25 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390812" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.738 ] 
+},
+"properties": {
+ "name": "E 20 St & Park Ave",
+"idx":    277,
+"timestamp": "2013-08-19T22:32:15.390849",
+"number":    503,
+"free":     13,
+"bikes":     14,
+"coordinates": "",
+"address": "E 20 St & Park Ave",
+"lat": 4.0738e+07,
+"lng": -7.3988e+07,
+"id":    277,
+"fillColor": "#FFFFBF",
+"popup": "<b>E 20 St &amp; Park Ave</b><br>\n<b>Free Docks: </b> 13 <br>\n<b>Available Bikes:</b> 14<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390849" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.982, 40.732 ] 
+},
+"properties": {
+ "name": "1 Ave & E 15 St",
+"idx":    278,
+"timestamp": "2013-08-19T22:32:15.390885",
+"number":    504,
+"free":     43,
+"bikes":      1,
+"coordinates": "",
+"address": "1 Ave & E 15 St",
+"lat": 4.0732e+07,
+"lng": -7.3982e+07,
+"id":    278,
+"fillColor": "#D7191C",
+"popup": "<b>1 Ave &amp; E 15 St</b><br>\n<b>Free Docks: </b> 43 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390885" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.988, 40.749 ] 
+},
+"properties": {
+ "name": "6 Ave & W 33 St",
+"idx":    279,
+"timestamp": "2013-08-19T22:32:15.390920",
+"number":    505,
+"free":     20,
+"bikes":     16,
+"coordinates": "",
+"address": "6 Ave & W 33 St",
+"lat": 4.0749e+07,
+"lng": -7.3988e+07,
+"id":    279,
+"fillColor": "#FFFFBF",
+"popup": "<b>6 Ave &amp; W 33 St</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390920" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.98, 40.739 ] 
+},
+"properties": {
+ "name": "E 25 St & 2 Ave",
+"idx":    280,
+"timestamp": "2013-08-19T22:32:15.390955",
+"number":    507,
+"free":     39,
+"bikes":      7,
+"coordinates": "",
+"address": "E 25 St & 2 Ave",
+"lat": 4.0739e+07,
+"lng": -7.398e+07,
+"id":    280,
+"fillColor": "#D7191C",
+"popup": "<b>E 25 St &amp; 2 Ave</b><br>\n<b>Free Docks: </b> 39 <br>\n<b>Available Bikes:</b> 7<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.390955" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.997, 40.763 ] 
+},
+"properties": {
+ "name": "W 46 St & 11 Ave",
+"idx":    281,
+"timestamp": "2013-08-19T22:32:15.391015",
+"number":    508,
+"free":     23,
+"bikes":      1,
+"coordinates": "",
+"address": "W 46 St & 11 Ave",
+"lat": 4.0763e+07,
+"lng": -7.3997e+07,
+"id":    281,
+"fillColor": "#D7191C",
+"popup": "<b>W 46 St &amp; 11 Ave</b><br>\n<b>Free Docks: </b> 23 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391015" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.002, 40.745 ] 
+},
+"properties": {
+ "name": "9 Ave & W 22 St",
+"idx":    282,
+"timestamp": "2013-08-19T22:32:15.391054",
+"number":    509,
+"free":     24,
+"bikes":      5,
+"coordinates": "",
+"address": "9 Ave & W 22 St",
+"lat": 4.0745e+07,
+"lng": -7.4002e+07,
+"id":    282,
+"fillColor": "#D7191C",
+"popup": "<b>9 Ave &amp; W 22 St</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391054" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.98, 40.761 ] 
+},
+"properties": {
+ "name": "W 51 St & 6 Ave",
+"idx":    283,
+"timestamp": "2013-08-19T22:32:15.391090",
+"number":    510,
+"free":     34,
+"bikes":     15,
+"coordinates": "",
+"address": "W 51 St & 6 Ave",
+"lat": 4.0761e+07,
+"lng": -7.398e+07,
+"id":    283,
+"fillColor": "#FDAE61",
+"popup": "<b>W 51 St &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 34 <br>\n<b>Available Bikes:</b> 15<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391090" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.978, 40.729 ] 
+},
+"properties": {
+ "name": "E 14 St & Avenue B",
+"idx":    284,
+"timestamp": "2013-08-19T22:32:15.391126",
+"number":    511,
+"free":     30,
+"bikes":      2,
+"coordinates": "",
+"address": "E 14 St & Avenue B",
+"lat": 4.0729e+07,
+"lng": -7.3978e+07,
+"id":    284,
+"fillColor": "#D7191C",
+"popup": "<b>E 14 St &amp; Avenue B</b><br>\n<b>Free Docks: </b> 30 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391126" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.998,  40.75 ] 
+},
+"properties": {
+ "name": "W 29 St & 9 Ave",
+"idx":    285,
+"timestamp": "2013-08-19T22:32:15.391163",
+"number":    512,
+"free":     21,
+"bikes":      6,
+"coordinates": "",
+"address": "W 29 St & 9 Ave",
+"lat": 4.075e+07,
+"lng": -7.3998e+07,
+"id":    285,
+"fillColor": "#FDAE61",
+"popup": "<b>W 29 St &amp; 9 Ave</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391163" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.989, 40.768 ] 
+},
+"properties": {
+ "name": "W 56 St & 10 Ave",
+"idx":    286,
+"timestamp": "2013-08-19T22:32:15.391197",
+"number":    513,
+"free":     24,
+"bikes":      2,
+"coordinates": "",
+"address": "W 56 St & 10 Ave",
+"lat": 4.0768e+07,
+"lng": -7.3989e+07,
+"id":    286,
+"fillColor": "#D7191C",
+"popup": "<b>W 56 St &amp; 10 Ave</b><br>\n<b>Free Docks: </b> 24 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391197" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.003, 40.761 ] 
+},
+"properties": {
+ "name": "12 Ave & W 40 St",
+"idx":    287,
+"timestamp": "2013-08-19T22:32:15.391233",
+"number":    514,
+"free":     46,
+"bikes":      5,
+"coordinates": "",
+"address": "12 Ave & W 40 St",
+"lat": 4.0761e+07,
+"lng": -7.4003e+07,
+"id":    287,
+"fillColor": "#D7191C",
+"popup": "<b>12 Ave &amp; W 40 St</b><br>\n<b>Free Docks: </b> 46 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391233" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.995,  40.76 ] 
+},
+"properties": {
+ "name": "W 43 St & 10 Ave",
+"idx":    288,
+"timestamp": "2013-08-19T22:32:15.391267",
+"number":    515,
+"free":     20,
+"bikes":     14,
+"coordinates": "",
+"address": "W 43 St & 10 Ave",
+"lat": 4.076e+07,
+"lng": -7.3995e+07,
+"id":    288,
+"fillColor": "#FFFFBF",
+"popup": "<b>W 43 St &amp; 10 Ave</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 14<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391267" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.968, 40.752 ] 
+},
+"properties": {
+ "name": "E 47 St & 1 Ave",
+"idx":    289,
+"timestamp": "2013-08-19T22:32:15.391303",
+"number":    516,
+"free":     11,
+"bikes":     20,
+"coordinates": "",
+"address": "E 47 St & 1 Ave",
+"lat": 4.0752e+07,
+"lng": -7.3968e+07,
+"id":    289,
+"fillColor": "#A6D96A",
+"popup": "<b>E 47 St &amp; 1 Ave</b><br>\n<b>Free Docks: </b> 11 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391303" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.978, 40.751 ] 
+},
+"properties": {
+ "name": "Pershing Square S",
+"idx":    290,
+"timestamp": "2013-08-19T22:32:15.391342",
+"number":    517,
+"free":     13,
+"bikes":     41,
+"coordinates": "",
+"address": "Pershing Square S",
+"lat": 4.0751e+07,
+"lng": -7.3978e+07,
+"id":    290,
+"fillColor": "#A6D96A",
+"popup": "<b>Pershing Square S</b><br>\n<b>Free Docks: </b> 13 <br>\n<b>Available Bikes:</b> 41<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391342" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.973, 40.748 ] 
+},
+"properties": {
+ "name": "E 39 St & 2 Ave",
+"idx":    291,
+"timestamp": "2013-08-19T22:32:15.391379",
+"number":    518,
+"free":     28,
+"bikes":     10,
+"coordinates": "",
+"address": "E 39 St & 2 Ave",
+"lat": 4.0748e+07,
+"lng": -7.3973e+07,
+"id":    291,
+"fillColor": "#FDAE61",
+"popup": "<b>E 39 St &amp; 2 Ave</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 10<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391379" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.978, 40.752 ] 
+},
+"properties": {
+ "name": "Pershing Square N",
+"idx":    292,
+"timestamp": "2013-08-19T22:32:15.391415",
+"number":    519,
+"free":      8,
+"bikes":     49,
+"coordinates": "",
+"address": "Pershing Square N",
+"lat": 4.0752e+07,
+"lng": -7.3978e+07,
+"id":    292,
+"fillColor": "#1A9641",
+"popup": "<b>Pershing Square N</b><br>\n<b>Free Docks: </b> 8 <br>\n<b>Available Bikes:</b> 49<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391415" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.976,  40.76 ] 
+},
+"properties": {
+ "name": "W 52 St & 5 Ave",
+"idx":    293,
+"timestamp": "2013-08-19T22:32:15.391450",
+"number":    520,
+"free":     11,
+"bikes":     22,
+"coordinates": "",
+"address": "W 52 St & 5 Ave",
+"lat": 4.076e+07,
+"lng": -7.3976e+07,
+"id":    293,
+"fillColor": "#A6D96A",
+"popup": "<b>W 52 St &amp; 5 Ave</b><br>\n<b>Free Docks: </b> 11 <br>\n<b>Available Bikes:</b> 22<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391450" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.995,  40.75 ] 
+},
+"properties": {
+ "name": "8 Ave & W 31 St",
+"idx":    294,
+"timestamp": "2013-08-19T22:32:15.391489",
+"number":    521,
+"free":     42,
+"bikes":     20,
+"coordinates": "",
+"address": "8 Ave & W 31 St",
+"lat": 4.075e+07,
+"lng": -7.3995e+07,
+"id":    294,
+"fillColor": "#FDAE61",
+"popup": "<b>8 Ave &amp; W 31 St</b><br>\n<b>Free Docks: </b> 42 <br>\n<b>Available Bikes:</b> 20<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391489" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.972, 40.757 ] 
+},
+"properties": {
+ "name": "E 51 St & Lexington Ave",
+"idx":    295,
+"timestamp": "2013-08-19T22:32:15.391527",
+"number":    522,
+"free":     12,
+"bikes":     35,
+"coordinates": "",
+"address": "E 51 St & Lexington Ave",
+"lat": 4.0757e+07,
+"lng": -7.3972e+07,
+"id":    295,
+"fillColor": "#A6D96A",
+"popup": "<b>E 51 St &amp; Lexington Ave</b><br>\n<b>Free Docks: </b> 12 <br>\n<b>Available Bikes:</b> 35<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391527" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991, 40.755 ] 
+},
+"properties": {
+ "name": "W 38 St & 8 Ave",
+"idx":    296,
+"timestamp": "2013-08-19T22:32:15.391565",
+"number":    523,
+"free":     47,
+"bikes":      2,
+"coordinates": "",
+"address": "W 38 St & 8 Ave",
+"lat": 4.0755e+07,
+"lng": -7.3991e+07,
+"id":    296,
+"fillColor": "#D7191C",
+"popup": "<b>W 38 St &amp; 8 Ave</b><br>\n<b>Free Docks: </b> 47 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391565" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983, 40.755 ] 
+},
+"properties": {
+ "name": "W 43 St & 6 Ave",
+"idx":    297,
+"timestamp": "2013-08-19T22:32:15.391601",
+"number":    524,
+"free":     20,
+"bikes":     34,
+"coordinates": "",
+"address": "W 43 St & 6 Ave",
+"lat": 4.0755e+07,
+"lng": -7.3983e+07,
+"id":    297,
+"fillColor": "#A6D96A",
+"popup": "<b>W 43 St &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 34<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391601" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.002, 40.756 ] 
+},
+"properties": {
+ "name": "W 34 St & 11 Ave",
+"idx":    298,
+"timestamp": "2013-08-19T22:32:15.391638",
+"number":    525,
+"free":      4,
+"bikes":     29,
+"coordinates": "",
+"address": "W 34 St & 11 Ave",
+"lat": 4.0756e+07,
+"lng": -7.4002e+07,
+"id":    298,
+"fillColor": "#1A9641",
+"popup": "<b>W 34 St &amp; 11 Ave</b><br>\n<b>Free Docks: </b> 4 <br>\n<b>Available Bikes:</b> 29<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391638" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.985, 40.748 ] 
+},
+"properties": {
+ "name": "E 33 St & 5 Ave",
+"idx":    299,
+"timestamp": "2013-08-19T22:32:15.391675",
+"number":    526,
+"free":     42,
+"bikes":      0,
+"coordinates": "",
+"address": "E 33 St & 5 Ave",
+"lat": 4.0748e+07,
+"lng": -7.3985e+07,
+"id":    299,
+"fillColor": "#D7191C",
+"popup": "<b>E 33 St &amp; 5 Ave</b><br>\n<b>Free Docks: </b> 42 <br>\n<b>Available Bikes:</b> 0<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391675" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.974, 40.743 ] 
+},
+"properties": {
+ "name": "E 33 St & 1 Ave",
+"idx":    300,
+"timestamp": "2013-08-19T22:32:15.391711",
+"number":    527,
+"free":     39,
+"bikes":     18,
+"coordinates": "",
+"address": "E 33 St & 1 Ave",
+"lat": 4.0743e+07,
+"lng": -7.3974e+07,
+"id":    300,
+"fillColor": "#FDAE61",
+"popup": "<b>E 33 St &amp; 1 Ave</b><br>\n<b>Free Docks: </b> 39 <br>\n<b>Available Bikes:</b> 18<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391711" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.977, 40.743 ] 
+},
+"properties": {
+ "name": "2 Ave & E 30 St",
+"idx":    301,
+"timestamp": "2013-08-19T22:32:15.391746",
+"number":    528,
+"free":     30,
+"bikes":      4,
+"coordinates": "",
+"address": "2 Ave & E 30 St",
+"lat": 4.0743e+07,
+"lng": -7.3977e+07,
+"id":    301,
+"fillColor": "#D7191C",
+"popup": "<b>2 Ave &amp; E 30 St</b><br>\n<b>Free Docks: </b> 30 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391746" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991, 40.758 ] 
+},
+"properties": {
+ "name": "W 42 St & 8 Ave",
+"idx":    302,
+"timestamp": "2013-08-19T22:32:15.391783",
+"number":    529,
+"free":     14,
+"bikes":     22,
+"coordinates": "",
+"address": "W 42 St & 8 Ave",
+"lat": 4.0758e+07,
+"lng": -7.3991e+07,
+"id":    302,
+"fillColor": "#A6D96A",
+"popup": "<b>W 42 St &amp; 8 Ave</b><br>\n<b>Free Docks: </b> 14 <br>\n<b>Available Bikes:</b> 22<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391783" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.991, 40.772 ] 
+},
+"properties": {
+ "name": "11 Ave & W 59 St",
+"idx":    303,
+"timestamp": "2013-08-19T22:32:15.391820",
+"number":    530,
+"free":     33,
+"bikes":      2,
+"coordinates": "",
+"address": "11 Ave & W 59 St",
+"lat": 4.0772e+07,
+"lng": -7.3991e+07,
+"id":    303,
+"fillColor": "#D7191C",
+"popup": "<b>11 Ave &amp; W 59 St</b><br>\n<b>Free Docks: </b> 33 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391820" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.993, 40.719 ] 
+},
+"properties": {
+ "name": "Forsyth St & Broome St",
+"idx":    304,
+"timestamp": "2013-08-19T22:32:15.391857",
+"number":    531,
+"free":     32,
+"bikes":      6,
+"coordinates": "",
+"address": "Forsyth St & Broome St",
+"lat": 4.0719e+07,
+"lng": -7.3993e+07,
+"id":    304,
+"fillColor": "#D7191C",
+"popup": "<b>Forsyth St &amp; Broome St</b><br>\n<b>Free Docks: </b> 32 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391857" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.961,  40.71 ] 
+},
+"properties": {
+ "name": "S 5 Pl & S 4 St",
+"idx":    305,
+"timestamp": "2013-08-19T22:32:15.391892",
+"number":    532,
+"free":     36,
+"bikes":      6,
+"coordinates": "",
+"address": "S 5 Pl & S 4 St",
+"lat": 4.071e+07,
+"lng": -7.3961e+07,
+"id":    305,
+"fillColor": "#D7191C",
+"popup": "<b>S 5 Pl &amp; S 4 St</b><br>\n<b>Free Docks: </b> 36 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391892" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.987, 40.753 ] 
+},
+"properties": {
+ "name": "Broadway & W 39 St",
+"idx":    306,
+"timestamp": "2013-08-19T22:32:15.391928",
+"number":    533,
+"free":     49,
+"bikes":      1,
+"coordinates": "",
+"address": "Broadway & W 39 St",
+"lat": 4.0753e+07,
+"lng": -7.3987e+07,
+"id":    306,
+"fillColor": "#D7191C",
+"popup": "<b>Broadway &amp; W 39 St</b><br>\n<b>Free Docks: </b> 49 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391928" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.013, 40.703 ] 
+},
+"properties": {
+ "name": "Water - Whitehall Plaza",
+"idx":    307,
+"timestamp": "2013-08-19T22:32:15.391965",
+"number":    534,
+"free":     15,
+"bikes":     15,
+"coordinates": "",
+"address": "Water - Whitehall Plaza",
+"lat": 4.0703e+07,
+"lng": -7.4013e+07,
+"id":    307,
+"fillColor": "#FFFFBF",
+"popup": "<b>Water - Whitehall Plaza</b><br>\n<b>Free Docks: </b> 15 <br>\n<b>Available Bikes:</b> 15<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.391965" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.975, 40.741 ] 
+},
+"properties": {
+ "name": "1 Ave & E 30 St",
+"idx":    308,
+"timestamp": "2013-08-19T22:32:15.392029",
+"number":    536,
+"free":     22,
+"bikes":      5,
+"coordinates": "",
+"address": "1 Ave & E 30 St",
+"lat": 4.0741e+07,
+"lng": -7.3975e+07,
+"id":    308,
+"fillColor": "#D7191C",
+"popup": "<b>1 Ave &amp; E 30 St</b><br>\n<b>Free Docks: </b> 22 <br>\n<b>Available Bikes:</b> 5<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392029" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.984,  40.74 ] 
+},
+"properties": {
+ "name": "Lexington Ave & E 24 St",
+"idx":    309,
+"timestamp": "2013-08-19T22:32:15.392069",
+"number":    537,
+"free":     28,
+"bikes":      8,
+"coordinates": "",
+"address": "Lexington Ave & E 24 St",
+"lat": 4.074e+07,
+"lng": -7.3984e+07,
+"id":    309,
+"fillColor": "#FDAE61",
+"popup": "<b>Lexington Ave &amp; E 24 St</b><br>\n<b>Free Docks: </b> 28 <br>\n<b>Available Bikes:</b> 8<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392069" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.978, 40.758 ] 
+},
+"properties": {
+ "name": "W 49 St & 5 Ave",
+"idx":    310,
+"timestamp": "2013-08-19T22:32:15.392108",
+"number":    538,
+"free":     21,
+"bikes":     17,
+"coordinates": "",
+"address": "W 49 St & 5 Ave",
+"lat": 4.0758e+07,
+"lng": -7.3978e+07,
+"id":    310,
+"fillColor": "#FFFFBF",
+"popup": "<b>W 49 St &amp; 5 Ave</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 17<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392108" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.96, 40.715 ] 
+},
+"properties": {
+ "name": "Metropolitan Ave & Bedford Ave",
+"idx":    311,
+"timestamp": "2013-08-19T22:32:15.392145",
+"number":    539,
+"free":     20,
+"bikes":     10,
+"coordinates": "",
+"address": "Metropolitan Ave & Bedford Ave",
+"lat": 4.0715e+07,
+"lng": -7.396e+07,
+"id":    311,
+"fillColor": "#FDAE61",
+"popup": "<b>Metropolitan Ave &amp; Bedford Ave</b><br>\n<b>Free Docks: </b> 20 <br>\n<b>Available Bikes:</b> 10<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392145" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983, 40.741 ] 
+},
+"properties": {
+ "name": "Lexington Ave & E 26 St",
+"idx":    312,
+"timestamp": "2013-08-19T22:32:15.392181",
+"number":    540,
+"free":     31,
+"bikes":      4,
+"coordinates": "",
+"address": "Lexington Ave & E 26 St",
+"lat": 4.0741e+07,
+"lng": -7.3983e+07,
+"id":    312,
+"fillColor": "#D7191C",
+"popup": "<b>Lexington Ave &amp; E 26 St</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392181" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.978, 40.737 ] 
+},
+"properties": {
+ "name": "E 23 St & 1 Ave",
+"idx":    313,
+"timestamp": "2013-08-19T22:32:15.392219",
+"number":    545,
+"free":     21,
+"bikes":      2,
+"coordinates": "",
+"address": "E 23 St & 1 Ave",
+"lat": 4.0737e+07,
+"lng": -7.3978e+07,
+"id":    313,
+"fillColor": "#D7191C",
+"popup": "<b>E 23 St &amp; 1 Ave</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 2<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392219" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.983, 40.744 ] 
+},
+"properties": {
+ "name": "E 30 St & Park Ave S",
+"idx":    314,
+"timestamp": "2013-08-19T22:32:15.392255",
+"number":    546,
+"free":     19,
+"bikes":     16,
+"coordinates": "",
+"address": "E 30 St & Park Ave S",
+"lat": 4.0744e+07,
+"lng": -7.3983e+07,
+"id":    314,
+"fillColor": "#FFFFBF",
+"popup": "<b>E 30 St &amp; Park Ave S</b><br>\n<b>Free Docks: </b> 19 <br>\n<b>Available Bikes:</b> 16<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392255" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.989, 40.703 ] 
+},
+"properties": {
+ "name": "Front St & Washington St",
+"idx":    315,
+"timestamp": "2013-08-19T22:32:15.392288",
+"number":   2000,
+"free":      0,
+"bikes":     26,
+"coordinates": "",
+"address": "Front St & Washington St",
+"lat": 4.0703e+07,
+"lng": -7.3989e+07,
+"id":    315,
+"fillColor": "#1A9641",
+"popup": "<b>Front St &amp; Washington St</b><br>\n<b>Free Docks: </b> 0 <br>\n<b>Available Bikes:</b> 26<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392288" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.973, 40.699 ] 
+},
+"properties": {
+ "name": "7th Ave & Farragut St",
+"idx":    316,
+"timestamp": "2013-08-19T22:32:15.392324",
+"number":   2001,
+"free":      3,
+"bikes":     12,
+"coordinates": "",
+"address": "7th Ave & Farragut St",
+"lat": 4.0699e+07,
+"lng": -7.3973e+07,
+"id":    316,
+"fillColor": "#A6D96A",
+"popup": "<b>7th Ave &amp; Farragut St</b><br>\n<b>Free Docks: </b> 3 <br>\n<b>Available Bikes:</b> 12<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392324" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.963, 40.717 ] 
+},
+"properties": {
+ "name": "Wythe Ave & Metropolitan Ave",
+"idx":    317,
+"timestamp": "2013-08-19T22:32:15.392361",
+"number":   2002,
+"free":     21,
+"bikes":      6,
+"coordinates": "",
+"address": "Wythe Ave & Metropolitan Ave",
+"lat": 4.0717e+07,
+"lng": -7.3963e+07,
+"id":    317,
+"fillColor": "#FDAE61",
+"popup": "<b>Wythe Ave &amp; Metropolitan Ave</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392361" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.98, 40.734 ] 
+},
+"properties": {
+ "name": "1 Ave & E 18 St",
+"idx":    318,
+"timestamp": "2013-08-19T22:32:15.392398",
+"number":   2003,
+"free":     25,
+"bikes":      4,
+"coordinates": "",
+"address": "1 Ave & E 18 St",
+"lat": 4.0734e+07,
+"lng": -7.398e+07,
+"id":    318,
+"fillColor": "#D7191C",
+"popup": "<b>1 Ave &amp; E 18 St</b><br>\n<b>Free Docks: </b> 25 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392398" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.004, 40.725 ] 
+},
+"properties": {
+ "name": "Spring St & 6 Ave",
+"idx":    319,
+"timestamp": "2013-08-19T22:32:15.392435",
+"number":   2004,
+"free":     16,
+"bikes":     19,
+"coordinates": "",
+"address": "Spring St & 6 Ave",
+"lat": 4.0726e+07,
+"lng": -7.4004e+07,
+"id":    319,
+"fillColor": "#FFFFBF",
+"popup": "<b>Spring St &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 16 <br>\n<b>Available Bikes:</b> 19<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392435" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.971, 40.705 ] 
+},
+"properties": {
+ "name": "Railroad Ave & Kay Ave",
+"idx":    320,
+"timestamp": "2013-08-19T22:32:15.392471",
+"number":   2005,
+"free":      3,
+"bikes":      9,
+"coordinates": "",
+"address": "Railroad Ave & Kay Ave",
+"lat": 4.0705e+07,
+"lng": -7.3971e+07,
+"id":    320,
+"fillColor": "#A6D96A",
+"popup": "<b>Railroad Ave &amp; Kay Ave</b><br>\n<b>Free Docks: </b> 3 <br>\n<b>Available Bikes:</b> 9<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392471" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.976, 40.766 ] 
+},
+"properties": {
+ "name": "Central Park S & 6 Ave",
+"idx":    321,
+"timestamp": "2013-08-19T22:32:15.392508",
+"number":   2006,
+"free":     15,
+"bikes":     26,
+"coordinates": "",
+"address": "Central Park S & 6 Ave",
+"lat": 4.0766e+07,
+"lng": -7.3976e+07,
+"id":    321,
+"fillColor": "#A6D96A",
+"popup": "<b>Central Park S &amp; 6 Ave</b><br>\n<b>Free Docks: </b> 15 <br>\n<b>Available Bikes:</b> 26<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392508" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.017, 40.706 ] 
+},
+"properties": {
+ "name": "Little West St & 1 Pl",
+"idx":    322,
+"timestamp": "2013-08-19T22:32:15.392542",
+"number":   2008,
+"free":     15,
+"bikes":      6,
+"coordinates": "",
+"address": "Little West St & 1 Pl",
+"lat": 4.0706e+07,
+"lng": -7.4017e+07,
+"id":    322,
+"fillColor": "#FDAE61",
+"popup": "<b>Little West St &amp; 1 Pl</b><br>\n<b>Free Docks: </b> 15 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392542" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.997, 40.711 ] 
+},
+"properties": {
+ "name": "Catherine St & Monroe St",
+"idx":    323,
+"timestamp": "2013-08-19T22:32:15.392576",
+"number":   2009,
+"free":     26,
+"bikes":      6,
+"coordinates": "",
+"address": "Catherine St & Monroe St",
+"lat": 4.0711e+07,
+"lng": -7.3997e+07,
+"id":    323,
+"fillColor": "#D7191C",
+"popup": "<b>Catherine St &amp; Monroe St</b><br>\n<b>Free Docks: </b> 26 <br>\n<b>Available Bikes:</b> 6<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392576" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.002, 40.722 ] 
+},
+"properties": {
+ "name": "Grand St & Greene St",
+"idx":    324,
+"timestamp": "2013-08-19T22:32:15.392612",
+"number":   2010,
+"free":      7,
+"bikes":     23,
+"coordinates": "",
+"address": "Grand St & Greene St",
+"lat": 4.0722e+07,
+"lng": -7.4002e+07,
+"id":    324,
+"fillColor": "#A6D96A",
+"popup": "<b>Grand St &amp; Greene St</b><br>\n<b>Free Docks: </b> 7 <br>\n<b>Available Bikes:</b> 23<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392612" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.977, 40.739 ] 
+},
+"properties": {
+ "name": "E 27 St & 1 Ave",
+"idx":    325,
+"timestamp": "2013-08-19T22:32:15.392648",
+"number":   2012,
+"free":     31,
+"bikes":      0,
+"coordinates": "",
+"address": "E 27 St & 1 Ave",
+"lat": 4.0739e+07,
+"lng": -7.3977e+07,
+"id":    325,
+"fillColor": "#D7191C",
+"popup": "<b>E 27 St &amp; 1 Ave</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 0<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392648" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.971,  40.75 ] 
+},
+"properties": {
+ "name": "E 43 St & 2 Ave",
+"idx":    326,
+"timestamp": "2013-08-19T22:32:15.392684",
+"number":   2017,
+"free":     21,
+"bikes":     14,
+"coordinates": "",
+"address": "E 43 St & 2 Ave",
+"lat": 4.075e+07,
+"lng": -7.3971e+07,
+"id":    326,
+"fillColor": "#FDAE61",
+"popup": "<b>E 43 St &amp; 2 Ave</b><br>\n<b>Free Docks: </b> 21 <br>\n<b>Available Bikes:</b> 14<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392684" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.989, 40.759 ] 
+},
+"properties": {
+ "name": "W 45 St & 8 Ave",
+"idx":    327,
+"timestamp": "2013-08-19T22:32:15.392716",
+"number":   2021,
+"free":     32,
+"bikes":      4,
+"coordinates": "",
+"address": "W 45 St & 8 Ave",
+"lat": 4.0759e+07,
+"lng": -7.3989e+07,
+"id":    327,
+"fillColor": "#D7191C",
+"popup": "<b>W 45 St &amp; 8 Ave</b><br>\n<b>Free Docks: </b> 32 <br>\n<b>Available Bikes:</b> 4<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392716" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.959, 40.758 ] 
+},
+"properties": {
+ "name": "E 59 St & Sutton Pl",
+"idx":    328,
+"timestamp": "2013-08-19T22:32:15.392752",
+"number":   2022,
+"free":     31,
+"bikes":      1,
+"coordinates": "",
+"address": "E 59 St & Sutton Pl",
+"lat": 4.0758e+07,
+"lng": -7.3959e+07,
+"id":    328,
+"fillColor": "#D7191C",
+"popup": "<b>E 59 St &amp; Sutton Pl</b><br>\n<b>Free Docks: </b> 31 <br>\n<b>Available Bikes:</b> 1<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392752" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.97,  40.76 ] 
+},
+"properties": {
+ "name": "E 55 St & Lexington Ave",
+"idx":    329,
+"timestamp": "2013-08-19T22:32:15.392788",
+"number":   2023,
+"free":      5,
+"bikes":     24,
+"coordinates": "",
+"address": "E 55 St & Lexington Ave",
+"lat": 4.076e+07,
+"lng": -7.397e+07,
+"id":    329,
+"fillColor": "#1A9641",
+"popup": "<b>E 55 St &amp; Lexington Ave</b><br>\n<b>Free Docks: </b> 5 <br>\n<b>Available Bikes:</b> 24<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392788" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.016, 40.712 ] 
+},
+"properties": {
+ "name": "South End Ave & Liberty St",
+"idx":    330,
+"timestamp": "2013-08-19T22:32:15.392825",
+"number":   3002,
+"free":      6,
+"bikes":     12,
+"coordinates": "",
+"address": "South End Ave & Liberty St",
+"lat": 4.0712e+07,
+"lng": -7.4016e+07,
+"id":    330,
+"fillColor": "#A6D96A",
+"popup": "<b>South End Ave &amp; Liberty St</b><br>\n<b>Free Docks: </b> 6 <br>\n<b>Available Bikes:</b> 12<br>\n<b>Retrieved At:</b> 2013-08-19T22:32:15.392825" 
+} 
+} 
+] 
+}
+  var map = L.map(spec.dom)
+    .setView(spec.center, spec.zoom);
+
+    if (spec.provider){
+      L.tileLayer.provider(spec.provider).addTo(map)    
+    } else {
+		  L.tileLayer(spec.urlTemplate, spec.layerOpts).addTo(map)
+    }
+     
+    
+    
+    
+    
+    
+    if (spec.circle2){
+      for (var c in spec.circle2){
+        var circle = L.circle(c.center, c.radius, c.opts)
+         .addTo(map);
+      }
+    }
+    
+    
+    
+    
+      L.geoJson(spec.features 
+        , 
+         {
+ "onEachFeature":  function(feature, layer){
+    layer.bindPopup(feature.properties.popup)
+  } ,
+"pointToLayer":  function(feature, latlng){
+    return L.circleMarker(latlng, {
+      radius: 4,
+      fillColor: feature.properties.fillColor || 'red',    
+      color: '#000',
+      weight: 1,
+      fillOpacity: 0.8
+    })
+  }  
+}
+      ).addTo(map)
+    
+   
+</script>
+    
+  </body>
+</html>
